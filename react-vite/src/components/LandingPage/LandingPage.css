@@ -1,0 +1,68 @@
+.landing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-tree{
+    border: 3.5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 18px 18px 10px grey;
+    display: flex;
+    justify-self: start;
+    height: 10em;
+    width: 63%;
+    overflow-y: scroll;
+    align-self: center;
+}
+
+.skill-tree-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: 40em;
+    font-size: 13px;
+}
+
+.list-a-skill{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    padding:.5%;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    width: 80%;
+}
+
+.links{
+    display: flex;
+    margin: 4%;
+    width: auto;
+    font-size: larger;
+    text-decoration: none;
+    color: blue;
+}
+.links:hover{
+    color: green;
+}
+.bios{
+    display: flex;
+    height: 15em;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.about{
+    width: auto;
+    height: 200px;
+    padding: 1cap;
+}
+
+.future{
+    margin-top: 2%;
+    padding-top: 4cap;
+}

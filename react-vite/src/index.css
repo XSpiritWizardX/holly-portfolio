@@ -1,1 +1,30 @@
 /* TODO: Add sitewide styles */
+h1{
+    font-size: 52px;
+    animation: title 10s infinite;
+}
+
+
+@keyframes titleGlow {
+    0% {
+      text-shadow: 10px 10px 10px rgba(0, 172, 252, 0.863), 10px 10px 40px rgba(2, 255, 86, 0.986);
+    }
+    100% {
+      text-shadow: 10 10 35px rgba(5, 100, 145, 0.9), 10 10 60px rgb(255, 188, 4), 0 0 45px rgba(13, 250, 159, 0.5);
+    }
+  }
+
+
+
+  .title {
+    font-family: 'Cinzel Decorative', cursive, serif;
+    text-align: center;
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  color: #000000;
+  border-bottom: 4px dotted black;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: font-size 0.3s ease;
+  animation: titleGlow .3s infinite alternate;
+}
