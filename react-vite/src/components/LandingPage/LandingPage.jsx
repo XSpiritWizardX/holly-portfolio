@@ -27,25 +27,39 @@ function LandingPage() {
             className="about"
             >
 
-        <h2>About Me</h2>
-        <p> I am a husband to a very amazing wife and a father to 5 wonderful children.<br/>
-            I enjoy music, art, games, fishing, sports, animals, and computers.<br/>
-            I have been programming for almost 2 years now and love what i do!
+        <h2>ABOUT ME</h2>
+        <p> I&apos;m a proud husband and father of five amazing kids. <br/>My family drives my hustle, creativity, and focus.<br/> Outside of coding, you&apos;ll find me making music in my home studio,<br/> jamming on guitar or piano, or getting a little too competitive <br/>in fantasy games and sports. I&apos;m deeply inspired by how tech, design, <br/>and imaginationcan blend to make magic — and I bring that energy <br/>into every project.
+        </p>
+        <h2>Looking For</h2>
+        <p> I am looking for a full-time position as a software engineer or developer.<br/>
+         I am looking for a company that values creativity and innovation.<br/>
+        I am looking for a company that is willing to invest <br/>in my growth and development.</p>
+        <h2>Education </h2>
+        <p>App Academy — Full Stack Software Engineering Bootcamp<br/>
+        Graduated 2025 | 1000+ hours | Acceptance rate less than 3%</p>
+        <p>Grow With Google — Digital Marketing & e-commerce
+          <br/>
+          Graduated 2023 | 7 courses | 7 Google Certifications
+        </p>
+        <p>Glen Oaks Community Coillege — Associates of General Studies
+          <br/>
+          Graduated 2023
         </p>
             </div>
+
+
             <div
             className="about"
             >
 
-        <h2>Hobbies</h2>
-        <p> I am a husband to a very amazing wife and a father to 5 wonderful children.<br/>
-            I enjoy music, art, games, fishing, sports, animals, and computers.<br/>
-            I have been programming for almost 2 years now and love what i do!
-        </p>
-            </div>
-
-        </div>
-
+        <h2>HOBBIES & INTERESTS</h2>
+        <p>🥾 I enjoy hiking, reading, and playing video games.<br/>
+       🎸 Playing music & songwriting <br/>
+       🎨 UI/UX design experimentation<br/>
+        ⚽ Playing & watching sports<br/>
+       🧙 Fantasy RPGs & worldbuilding<br/>
+       🎥 Video editing & music production<br/>
+        👨‍👩‍👧‍👦 Family time (board games, movies, and chaos)</p>
 
 
 
@@ -57,9 +71,74 @@ function LandingPage() {
             <li>AI Trade Bot</li>
             <li>AI LLM/ media generation model </li>
             <li>Personal School App</li>
+            <li>Jam Session AI</li>
+
 
         </ul>
 
+
+        </div>
+
+
+
+        </div>
+
+<br/><br/><br/><br/><br/><br/><br/>
+
+
+<h2>Personal Projects</h2>
+        <h3>Dustin Bovee Music -- ProTools</h3>
+        <div
+        className="video-container"
+        >
+
+        <iframe
+            className="video"
+        width="360" height="215" src="https://www.youtube.com/embed/xnXgBuqI-1g?si=6wtGMT3SMcQURKOw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+          <iframe
+          className="video"
+          width="360" height="215" src="https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+        <h3>The Dark Musician -- UE5</h3>
+        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868853/Snowy_Mountains_aibnwt.jpg" className="image-small" />
+          <div
+          className="image-container"
+          >
+
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868619/banker_zzynci.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747867182/melody_mih8nb.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868469/melancholy_h3rl4y.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868590/muted-singer_jqzxjh.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747870423/8yfbbQmBCOipBlepN6eO--1--djg4q_uhvqch.jpg" className="image" />
+
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870624/drums_j82q1b.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870692/heartbeat_qbmrsb.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870585/headphones_rkdtof.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870693/microphone_mgsxsz.png" className="image" />
+
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870696/piano_xllx7u.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870689/guitar_isdahh.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870688/flute_w48bvw.png" className="image" />
+
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869226/additional_1_teiv38.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869229/additional_2_iwnaep.png" className="image" />
+
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869230/additional_4_keftze.png" className="image" />
+
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869234/additional_7_mdhmxb.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869233/additional_6_fzxaqd.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869236/additional_8_nstngm.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747869186/deathbat_nft-removebg-preview_uug359.png" className="image" />
+
+          </div>
+
+<br/><br/><br/><br/><br/><br/><br/>
+<div
+className="skill-tech"
+>
 
         <h2> Skills / Known Technologies </h2>
         <div
@@ -478,8 +557,7 @@ function LandingPage() {
 
             </ul>
         </div>
-
-
+</div>
         <h2>Links To Projects</h2>
 
 
@@ -488,11 +566,12 @@ function LandingPage() {
         >
 
         <a
-          href='https://football-bnb.onrender.com/'
+          href='https://footballbnb.onrender.com/'
           target="_self"
           className='links'
           >Football bnb
           </a>
+          <p></p>
         <a
           href='https://tradetoad.onrender.com/'
           target="_self"
@@ -518,7 +597,6 @@ function LandingPage() {
 
         <h2>Connect With Me</h2>
 
-
 <div
 className="link-container"
 >
@@ -530,6 +608,11 @@ className="link-container"
   >Github
   </a>
 
+  <p> phone: (269)506-5112
+  <br/>
+      email: dbovee824@gmail.com
+
+  </p>
 <a
   href='https://www.linkedin.com/in/dustin-bovee/'
   target="_self"

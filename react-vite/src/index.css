@@ -7,10 +7,10 @@ h1{
 
 @keyframes titleGlow {
     0% {
-      text-shadow: 10px 10px 10px rgba(0, 172, 252, 0.863), 10px 10px 40px rgba(2, 255, 86, 0.986);
+      text-shadow: 10px 10px 10px rgba(128, 153, 15, 0.863), 10px 10px 40px rgba(129, 131, 5, 0.986);
     }
     100% {
-      text-shadow: 10 10 35px rgba(5, 100, 145, 0.9), 10 10 60px rgb(255, 188, 4), 0 0 45px rgba(13, 250, 159, 0.5);
+      text-shadow: 10 10 35px rgba(249, 253, 28, 0.9), 10 10 60px rgb(255, 188, 4), 0 0 45px rgba(13, 250, 159, 0.5);
     }
   }
 
@@ -26,5 +26,24 @@ h1{
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
   transition: font-size 0.3s ease;
-  animation: titleGlow .3s infinite alternate;
+  animation: titleGlow .5s infinite alternate;
+}
+
+p{
+  color: white;
+  font-size: larger;
+}
+
+h2{
+  color: rgb(111, 5, 250);
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 1rem 0;
+}
+
+h3{
+  color: rgb(238, 234, 27);
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
