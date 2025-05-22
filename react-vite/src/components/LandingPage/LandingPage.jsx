@@ -64,7 +64,6 @@ function LandingPage() {
 
 
         <h2
-        className="future"
         >Future Projects</h2>
         <ul>
             <li>Joezano&apos;s Pizza App</li>
@@ -102,14 +101,14 @@ function LandingPage() {
           width="360" height="215" src="https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-        <h3>The Dark Musician -- UE5</h3>
+        <h3>The Dark Musician -- Unreal Engine 5</h3>
         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868853/Snowy_Mountains_aibnwt.jpg" className="image-small" />
           <div
           className="image-container"
           >
 
-          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868619/banker_zzynci.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747867182/melody_mih8nb.png" className="image" />
+          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868619/banker_zzynci.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868469/melancholy_h3rl4y.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868590/muted-singer_jqzxjh.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747870423/8yfbbQmBCOipBlepN6eO--1--djg4q_uhvqch.jpg" className="image" />
@@ -124,23 +123,26 @@ function LandingPage() {
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747870688/flute_w48bvw.png" className="image" />
 
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869226/additional_1_teiv38.png" className="image" />
-          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869229/additional_2_iwnaep.png" className="image" />
 
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869230/additional_4_keftze.png" className="image" />
 
-          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869234/additional_7_mdhmxb.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869233/additional_6_fzxaqd.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/f_png/v1747869236/additional_8_nstngm.png" className="image" />
           <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747869186/deathbat_nft-removebg-preview_uug359.png" className="image" />
 
           </div>
 
+
+
+
+
+
 <br/><br/><br/><br/><br/><br/><br/>
 <div
 className="skill-tech"
 >
 
-        <h2> Skills / Known Technologies </h2>
+  <h2> Skills / Known Technologies </h2>
         <div
         className="skill-tree"
         >

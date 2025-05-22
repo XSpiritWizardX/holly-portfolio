@@ -30,19 +30,20 @@ h1{
 }
 
 p{
-  color: white;
+  color: rgb(142, 235, 173);
   font-size: larger;
 }
 
 h2{
-  color: rgb(111, 5, 250);
+  color: rgb(250, 5, 217);
   text-align: center;
-  font-size: 2.3rem;
+  justify-self: center;
+  font-size: 2.8rem;
   margin: 1rem 0;
 }
 
 h3{
-  color: rgb(238, 234, 27);
+  color: rgb(3, 255, 24);
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0;
