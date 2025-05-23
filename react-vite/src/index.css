@@ -30,8 +30,9 @@ h1{
 }
 
 p{
-  color: rgb(142, 235, 173);
-  font-size: larger;
+  color: rgb(0, 255, 106);
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 h2{

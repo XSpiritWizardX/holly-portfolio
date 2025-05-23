@@ -50,6 +50,7 @@ function LandingPage() {
           I could talk all day about future cruises and vacations.<br/>
           <br/>
          </p>
+         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/485761821_9289269257789147_3271802936818663508_n_v9keh4.jpg" className="picture" alt="dustin-bovee-with-wife-and-older-kids"/>
         <h2>Looking For:</h2>
         <p> I am looking for a full-time position as a <br/>software engineer.
          I am looking for a company that values creativity<br/> and innovation.
@@ -98,19 +99,9 @@ function LandingPage() {
             <li>AI LLM / media generation model </li>
             <li>Personal School App</li>
             <li>Jam Session AI</li>
-
-
         </ul>
-        <h3>On Tour:</h3>
-        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/462504050_8324973944218688_6095070514255415304_n_drhvmy.jpg" className="image-band" />
-        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/464703713_8431656183550463_41070255764846273_n_v4mkkh.jpg" className="image-band" />
-        </div>
 
 
-
-        </div>
-
-<br/><br/><br/><br/><br/><br/><br/>
 
 
 <h2>Personal Projects:</h2>
@@ -122,7 +113,7 @@ function LandingPage() {
 
         <iframe
             className="video"
-        width="360" height="215" src="https://www.youtube.com/embed/xnXgBuqI-1g?si=6wtGMT3SMcQURKOw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            width="360" height="215" src="https://www.youtube.com/embed/xnXgBuqI-1g?si=6wtGMT3SMcQURKOw" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
           <iframe
@@ -132,7 +123,6 @@ function LandingPage() {
 
         <h3>The Dark Musician: </h3>
         <p>Familiar with Unity, Harmony22 Premium, ToonBoon, Krita,<br/> Adobe Suite, C#, Game Design, UI/UX, world building</p>
-        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868853/Snowy_Mountains_aibnwt.jpg" className="image-small" />
           <div
           className="image-container"
           >
@@ -167,12 +157,15 @@ function LandingPage() {
 
 
 
-<br/><br/><br/><br/><br/><br/><br/>
-<div
-className="skill-tech"
->
+            </div>
+            </div>
 
-  <h2> Skills / Known Technologies: </h2>
+
+
+
+            <h2> Skills / Known Technologies: </h2>
+
+
         <div
         className="skill-tree"
         >
@@ -614,6 +607,137 @@ className="skill-tech"
 
             </li>
             <li
+            className="list-a-skill">
+            CRUD Operations
+
+            </li>
+            <li
+            className="list-a-skill">
+            WTForms
+            </li>
+            <li
+            className="list-a-skill">
+              React Router Documentation
+            </li>
+            <li
+            className="list-a-skill">
+            Big-O
+
+            </li>
+            <li
+            className="list-a-skill">
+            Linear Data Structures
+
+            </li>
+            <li
+            className="list-a-skill">
+              Sorting
+            </li>
+            <li
+            className="list-a-skill">
+            Trees
+
+            </li>
+            <li
+            className="list-a-skill">
+            Graphs
+
+            </li>
+            <li
+            className="list-a-skill">
+           Callbacks
+
+            </li>
+            <li
+            className="list-a-skill">
+           Scopes and Closures
+
+            </li>
+            <li
+            className="list-a-skill">
+              Recursion
+            </li>
+            <li
+            className="list-a-skill">
+            IIFEs
+
+            </li>
+            <li
+            className="list-a-skill">
+            Asynchronous Programming
+
+            </li>
+            <li
+            className="list-a-skill">
+            Microservices
+
+            </li>
+            <li
+            className="list-a-skill">
+            TDD with pytest
+
+            </li>
+            <li
+            className="list-a-skill">
+            Python Environment Management
+
+            </li>
+            <li
+            className="list-a-skill">
+            Polymorphism
+
+            </li>
+            <li
+            className="list-a-skill">
+            Inheritance
+
+            </li>
+            <li
+            className="list-a-skill">
+            Python Decorators
+
+            </li>
+            <li
+            className="list-a-skill">
+            Built in Methods
+
+            </li>
+            <li
+            className="list-a-skill">
+            Advanced List Comprehensions
+
+            </li>
+            <li
+            className="list-a-skill">
+            Tuples
+
+            </li>
+            <li
+            className="list-a-skill">
+            Router Nesting
+
+            </li>
+            <li
+            className="list-a-skill">
+            React Hooks
+
+            </li>
+            <li
+            className="list-a-skill">
+            Reactive Functions
+
+            </li>
+            <li
+            className="list-a-skill">
+            Custom Forms and Validations
+
+            </li>
+            <li
+            className="list-a-skill">
+            Context
+
+            </li>
+            <li
             className="list-a-skill"
             >
             Continous Learning
@@ -630,7 +754,7 @@ className="skill-tech"
 
             </ul>
         </div>
-</div>
+
         <h2>Links To Projects:</h2>
 
 
