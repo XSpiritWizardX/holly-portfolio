@@ -18,7 +18,7 @@ function LandingPage() {
         <h1
         className="title"
         >Dustin Bovee Portfolio</h1>
-        <img src="none.png" className="profile-picture" />
+        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/e_dropshadow:azimuth_220;elevation_60;spread_20/b_rgb:FFFFFF/f_png/v1747963856/472684932_8842676349115109_2028848718984112102_n_xm2fqm.jpg" className="profile-picture" />
 
         <div
         className="bios"
@@ -27,21 +27,48 @@ function LandingPage() {
             className="about"
             >
 
-        <h2>ABOUT ME</h2>
-        <p> I&apos;m a proud husband and father of five amazing kids. <br/>My family drives my hustle, creativity, and focus.<br/> Outside of coding, you&apos;ll find me making music in my home studio,<br/> jamming on guitar or piano, or getting a little too competitive <br/>in fantasy games and sports. I&apos;m deeply inspired by how tech, design, <br/>and imaginationcan blend to make magic — and I bring that energy <br/>into every project.
-        </p>
-        <h2>Looking For</h2>
-        <p> I am looking for a full-time position as a software engineer or developer.<br/>
-         I am looking for a company that values creativity and innovation.<br/>
-        I am looking for a company that is willing to invest <br/>in my growth and development.</p>
-        <h2>Education </h2>
-        <p>App Academy — Full Stack Software Engineering Bootcamp<br/>
+        <h2>About Me:</h2>
+        <p> I&apos;m a proud husband and father of five amazing kids. <br/>
+        My family drives my hustle, creativity, and focus.<br/>
+         Outside of coding, you&apos;ll find me making music in my home studio,<br/>
+         jamming on guitar or piano, or getting a little competitive <br/>
+         in fantasy games and sports.
+         I&apos;m deeply inspired by how tech, design,<br/>
+         and imagination can blend
+         to make magic — and I bring that energy <br/>
+         into every project.
+          I love the thrill of solving problems and creating something <br/>
+          new and innovative.
+          I am a passionate software engineer with a strong background <br/>
+          in full-stack development, digital marketing, and e-commerce.<br/>
+          I have a knack for turning complex ideas into user-friendly solutions.<br/>
+          I am a quick learner and a team player who is always looking to grow.<br/>
+          I have travelled all across America and have been to a few countries.<br/>
+          I enjoy travelling and experiencing new cultures, and scenery.<br/>
+          Eventually I want to travel and stay in Iceland for awhile<br/>
+          and maybe retire in the south carribean...<br/>
+          I could talk all day about future cruises and vacations.<br/>
+          <br/>
+         </p>
+        <h2>Looking For:</h2>
+        <p> I am looking for a full-time position as a <br/>software engineer.
+         I am looking for a company that values creativity<br/> and innovation.
+        I am looking for a company that is willing to invest <br/>in my growth and development.
+        <br/>I am looking for collaborators and new opportunities.</p>
+        <h2>Education: </h2>
+        <p
+        className="education"
+        >App Academy — Full Stack Software Engineering Bootcamp<br/>
         Graduated 2025 | 1000+ hours | Acceptance rate less than 3%</p>
-        <p>Grow With Google — Digital Marketing & e-commerce
+        <p
+        className="education"
+        >Grow With Google — Digital Marketing & e-commerce
           <br/>
           Graduated 2023 | 7 courses | 7 Google Certifications
         </p>
-        <p>Glen Oaks Community Coillege — Associates of General Studies
+        <p
+        className="education"
+        >Glen Oaks Community Coillege — Associates of General Studies
           <br/>
           Graduated 2023
         </p>
@@ -52,7 +79,7 @@ function LandingPage() {
             className="about"
             >
 
-        <h2>HOBBIES & INTERESTS</h2>
+        <h2>Hobbies and Interests:</h2>
         <p>🥾 I enjoy hiking, reading, and playing video games.<br/>
        🎸 Playing music & songwriting <br/>
        🎨 UI/UX design experimentation<br/>
@@ -64,18 +91,19 @@ function LandingPage() {
 
 
         <h2
-        >Future Projects</h2>
+        >Future Projects:</h2>
         <ul>
             <li>Joezano&apos;s Pizza App</li>
             <li>AI Trade Bot</li>
-            <li>AI LLM/ media generation model </li>
+            <li>AI LLM / media generation model </li>
             <li>Personal School App</li>
             <li>Jam Session AI</li>
 
 
         </ul>
-
-
+        <h3>On Tour:</h3>
+        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/462504050_8324973944218688_6095070514255415304_n_drhvmy.jpg" className="image-band" />
+        <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/464703713_8431656183550463_41070255764846273_n_v4mkkh.jpg" className="image-band" />
         </div>
 
 
@@ -85,8 +113,9 @@ function LandingPage() {
 <br/><br/><br/><br/><br/><br/><br/>
 
 
-<h2>Personal Projects</h2>
-        <h3>Dustin Bovee Music -- ProTools</h3>
+<h2>Personal Projects:</h2>
+        <h3>Dustin Bovee Music:</h3>
+        <p>Familiar with Protools, Audacity, Studio 1,<br/> Guitar, Piano, Drums, Bass, Vocals, Synth, <br/> Woodwinds, Brass, Orchestra, Recording, <br/> Mixing and Mastering, Music Videos </p>
         <div
         className="video-container"
         >
@@ -101,7 +130,8 @@ function LandingPage() {
           width="360" height="215" src="https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
 
-        <h3>The Dark Musician -- Unreal Engine 5</h3>
+        <h3>The Dark Musician: </h3>
+        <p>Familiar with Unity, Harmony22 Premium, ToonBoon, Krita,<br/> Adobe Suite, C#, Game Design, UI/UX, world building</p>
         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747868853/Snowy_Mountains_aibnwt.jpg" className="image-small" />
           <div
           className="image-container"
@@ -142,7 +172,7 @@ function LandingPage() {
 className="skill-tech"
 >
 
-  <h2> Skills / Known Technologies </h2>
+  <h2> Skills / Known Technologies: </h2>
         <div
         className="skill-tree"
         >
@@ -542,6 +572,47 @@ className="skill-tech"
             >
             Problem Solving
             </li>
+
+            <li
+            className="list-a-skill"
+            >
+            Attention to Detail
+            </li>
+            <li
+            className="list-a-skill"
+            >
+              Object-Relational Mapping
+            </li>
+            <li
+            className="list-a-skill"
+            >
+              Sequelize
+            </li>
+            <li
+            className="list-a-skill">
+              SQLAlchemy
+            </li>
+            <li
+            className="list-a-skill">
+              Key Performance Indicators
+            </li>
+            <li
+            className="list-a-skill">
+              KPI Reporting
+            </li>
+            <li
+            className="list-a-skill">
+              Data Visualization
+            </li>
+            <li
+            className="list-a-skill">
+              High Volume Data
+            </li>
+            <li
+            className="list-a-skill">
+            Web Accessibility
+
+            </li>
             <li
             className="list-a-skill"
             >
@@ -560,7 +631,7 @@ className="skill-tech"
             </ul>
         </div>
 </div>
-        <h2>Links To Projects</h2>
+        <h2>Links To Projects:</h2>
 
 
         <div
