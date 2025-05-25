@@ -7,10 +7,10 @@ h1{
 
 @keyframes titleGlow {
     0% {
-      text-shadow: 10px 10px 10px rgba(128, 153, 15, 0.863), 10px 10px 40px rgba(129, 131, 5, 0.986);
+      text-shadow: 10px 10px 10px #19f3628c, 10px 10px 40px #9bce0e67;;
     }
     100% {
-      text-shadow: 10 10 35px rgba(249, 253, 28, 0.9), 10 10 60px rgb(255, 188, 4), 0 0 45px rgba(13, 250, 159, 0.5);
+      text-shadow: 10 10 35px rgb(249, 253, 28), 10 10 60px rgb(172, 190, 9), 0 0 45px rgba(13, 250, 159, 0.5);
     }
   }
 
@@ -21,22 +21,30 @@ h1{
     text-align: center;
   font-size: 3.5rem;
   margin: 1rem 0;
-  color: #a0e91a50;
+  color: #1b241e6b;
+  /* color: #59e0866b; */
   border-bottom: 4px dotted black;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
   transition: font-size 0.3s ease;
-  animation: titleGlow .5s infinite alternate;
+  animation: titleGlow .9s infinite alternate;
 }
-
+.subtitle {
+  font-family: 'Cinzel Decorative', cursive, serif;
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #1b241e6b;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
+}
 p{
-  color: rgb(0, 255, 106);
+  color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: bolder;
 }
 
 h2{
-  color: rgb(250, 5, 217);
+  color: rgba(102, 129, 146, 0.479);
   text-align: center;
   justify-self: center;
   font-size: 2.8rem;
@@ -44,7 +52,7 @@ h2{
 }
 
 h3{
-  color: rgb(3, 255, 24);
+  color: rgba(61, 25, 109, 0.39);
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0;

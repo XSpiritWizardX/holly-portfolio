@@ -1,7 +1,7 @@
 import "./LandingPage.css";
 
-
-
+import { FaPhone } from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
 
 
 
@@ -17,7 +17,10 @@ function LandingPage() {
 
         <h1
         className="title"
-        >Dustin Bovee Portfolio</h1>
+        >Dustin Bovee</h1>
+        <p
+        className="subtitle"
+        >The Man<br/> The Myth<br/>The Legend<br/>Portfolio Spotlight</p>
         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/e_dropshadow:azimuth_220;elevation_60;spread_20/b_rgb:FFFFFF/f_png/v1747963856/472684932_8842676349115109_2028848718984112102_n_xm2fqm.jpg" className="profile-picture" />
 
         <div
@@ -50,17 +53,41 @@ function LandingPage() {
           I could talk all day about future cruises and vacations.<br/>
           <br/>
          </p>
+
+
+
+        <div
+        className="picture-container">
+
+         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/462504050_8324973944218688_6095070514255415304_n_drhvmy.jpg" className="picture" alt="dustin-bovee-with-under-the-vine"/>
+         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132681/485807983_9289284137787659_7415467271367767227_n_vytilr.jpg" className="picture" alt="dustin-bovee-with-alcohol"/>
          <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/485761821_9289269257789147_3271802936818663508_n_v9keh4.jpg" className="picture" alt="dustin-bovee-with-wife-and-older-kids"/>
+         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg" className="picture" alt="dustin-bovee-with-wife"/>
+        </div>
+
+
+
+
+
+
+
+
+
+
         <h2>Looking For:</h2>
         <p> I am looking for a full-time position as a <br/>software engineer.
-         I am looking for a company that values creativity<br/> and innovation.
-        I am looking for a company that is willing to invest <br/>in my growth and development.
-        <br/>I am looking for collaborators and new opportunities.</p>
+         I&apos;m on the lookout for a company that values creativity<br/> and innovation.
+        I am actively seeking out a company that is willing to invest <br/>in my growth and development.
+        <br/>I am looking for collaborators and new opportunities.<br/> </p>
+
+
+
+
         <h2>Education: </h2>
         <p
         className="education"
         >App Academy — Full Stack Software Engineering Bootcamp<br/>
-        Graduated 2025 | 1000+ hours | Acceptance rate less than 3%</p>
+        Graduated 2025 | 888+ hours | Acceptance rate less than 3%</p>
         <p
         className="education"
         >Grow With Google — Digital Marketing & e-commerce
@@ -81,24 +108,28 @@ function LandingPage() {
             >
 
         <h2>Hobbies and Interests:</h2>
-        <p>🥾 I enjoy hiking, reading, and playing video games.<br/>
-       🎸 Playing music & songwriting <br/>
-       🎨 UI/UX design experimentation<br/>
-        ⚽ Playing & watching sports<br/>
-       🧙 Fantasy RPGs & worldbuilding<br/>
-       🎥 Video editing & music production<br/>
-        👨‍👩‍👧‍👦 Family time (board games, movies, and chaos)</p>
+        <p>🥾 Hiking<br/>
+         ⛺ Camping<br/>
+        📖 Reading<br/>
+        🎮 Playing Video Games.<br/>
+       🎸 Playing Music <br/>
+       🎨 Animations<br/>
+        ⚽ Playing & Watching Sports<br/>
+       🧙 Fantasy RPGs & Worldbuilding<br/>
+       🎥 Making Awesome Videos<br/>
+       🛩️ Traveling<br/>
+        👨‍👩‍👧‍👦 Family Time (board games, movies, and chaos)</p>
 
 
 
         <h2
         >Future Projects:</h2>
         <ul>
-            <li>Joezano&apos;s Pizza App</li>
-            <li>AI Trade Bot</li>
-            <li>AI LLM / media generation model </li>
+            <li>Local LLM</li>
+            <li>AI Image Generator </li>
             <li>Personal School App</li>
             <li>Jam Session AI</li>
+            <li>AI Trade Bot</li>
         </ul>
 
 
@@ -106,7 +137,8 @@ function LandingPage() {
 
 <h2>Personal Projects:</h2>
         <h3>Dustin Bovee Music:</h3>
-        <p>Familiar with Protools, Audacity, Studio 1,<br/> Guitar, Piano, Drums, Bass, Vocals, Synth, <br/> Woodwinds, Brass, Orchestra, Recording, <br/> Mixing and Mastering, Music Videos </p>
+        <p>Familiar with Protools, Audacity, Studio 1,<br/> Guitar, Piano, Drums, Bass, Vocals, Synth, <br/> Woodwinds, Brass, Orchestra, Recording, <br/> Mixing and Mastering,<br/>
+        Sound and Song Engineering </p>
         <div
         className="video-container"
         >
@@ -122,7 +154,7 @@ function LandingPage() {
           </div>
 
         <h3>The Dark Musician: </h3>
-        <p>Familiar with Unity, Harmony22 Premium, ToonBoon, Krita,<br/> Adobe Suite, C#, Game Design, UI/UX, world building</p>
+        <p>Unity, C#, Harmony22, ToonBoon, Krita, Adobe Suite,<br/> Game Design Documentation, UI/UX,</p>
           <div
           className="image-container"
           >
@@ -768,7 +800,6 @@ function LandingPage() {
           className='links'
           >Football bnb
           </a>
-          <p></p>
         <a
           href='https://tradetoad.onrender.com/'
           target="_self"
@@ -798,18 +829,23 @@ function LandingPage() {
 className="link-container"
 >
 
+
+<a
+className="phone"
+href="tel:555-555-5555"><FaPhone /></a>
+
+  <a
+  className="email"
+  href="mailto:dbovee824@gmail.com
+         ?subject=Saying%20hello%20from%20GFG">
+        <TfiEmail />
+    </a>
 <a
   href='https://github.com/XSpiritWizardX'
   target="_self"
   className='links'
   >Github
   </a>
-
-  <p> phone: (269)506-5112
-  <br/>
-      email: dbovee824@gmail.com
-
-  </p>
 <a
   href='https://www.linkedin.com/in/dustin-bovee/'
   target="_self"

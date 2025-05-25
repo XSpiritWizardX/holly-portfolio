@@ -1,11 +1,13 @@
 .landing{
+    width: 100lvw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747867032/inkpendude-portal-storm_s5bzrt.gif');
+    background-color: rgba(100, 139, 143, 0.438);
     background-position: center;
     background-size: cover;
-
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .skill-tree{
@@ -15,13 +17,22 @@
     display: flex;
     justify-self: center;
     height: 20em;
-    width: 90%;
+    width: 95%;
     overflow-y: scroll;
     align-self: center;
     margin-top: 0%;
     background-color: lightblue;
     opacity: 60%;
-    /* margin-top: 15cap; */
+}
+
+/* Mobile adjustments for skill-tree */
+@media (max-width: 768px) {
+    .skill-tree {
+        width: 98%;
+        height: 15em;
+        border: 4px solid rgb(0, 255, 149);
+        box-shadow: 10px 10px 8px grey;
+    }
 }
 
 .skill-tree-list{
@@ -34,16 +45,32 @@
     margin-top: 2%;
 }
 
+/* Mobile adjustments for skill-tree-list */
+@media (max-width: 768px) {
+    .skill-tree-list {
+        font-size: 18px;
+        height: 60em;
+        flex-wrap: nowrap;
+    }
+}
+
 .list-a-skill{
-    margin-left: 5%;
+    margin-left: 7%;
     margin-bottom: 2%;
     padding:.4%;
     color: black;
     font-size: 25px;
     font-weight: bolder;
     list-style-type:decimal;
+}
 
-    /* color: rgb(255, 169, 10); */
+/* Mobile adjustments for list-a-skill */
+@media (max-width: 768px) {
+    .list-a-skill {
+        font-size: 18px;
+        margin-left: 3%;
+        padding: 0.2%;
+    }
 }
 
 .link-container{
@@ -51,23 +78,70 @@
     justify-content: center;
     margin: 2px;
     width: 80%;
+    flex-wrap: wrap;
 }
 
+/* Mobile adjustments for link-container */
+@media (max-width: 768px) {
+    .link-container {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.email{
+    font-size: 20px;
+    color: rgba(14, 81, 126, 0.733);
+    text-decoration: none;
+    margin: 0%;
+    padding: 1%;
+
+}
+.phone{
+    font-size: 20px;
+    color: rgba(14, 81, 126, 0.733);
+    text-decoration: none;
+    margin: 0%;
+    padding: 1%;
+
+}
 .links{
     display: flex;
-    margin: 2%;
+    margin: 0%;
     width: auto;
     font-size: larger;
     text-decoration: none;
-    color: rgb(206, 255, 29);
+    color: rgba(14, 81, 126, 0.733);
+    padding: 1%;
+
 }
+
 .links:hover{
-    color: rgb(92, 160, 92);
+    color: rgba(98, 107, 14, 0.733);
 }
+
+/* Mobile adjustments for links */
+@media (max-width: 768px) {
+    .links {
+        font-size: medium;
+        margin: 1%;
+        text-align: center;
+    }
+}
+
 .bios{
     display: flex;
     width: 80%;
     justify-content: space-between;
+}
+
+/* Mobile adjustments for bios */
+@media (max-width: 768px) {
+    .bios {
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
 }
 
 .about{
@@ -75,37 +149,85 @@
     padding: 1cap;
 }
 
-.future{
-    margin-top: 2%;
-    padding-top: 4px;
-    color: rgb(111, 5, 250);
+/* Mobile adjustments for about */
+@media (max-width: 768px) {
+    .about {
+        width: 100%;
+        padding: 0.5cap;
+        text-align: center;
+    }
 }
+
+
+.picture-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    width: 100%;
+}
+
+
+
 .picture{
-    height: 400px;
-    width: 80%;
+    max-height: 30cap;
+    height: 35%;
+    width: 35%;
+
     border-radius: 15%;
     border: 4px solid lightblue;
-    box-shadow: 6px 6px 12px lightblue;
+    box-shadow: 6px 6px 12px rgb(39, 104, 126);
+    margin: 2%;
 }
-.profile-picture{
 
+/* Mobile adjustments for picture */
+@media (max-width: 768px) {
+    .picture {
+        height: 250px;
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+.profile-picture{
     width: 500px;
     height: 500px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 .profile-picture:hover{
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
+/* Mobile adjustments for profile-picture */
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 250px;
+        height: 250px;
+        margin: 15px 0;
+    }
+}
+
 .video{
     border-radius: 5px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 12px rgb(39, 104, 126);
     margin-bottom: 20px;
     border: 6px solid lightblue;
     border-radius: 10%;
-
 }
+
+/* Mobile adjustments for video */
+@media (max-width: 768px) {
+    .video {
+        width: 90%;
+        height: auto;
+        border: 4px solid lightblue;
+        margin-bottom: 15px;
+    }
+}
+
 .video-container{
     display: flex;
     flex-direction: column;
@@ -114,38 +236,46 @@
     border-radius: 50%;
 }
 
-.skill-tech{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0%;
-}
-
 li{
-    color: rgb(142, 235, 173);
+    color: rgba(0, 0, 0, 0.644);
     list-style-type: square;
     margin: 5px 0;
     font-size: 1.4rem;
     text-align: left;
 }
 
-
+/* Mobile adjustments for li */
+@media (max-width: 768px) {
+    li {
+        font-size: 1.1rem;
+        margin: 3px 0;
+        text-align: center;
+    }
+}
 
 .image-container{
     display: flex;
     justify-content: center;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     width: 50cap;
     align-items: center;
     margin: 2%;
 }
+
+/* Mobile adjustments for image-container */
+@media (max-width: 768px) {
+    .image-container {
+        width: 95%;
+        margin: 1%;
+        justify-content: space-around;
+    }
+}
+
 .image{
     width: 10%;
     height: 10%;
-
 }
+
 .image-band{
     width: 10%;
     height: 10%;
@@ -153,20 +283,55 @@ li{
     margin-top: 4%;
     border: 4px solid lightblue;
 }
+
 .image:hover{
     transform: scale(3.8);
     transition: transform 0.3s ease;
-
 }
+
+/* Mobile adjustments for images */
+@media (max-width: 768px) {
+    .image {
+        width: 15%;
+        height: 15%;
+        margin: 5px;
+    }
+
+    .image-band {
+        width: 15%;
+        height: 15%;
+        margin: 5px;
+        border: 2px solid lightblue;
+    }
+
+    .image:hover {
+        transform: scale(2.5);
+    }
+}
+
 .image-small{
     width: 10%;
     height: 10%;
     border: 4px solid lightblue;
 }
+
 .image-small:hover{
     transform: scale(4.8);
     transition: transform 0.3s ease;
+}
 
+/* Mobile adjustments for image-small */
+@media (max-width: 768px) {
+    .image-small {
+        width: 15%;
+        height: 15%;
+        border: 2px solid lightblue;
+        margin: 5px;
+    }
+
+    .image-small:hover {
+        transform: scale(3);
+    }
 }
 
 .personal{
@@ -177,6 +342,16 @@ li{
     margin-top: 2%;
     margin-bottom: 2%;
 }
+
+/* Mobile adjustments for personal */
+@media (max-width: 768px) {
+    .personal {
+        flex-direction: column;
+        width: 95%;
+        margin: 1% 0;
+    }
+}
+
 .education{
     font-size: 20px;
     margin-top: 10px;
@@ -190,7 +365,19 @@ li{
     align-items: center;
     border-radius: 5px;
     padding: 1%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(80, 148, 109, 0.336);
+}
+
+/* Mobile adjustments for education */
+@media (max-width: 768px) {
+    .education {
+        font-size: 16px;
+        width: 95%;
+        padding: 2%;
+        margin-top: 15px;
+        border: 2px dotted black;
+        text-align: center;
+    }
 }
 
 .skill-tech{
@@ -203,4 +390,63 @@ li{
     margin-right: 30%;
     margin-left: 2%;
     height: auto;
+}
+
+/* Mobile adjustments for skill-tech */
+@media (max-width: 768px) {
+    .skill-tech {
+        margin-top: 20px;
+        margin-right: 0;
+        margin-left: 0;
+        width: 95%;
+        padding: 10px;
+    }
+}
+
+/* General mobile optimizations */
+@media (max-width: 768px) {
+    /* Reduce overall spacing on mobile */
+    .landing {
+        padding: 5px;
+    }
+
+    /* Make text more readable on mobile */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Ensure no horizontal overflow */
+    body {
+        overflow-x: hidden;
+    }
+}
+
+/* Extra small devices (phones in portrait mode) */
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .picture {
+        height: 200px;
+        width: 95%;
+    }
+
+    .image, .image-small {
+        width: 20%;
+        height: 20%;
+    }
+
+    .list-a-skill {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .education {
+        font-size: 14px;
+    }
 }
