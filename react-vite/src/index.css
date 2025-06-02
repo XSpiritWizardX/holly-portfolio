@@ -24,7 +24,7 @@ h1{
   color: #1b241e6b;
   /* color: #59e0866b; */
   border-bottom: 4px dotted black;
-  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
   position: relative;
   transition: font-size 0.3s ease;
   animation: titleGlow .9s infinite alternate;
@@ -38,13 +38,13 @@ h1{
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 p{
-  color: rgb(0, 0, 0);
+  color: rgba(62, 206, 216, 0.562);
   font-size: 22px;
   font-weight: bolder;
-}
+  font-style: italic;}
 
 h2{
-  color: rgba(102, 129, 146, 0.479);
+  color: rgba(49, 126, 173, 0.678);
   text-align: center;
   justify-self: center;
   font-size: 2.8rem;
@@ -52,8 +52,13 @@ h2{
 }
 
 h3{
-  color: rgba(61, 25, 109, 0.39);
+  color: rgba(96, 7, 212, 0.541);
   text-align: center;
   font-size: 2rem;
   margin: 1rem 0;
+}
+
+
+li {
+  color: rgba(62, 206, 216, 0.562);
 }

@@ -2,7 +2,9 @@ import "./LandingPage.css";
 
 import { FaPhone } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
-
+import { FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 function LandingPage() {
@@ -18,9 +20,7 @@ function LandingPage() {
         <h1
         className="title"
         >Dustin Bovee</h1>
-        <p
-        className="subtitle"
-        >The Man<br/> The Myth<br/>The Legend<br/>Portfolio Spotlight</p>
+
         <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/e_dropshadow:azimuth_220;elevation_60;spread_20/b_rgb:FFFFFF/f_png/v1747963856/472684932_8842676349115109_2028848718984112102_n_xm2fqm.jpg" className="profile-picture" />
 
         <div
@@ -96,7 +96,7 @@ function LandingPage() {
         </p>
         <p
         className="education"
-        >Glen Oaks Community Coillege — Associates of General Studies
+        >Glen Oaks Community College — Associates of General Studies
           <br/>
           Graduated 2023
         </p>
@@ -137,7 +137,7 @@ function LandingPage() {
 
 <h2>Personal Projects:</h2>
         <h3>Dustin Bovee Music:</h3>
-        <p>Familiar with Protools, Audacity, Studio 1,<br/> Guitar, Piano, Drums, Bass, Vocals, Synth, <br/> Woodwinds, Brass, Orchestra, Recording, <br/> Mixing and Mastering,<br/>
+        <p>Pro-Tools, Studio One, Ozone 9, Avid,<br/> Guitar, Piano, Drums, Bass, Vocals, Synth, <br/> Woodwinds, Brass, Orchestra, Recording, <br/> Mixing and Mastering,
         Sound and Song Engineering </p>
         <div
         className="video-container"
@@ -154,7 +154,7 @@ function LandingPage() {
           </div>
 
         <h3>The Dark Musician: </h3>
-        <p>Unity, C#, Harmony22, ToonBoon, Krita, Adobe Suite,<br/> Game Design Documentation, UI/UX,</p>
+        <p>Unity, Harmony22, ToonBoon, Adobe Suite, Blender,<br/> Game Design Documentation, UI/UX,</p>
           <div
           className="image-container"
           >
@@ -436,6 +436,11 @@ function LandingPage() {
             className="list-a-skill"
             >
             AutoDesk / AutoCad
+            </li>
+            <li
+            className="list-a-skill"
+            >
+            Solid Works
             </li>
             <li
             className="list-a-skill"
@@ -786,7 +791,8 @@ function LandingPage() {
 
             </ul>
         </div>
-
+<br/>
+<br/>
         <h2>Links To Projects:</h2>
 
 
@@ -831,28 +837,44 @@ className="link-container"
 
 
 <a
-className="phone"
-href="tel:555-555-5555"><FaPhone /></a>
+
+href="tel:269-506-5112"
+ className='links'
+>
+  <FaPhone />
+</a>
 
   <a
-  className="email"
+
   href="mailto:dbovee824@gmail.com
-         ?subject=Saying%20hello%20from%20GFG">
+         ?subject=Saying%20hello%20from%20GFG"
+  className='links'
+         >
         <TfiEmail />
     </a>
 <a
   href='https://github.com/XSpiritWizardX'
   target="_self"
   className='links'
-  >Github
+  >
+    <FaGithub />
+
   </a>
 <a
   href='https://www.linkedin.com/in/dustin-bovee/'
   target="_self"
   className='links'
-  >Linkedin
-  </a>
+  >
+    <FaLinkedin />
 
+  </a>
+  <a
+  href='https://www.youtube.com/@dustinboveemusic'
+  target="_self"
+  className='links'
+  >
+    <FaYoutube />
+  </a>
 </div>
 
 
