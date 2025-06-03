@@ -1,168 +1,299 @@
-.landing{
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Mobile-first design */
+  .landing {
+    background: linear-gradient(135deg, #000000 0%, #314d6de3 100%);
+    min-height: 100vh;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    color: rgba(19, 187, 19, 0.719);
+    overflow-x: hidden;
+  }
+
+  /* Header section */
+  .title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    background: linear-gradient(45deg, #ffffff, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #05eeff;
+    box-shadow: -5cap 0 5cap rgba(29, 191, 255, 0.733);
+    object-fit: cover;
+  }
+
+  /* Game section */
+  .game-section {
+    background: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    height: auto;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .game-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #FFD700;
+  }
+
+  .game-instructions {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #E0E0E0;
+  }
+
+  /* Maze container */
+  #maze {
+    position: relative;
     width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    min-height: 430px;
+    margin: 0 auto 20px auto;
+    background: #000;
+    display: block;
+    box-shadow: 1px 1px 25cap rgba(3, 255, 255, 0.699);
+  }
+
+  /* Maze cells */
+  #maze .cell {
+    position: absolute;
+    transition: all 0.1s ease;
+  }
+
+  #maze .cell.wall {
+    background: linear-gradient(45deg, #333, #555);
+    border: 0.5px solid #666;
+  }
+
+  #maze .cell.player {
+    background: radial-gradient(circle, #00ff00, #00cc00);
+    border-radius: 50%;
+    z-index: 10;
+    box-shadow: 0 0 18px #00ff00;
+    animation: playerPulse .5s infinite alternate;
+  }
+
+  #maze .cell.enemy {
+    border-radius: 50%;
+    z-index: 5;
+    animation: enemyFloat 2s infinite ease-in-out;
+  }
+
+  #maze .cell.green-enemy {
+    background: radial-gradient(circle, #90EE90, #32CD32);
+    box-shadow: 0 0 6px #90EE90;
+  }
+
+  #maze .cell.red-enemy {
+    background: radial-gradient(circle, #ff4444, #cc0000);
+    box-shadow: 0 0 6px #ff4444;
+  }
+
+
+
+  /* Animations */
+  @keyframes playerPulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2); }
+  }
+
+  @keyframes enemyFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+  }
+
+
+
+  /* Game info */
+  .game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(5px);
+  }
+
+  .game-stat {
+    text-align: center;
+    flex: 1;
+  }
+
+  .game-stat h4 {
+    font-size: 12px;
+    color: #FFD700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .game-stat p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+
+  /* Mobile controls */
+  .mobile-controls {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
-}
+    gap: 20px;
+  }
 
-.skill-tree{
-    border: 6.5px solid rgb(0, 255, 149);
-    border-radius: 5px;
-    box-shadow: 18px 18px 10px grey;
+  .mobile-dpad {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+    gap: 8px;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+  }
+
+  .mobile-btn {
+    background: linear-gradient(145deg, #4a4a4a, #2a2a2a);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
     display: flex;
-    justify-self: center;
-    height: 20em;
-    width: 95%;
-    overflow-y: scroll;
-    align-self: center;
-    margin-top: 0%;
-    background-color: lightblue;
-    opacity: 60%;
-}
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.1s ease;
+    border: 2px solid rgba(255,255,255,0.1);
+  }
 
-/* Mobile adjustments for skill-tree */
-@media (max-width: 768px) {
-    .skill-tree {
-        width: 98%;
-        height: 15em;
-        border: 4px solid rgb(0, 255, 149);
-        box-shadow: 10px 10px 8px grey;
-    }
-}
+  .mobile-btn:active {
+    transform: scale(0.9);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    background: linear-gradient(145deg, #FFD700, #FFA500);
+    color: #000;
+  }
 
-.skill-tree-list{
+  .mobile-btn:hover {
+    background: linear-gradient(145deg, #5a5a5a, #3a3a3a);
+    border-color: #FFD700;
+  }
+
+  .btn-up { grid-column: 2; grid-row: 1; }
+  .btn-left { grid-column: 1; grid-row: 2; }
+  .btn-right { grid-column: 3; grid-row: 2; }
+  .btn-down { grid-column: 2; grid-row: 3; }
+
+  /* Game controls */
+  .game-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .control-btn {
+    background: linear-gradient(145deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .control-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+
+  .control-btn:active {
+    transform: translateY(0);
+  }
+
+  /* Content sections */
+  .content-section {
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .content-section h2 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+
+  .content-section h3 {
+    color: #FFA500;
+    font-size: 1.2rem;
+    margin: 15px 0 10px 0;
+  }
+
+  .content-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #E0E0E0;
+  }
+
+  /* Bio sections */
+  .bios {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: auto;
-    height: 90em;
-    font-size: 24px;
-    margin-top: 2%;
-}
+    gap: 20px;
+  }
 
-/* Mobile adjustments for skill-tree-list */
-@media (max-width: 768px) {
-    .skill-tree-list {
-        font-size: 18px;
-        height: 60em;
-        flex-wrap: nowrap;
-    }
-}
+  .about {
+    flex: 1;
+  }
 
-.list-a-skill{
-    margin-left: 7%;
-    margin-bottom: 2%;
-    padding:.4%;
-    color: black;
-    font-size: 25px;
-    font-weight: bolder;
-    list-style-type:decimal;
-}
+  /* Media containers */
 
-/* Mobile adjustments for list-a-skill */
-@media (max-width: 768px) {
-    .list-a-skill {
-        font-size: 18px;
-        margin-left: 3%;
-        padding: 0.2%;
-    }
-}
-
-.link-container{
+  .video-container,
+  .image-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 2px;
-    width: 80%;
-    flex-wrap: wrap;
-}
-
-/* Mobile adjustments for link-container */
-@media (max-width: 768px) {
-    .link-container {
-        width: 95%;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.email{
-    font-size: 20px;
-    color: rgba(14, 81, 126, 0.733);
-    text-decoration: none;
-    margin: 0%;
-    padding: 1%;
-
-}
-.phone{
-    font-size: 20px;
-    color: rgba(14, 81, 126, 0.733);
-    text-decoration: none;
-    margin: 0%;
-    padding: 1%;
-
-}
-.links{
-    display: flex;
-    margin: 0%;
-    width: auto;
-    font-size: larger;
-    text-decoration: none;
-    color: rgba(30, 238, 227, 0.733);
-    padding: 1%;
-
-}
-
-.links:hover{
-    color: rgba(19, 250, 69, 0.959);
-    transform: scale(1.2);
-}
-
-/* Mobile adjustments for links */
-@media (max-width: 768px) {
-    .links {
-        display: flex;
-        font-size: medium;
-        margin: 1%;
-        text-align: center;
-    }
-    .link-container {
-        flex-direction: row;
-        align-items: center;
-    }
-}
-
-.bios{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-}
-
-/* Mobile adjustments for bios */
-@media (max-width: 768px) {
-    .bios {
-        flex-direction: column;
-        width: 95%;
-        align-items: center;
-    }
-}
-
-.about{
-    width: auto;
-    padding: 1cap;
-}
-
-/* Mobile adjustments for about */
-@media (max-width: 768px) {
-    .about {
-        width: 100%;
-        padding: 0.5cap;
-        text-align: center;
-    }
-}
-
-
-.picture-container{
+    gap: 10px;
+    margin: 15px 0;
+  }
+  .picture-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,272 +315,295 @@
     margin: 2%;
 }
 
-/* Mobile adjustments for picture */
-@media (max-width: 768px) {
-    .picture {
-        height: 250px;
-        width: 90%;
-        margin: 10px 0;
-    }
-}
-
-.profile-picture{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.profile-picture:hover{
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-}
-
-/* Mobile adjustments for profile-picture */
-@media (max-width: 768px) {
-    .profile-picture {
-        width: 250px;
-        height: 250px;
-        margin: 15px 0;
-    }
-}
-
-.video{
-    border-radius: 5px;
-    box-shadow: 6px 6px 12px rgb(39, 104, 126);
-    margin-bottom: 20px;
-    border: 6px solid lightblue;
-    border-radius: 10%;
-}
-
-/* Mobile adjustments for video */
-@media (max-width: 768px) {
-    .video {
-        width: 90%;
-        height: auto;
-        border: 4px solid lightblue;
-        margin-bottom: 15px;
-    }
-}
-
-.video-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-li{
-    color: rgba(0, 0, 0, 0.644);
-    list-style-type: square;
-    margin: 5px 0;
-    font-size: 1.4rem;
-    text-align: left;
-}
-
-/* Mobile adjustments for li */
-@media (max-width: 768px) {
-    li {
-        font-size: 1.1rem;
-        margin: 3px 0;
-        text-align: center;
-    }
-}
-
-.image-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 50cap;
-    align-items: center;
-    margin: 2%;
-}
-
-/* Mobile adjustments for image-container */
-@media (max-width: 768px) {
-    .image-container {
-        width: 95%;
-        margin: 1%;
-        justify-content: space-around;
-    }
-}
-
 .image{
     width: 10%;
     height: 10%;
 }
 
-.image-band{
-    width: 10%;
-    height: 10%;
-    margin-left: 10%;
-    margin-top: 4%;
-    border: 4px solid lightblue;
-}
+  .picture:hover,
+  .image:hover {
+    transform: scale(1.05);
+  }
 
-.image:hover{
-    transform: scale(3.8);
-    transition: transform 0.3s ease;
-}
+  .video {
+    width: 100%;
+    max-width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    border: 2px solid #05b8ff;
+    margin: 10px;
+  }
 
-/* Mobile adjustments for images */
-@media (max-width: 768px) {
-    .image {
-        width: 15%;
-        height: 15%;
-        margin: 5px;
-    }
+  /* Skills section */
+  .skill-tree {
+    max-height: 400px;
+    overflow-y: auto;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 15px;
+  }
 
-    .image-band {
-        width: 15%;
-        height: 15%;
-        margin: 5px;
-        border: 2px solid lightblue;
-    }
+  .skill-tree-list {
+    list-style: none;
+    columns: 4;
+    column-gap: 15px;
+  }
 
-    .image:hover {
-        transform: scale(2.5);
-    }
-}
+  .list-a-skill {
+    background: linear-gradient(145deg, rgba(0, 203, 253, 0.493), rgba(255,255,255,0.05));
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    break-inside: avoid;
+    transition: all 0.3s ease;
+    color: #E0E0E0;
+  }
 
-.image-small{
-    width: 10%;
-    height: 10%;
-    border: 4px solid lightblue;
-}
+  .list-a-skill:hover {
+    background: linear-gradient(145deg, #26fa0a, #057c0f);
+    color: #000;
+    transform: scale(1.02);
+  }
 
-.image-small:hover{
-    transform: scale(4.8);
-    transition: transform 0.3s ease;
-}
-
-/* Mobile adjustments for image-small */
-@media (max-width: 768px) {
-    .image-small {
-        width: 15%;
-        height: 15%;
-        border: 2px solid lightblue;
-        margin: 5px;
-    }
-
-    .image-small:hover {
-        transform: scale(3);
-    }
-}
-
-.personal{
+  /* Links */
+  .link-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
+    gap: 15px;
+    margin: 20px 0;
+  }
 
-/* Mobile adjustments for personal */
-@media (max-width: 768px) {
-    .personal {
-        flex-direction: column;
-        width: 95%;
-        margin: 1% 0;
-    }
-}
-
-.education{
-    font-size: 20px;
-    margin-top: 10px;
-    color:black;
-    font-weight: bolder;
-    font-style: italic;
-    border: 4px dotted black;
-    width: 80%;
+  .links {
+    background: linear-gradient(145deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    padding: 1%;
-    background-color: rgba(60, 180, 112, 0.623);
-}
+    gap: 8px;
+  }
 
-/* Mobile adjustments for education */
-@media (max-width: 768px) {
-    .education {
-        font-size: 16px;
-        width: 95%;
-        padding: 2%;
-        margin-top: 15px;
-        border: 2px dotted black;
-        text-align: center;
-    }
-}
+  .links:hover {
+    background: linear-gradient(145deg, #13ff3a, #06f390);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
 
-.skill-tech{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 130cap;
-    margin-right: 30%;
-    margin-left: 2%;
-    height: auto;
-}
+  /* Education section */
+  .education {
+    background: rgba(17, 230, 52, 0.336);
+    color: #111111;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #ffffff;
+  }
 
-/* Mobile adjustments for skill-tech */
-@media (max-width: 768px) {
-    .skill-tech {
-        margin-top: 20px;
-        margin-right: 0;
-        margin-left: 0;
-        width: 95%;
-        padding: 10px;
-    }
-}
 
-/* General mobile optimizations */
-@media (max-width: 768px) {
-    /* Reduce overall spacing on mobile */
-    .landing {
-        padding: 5px;
+
+
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem;
     }
 
-    /* Make text more readable on mobile */
-    * {
-        box-sizing: border-box;
-    }
-
-    /* Ensure no horizontal overflow */
-    body {
-        overflow-x: hidden;
-    }
-}
-
-/* Extra small devices (phones in portrait mode) */
-@media (max-width: 480px) {
     .profile-picture {
-        width: 200px;
-        height: 200px;
+      width: 150px;
+      height: 150px;
     }
 
-    .picture {
-        height: 200px;
-        width: 95%;
+    #maze {
+        max-width: calc(100vw - 20px); /* Account for padding */
+        margin: 0 auto;
+      }
+
+    #maze .cell {
+      width: 6px;
+      height: 6px;
     }
 
-    .image, .image-small {
-        width: 20%;
-        height: 20%;
+    .mobile-dpad {
+      grid-template-columns: 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+      gap: 6px;
+      padding: 15px;
     }
 
-    .list-a-skill {
-        font-size: 16px;
+    .mobile-btn {
+      font-size: 20px;
     }
 
-    li {
-        font-size: 1rem;
+    .skill-tree-list {
+      columns: 1;
     }
 
-    .education {
-        font-size: 14px;
+    .picture,
+    .image {
+      width: 100px;
+      height: 100px;
     }
+  }
+
+  @media (max-width: 320px) {
+    .landing {
+      padding: 5px;
+    }
+
+    .title {
+      font-size: 1.8rem;
+    }
+
+    #maze {
+        max-width: calc(100vw - 10px);
+      }
+
+    #maze .cell {
+      width: 5px;
+      height: 5px;
+    }
+  }
+
+  /* Landscape mode */
+  @media (max-width: 768px) and (orientation: landscape) {
+    .game-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mobile-controls {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    #maze {
+      max-height: 50vh;
+    }
+  }
+
+  /* Desktop styles */
+  @media (min-width: 769px) {
+    .landing {
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 3.5rem;
+    }
+
+    .profile-picture {
+      width: 250px;
+      height: 250px;
+    }
+
+    #maze {
+      max-width: 800px;
+      height: 440px;
+    }
+
+    #maze .cell {
+      width: 20px;
+      height: 20px;
+    }
+
+    .bios {
+      flex-direction: row;
+    }
+  }
+
+
+  .reset-container {
+    margin: 15px 0;
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.reset-btn, .level-btn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.reset-btn {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.level-btn {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+}
+
+.reset-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+}
+
+.level-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.4);
+    background: linear-gradient(45deg, #44a08d, #4ecdc4);
+}
+
+.reset-btn:active, .level-btn:active {
+    transform: translateY(0);
+}
+
+.future-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+#maze .cell {
+    position: absolute;
+    /* Remove width and height - JavaScript will set these */
+    transition: all 0.1s ease;
+  }
+
+  /* Update responsive breakpoints */
+  @media (max-width: 480px) {
+    #maze {
+      max-width: calc(100vw - 20px); /* Account for padding */
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 320px) {
+    #maze {
+      max-width: calc(100vw - 10px);
+    }
+  }
+
+  .facts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    justify-self: center;
+    font-size: x-large;
+    color: rgba(62, 206, 216, 0.562);
+    font-weight: bolder;
+    text-align: center; 
+  }
