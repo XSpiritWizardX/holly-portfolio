@@ -602,8 +602,8 @@
     gap: 10px;
     margin: 20px 0;
     justify-self: center;
-    font-size: x-large;
+    font-size: larger;
     color: rgba(62, 206, 216, 0.562);
     font-weight: bolder;
-    text-align: center; 
+    text-align: flex-end;
   }
