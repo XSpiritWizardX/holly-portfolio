@@ -89,10 +89,10 @@
   }
 
   #maze .cell.player {
-    background: radial-gradient(circle, #00ff00, #00cc00);
+    background: radial-gradient(circle, #0bffff, #00c5ccc5);
     border-radius: 50%;
     z-index: 10;
-    box-shadow: 0 0 18px #00ff00;
+    box-shadow: 0 0 28px #00ff00;
     animation: playerPulse .5s infinite alternate;
   }
 
@@ -117,7 +117,7 @@
   /* Animations */
   @keyframes playerPulse {
     0% { transform: scale(1); }
-    100% { transform: scale(1.2); }
+    100% { transform: scale(1.4); }
   }
 
   @keyframes enemyFloat {
@@ -607,3 +607,158 @@
     font-weight: bolder;
     text-align: flex-end;
   }
+
+
+
+
+
+  .music-player{
+      background: rgba(0,0,0,0.8);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      z-index: 1000;
+      min-width: 250px;
+  }
+
+
+  /* Game Controls Container */
+.game-controls {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-self: center;
+}
+
+/* Reset and Level Buttons */
+.reset-btn, .level-btn {
+  background: #bdc00698;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 96%;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover, .level-btn:hover {
+  background: #d32f2f;
+}
+
+.level-btn {
+  background: #810a8b81;
+}
+
+.level-btn:hover {
+  background: #05a146;
+}
+
+/* Music Player */
+.music-player {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.music-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.now-playing {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #15bb54e5;
+}
+
+/* Music Controls */
+.music-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.play-pause-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-left: 10%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-pause-btn:hover {
+  background: #45a049;
+}
+
+.next-btn {
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-left: 10%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-btn:hover {
+  background: #1976d2;
+}
+
+.volume-slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* SFX Controls */
+.sfx-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.sfx-label {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.sfx-slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .game-controls {
+    top: 10px;
+    right: 10px;
+    min-width: 180px;
+    padding: 10px;
+  }
+
+  .music-controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .reset-btn, .level-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+}
