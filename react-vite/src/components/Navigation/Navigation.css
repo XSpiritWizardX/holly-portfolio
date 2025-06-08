@@ -1,3 +1,30 @@
-.profile-dropdown {
-  position: absolute;
+.navigation{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.nav-link{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: smaller;
+  font-weight: 500;
+  padding: 0.5rem;
+  margin: 0.15% 0.15%;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: center;
+
+  }
+
 }
