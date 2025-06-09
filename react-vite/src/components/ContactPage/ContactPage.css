@@ -1,6 +1,6 @@
 .contact-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 35%, #047e94 100%) ;
   color: white;
   padding: 2rem;
 }
@@ -11,11 +11,23 @@
 }
 
 .contact-header h1 {
-  font-size: 4rem;
+ font-size: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #ffd700, #fff);
+background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 12s linear infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -700% -700%;
+  }
 }
 
 .contact-header p {
@@ -39,7 +51,7 @@
 }
 
 .contact-info h2 {
-  color: #ffd700;
+  color: rgb(19, 255, 78);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -65,12 +77,12 @@
 
 .contact-icon {
   font-size: 2rem;
-  color: #ffd700;
+  color: rgb(19, 255, 78);
 }
 
 .contact-method h3 {
   margin: 0 0 0.5rem 0;
-  color: #ffd700;
+  color: rgb(19, 255, 78);
 }
 
 .contact-method a {
@@ -80,11 +92,11 @@
 }
 
 .contact-method a:hover {
-  color: #ffd700;
+  color: rgb(19, 255, 78);
 }
 
 .social-links h3 {
-  color: #ffd700;
+  color: rgb(19, 255, 78);
   margin-bottom: 1rem;
 }
 
@@ -108,7 +120,8 @@
 }
 
 .social-link:hover {
-  background: rgba(255, 215, 0, 0.2);
+  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
+  color: #000000;
   transform: translateY(-5px);
 }
 
@@ -142,7 +155,7 @@
 }
 
 .contact-form-container h2 {
-  color: #ffd700;
+  color: rgb(19, 255, 78);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -160,7 +173,7 @@
 
 .form-group label {
   margin-bottom: 0.5rem;
-  color: #ffd700;
+  color: rgb(19, 255, 78);
   font-weight: 600;
 }
 
@@ -180,21 +193,22 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #ffd700;
+  border-color: rgb(19, 255, 78);
   background: rgba(255, 255, 255, 0.15);
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(25, 216, 200, 0.6);
 }
 
 .submit-btn {
   padding: 1rem 2rem;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(45deg, #ffd700, #ff6b6b);
-  color: white;
+  background: transparent;
+  border: 2px solid rgb(19, 255, 78);
+  color: rgb(230, 222, 222);
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -205,6 +219,9 @@
 .submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
+  color: rgb(0, 0, 0);
+
 }
 
 .cta-section {
@@ -219,7 +236,7 @@
 
 .cta-section h2 {
   font-size: 2.5rem;
-  color: #ffd700;
+  color: rgb(19, 255, 78);
   margin-bottom: 1rem;
 }
 
@@ -247,14 +264,19 @@
 }
 
 .cta-btn.primary {
-  background: linear-gradient(45deg, #ffd700, #ff6b6b);
+   background: transparent;
   color: white;
-}
+  border: 2px solid rgb(19, 255, 78);
 
+}
+.cta-btn.primary:hover {
+  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
+  color: #333;
+}
 .cta-btn.secondary {
   background: transparent;
   color: white;
-  border: 2px solid #ffd700;
+  border: 2px solid rgb(19, 255, 78);
 }
 
 .cta-btn:hover {
@@ -263,7 +285,7 @@
 }
 
 .cta-btn.secondary:hover {
-  background: #ffd700;
+  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
   color: #333;
 }
 
@@ -290,4 +312,90 @@
     width: 100%;
     max-width: 300px;
   }
+}
+
+.resume-download {
+  margin: 2rem 0;
+  color: rgb(19, 255, 78);
+}
+
+.resume-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: white;
+  border: 2px solid rgb(19, 255, 78);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0px 35px rgba(19, 255, 78, 0.3);
+}
+
+.cta-btn.resume {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+  border: 2px solid rgb(19, 255, 78);
+  cursor: pointer;
+}
+
+.cta-btn.resume:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(19, 255, 78, 0.3);
+  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
+  color: #333;
+  border: 2px solid rgb(19, 255, 78);
+}
+
+
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.schedule-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   background: transparent;
+  color: white;
+  border: 2px solid rgb(19, 255, 78);
+}
+
+.schedule-btn:hover {
+ transform: translateY(-2px);
+  box-shadow: 0 0px 35px rgba(19, 255, 78, 0.3);
+}
+
+.cta-btn.schedule {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  text-decoration: none;
+}
+
+.cta-btn.schedule:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }

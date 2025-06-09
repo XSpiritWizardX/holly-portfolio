@@ -1659,7 +1659,7 @@ function LandingPage() {
               <span className="cursor">|</span>
             </div>
             <p className="hero-subtitle">
-              Passionate developer creating innovative solutions with 888+ hours of intensive training
+              Passionately creating innovative solutions
             </p>
 
             <div className="hero-buttons">
@@ -1672,12 +1672,12 @@ function LandingPage() {
 
       <div className="quick-stats">
         <div className="stat-item">
-          <h3>888+</h3>
-          <p>Hours of Training</p>
+          <h3>4+</h3>
+          <p>Active Apps</p>
         </div>
         <div className="stat-item">
-          <h3>4+</h3>
-          <p>Projects </p>
+          <h3>12+</h3>
+          <p>Extremely Satisfied Clients </p>
         </div>
         <div className="stat-item">
           <h3>50+</h3>
@@ -1686,26 +1686,7 @@ function LandingPage() {
 
       </div>
 
-      <div className="featured-section">
-        <h2>What I Do</h2>
-        <div className="feature-grid">
-          <div className="feature-card">
-            <div className="feature-icon">💻</div>
-            <h3>Full-Stack Development</h3>
-            <p>Building complete web applications with modern technologies</p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">🎵</div>
-            <h3>Music Production</h3>
-            <p>Creating original music with professional studio equipment</p>
-          </div>
-          <div className="feature-card">
-            <div className="feature-icon">🎮</div>
-            <h3>Game Development</h3>
-            <p>Developing "The Dark Musician" - an epic 2D platformer</p>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 }

@@ -5,47 +5,47 @@ const projects = [
   {
     id: 1,
     title: "Football BnB",
-    description: "A full-stack Airbnb clone focused on football stadium accommodations. Built with React, Flask, and PostgreSQL.",
+    description: "A full-stack application focused on football stadium accommodations.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/462504050_8324973944218688_6095070514255415304_n_drhvmy.jpg",
     liveUrl: "https://footballbnb.onrender.com/",
     githubUrl: "https://github.com/XSpiritWizardX/footballbnb",
-    technologies: ["React", "Flask", "PostgreSQL", "SQLAlchemy", "CSS"],
+    technologies: ["React", "Redux", "node.js","PostgreSQL", "SQLite", "Express", "Sequelize", "CSS", "HTML", "JavaScript"],
     category: "Web Development"
   },
   {
     id: 2,
     title: "Trade Toad",
-    description: "A trading platform application with real-time features and user authentication.",
+    description: "A trading simulation platform with real-time market data and learning center. Built to handle high volume data and integration options for predictive a.i. and trading bots.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/485761821_9289269257789147_3271802936818663508_n_v9keh4.jpg",
     liveUrl: "https://tradetoad.onrender.com/",
     githubUrl: "https://github.com/XSpiritWizardX/tradetoad",
-    technologies: ["React", "Express", "Node.js", "Redux", "WebSocket"],
+    technologies: ["React", "Redux", "Python", "Flask", "PostgreSQL", "CSS", "HTML", "Polygon", "React Charts"],
     category: "Web Development"
   },
   {
     id: 3,
     title: "Arcana Academy",
-    description: "A magical learning platform with interactive features and user progress tracking.",
+    description: "A Repository for all adventure game assets. This application allows users to upload their own assets, and use them in their games. Built with scalability in mind.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132681/485807983_9289284137787659_7415467271367767227_n_vytilr.jpg",
     liveUrl: "https://arcana-academy.onrender.com/",
     githubUrl: "https://github.com/XSpiritWizardX/arcana-academy",
-    technologies: ["React", "Python", "Flask", "PostgreSQL", "Redux"],
+    technologies: ["React", "Redux", "Python", "Flask", "PostgreSQL", "CSS", "HTML", "AWS", "Docker"],
     category: "Web Development"
   },
   {
     id: 4,
     title: "Joezano's Pizza",
-    description: "A restaurant ordering system with menu management and order tracking.",
+    description: "A single page webapp built according to wireframe. Has scalability in mind for future features.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg",
     liveUrl: "https://joezanos-pizza.onrender.com/",
     githubUrl: "https://github.com/XSpiritWizardX/joezanos-pizza",
-    technologies: ["React", "Express", "MongoDB", "Node.js", "Stripe"],
+    technologies: ["React", "Redux", "Flask", "PostgreSQL", "Wireframe", "CSS", "HTML", "JavaScript", "Python"],
     category: "Web Development"
   },
   {
     id: 5,
     title: "The Dark Musician",
-    description: "An epic 2D platformer game featuring original music and custom artwork.",
+    description: "An epic 2D platformer game featuring original music and custom artwork. Hobby project. Still in development.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747867182/melody_mih8nb.png",
     liveUrl: "#",
     githubUrl: "#",
@@ -103,12 +103,12 @@ function PortfolioPage() {
               <div className="project-links">
                 {project.liveUrl !== "#" && (
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                    🌐 Live Demo
+                     Live Demo
                   </a>
                 )}
                 {project.githubUrl !== "#" && (
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-                    📁 GitHub
+                     GitHub
                   </a>
                 )}
               </div>

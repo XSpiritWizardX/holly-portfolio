@@ -1,24 +1,11 @@
 .game-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f1419 0%, #1a2332 25%, #2d4a6b 50%, #4a90e2 75%, #87ceeb 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 35%, #047e94 100%) ;
   color: #ffffff;
   padding: 2rem;
   position: relative;
 }
 
-.game-page::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(circle at 20% 80%, rgba(135, 206, 235, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(74, 144, 226, 0.2) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-}
 
 .game-header {
   text-align: center;
@@ -28,18 +15,23 @@
 }
 
 .game-header h1 {
-  font-size: 4rem;
+ font-size: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #87ceeb, #4a90e2, #2d4a6b);
+background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 30px rgba(135, 206, 235, 0.5);
-  animation: titleGlow 3s ease-in-out infinite alternate;
+  background-clip: text;
+  animation: gradientShift 12s linear infinite;
 }
 
-@keyframes titleGlow {
-  0% { filter: drop-shadow(0 0 10px rgba(135, 206, 235, 0.5)); }
-  100% { filter: drop-shadow(0 0 25px rgba(135, 206, 235, 0.8)); }
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -700% -700%;
+  }
 }
 
 .game-header p {

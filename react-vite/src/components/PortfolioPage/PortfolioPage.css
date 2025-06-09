@@ -1,6 +1,6 @@
 .portfolio-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 35%, #047e94 100%) ;
   color: white;
   padding: 2rem;
 }
@@ -13,11 +13,21 @@
 .portfolio-header h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #ffd700, #ff6b6b);
+background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 12s linear infinite;
 }
-
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -700% -700%;
+  }
+}
 .category-filters {
   display: flex;
   justify-content: center;
@@ -28,18 +38,19 @@
 
 .filter-btn {
   padding: 0.8rem 1.5rem;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.1);
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
+
 }
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: #ffd700;
-  color: #333;
+  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
+  color: #000000;
 }
 
 .projects-grid {
@@ -51,7 +62,7 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(92, 99, 94, 0.39);
   border-radius: 15px;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -100,7 +111,10 @@
 }
 
 .project-info h3 {
-  color: #ffd700;
+  color: rgba(140, 247, 113, 0.904);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -112,8 +126,8 @@
 }
 
 .tech-tag {
-  background: rgba(255, 215, 0, 0.2);
-  color: #ffd700;
+  background: rgba(0, 0, 0, 0.699);
+  color: rgba(85, 163, 106, 0.753);
   padding: 0.3rem 0.8rem;
   border-radius: 15px;
   font-size: 0.8rem;
@@ -128,7 +142,7 @@
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(19, 255, 78);
   border-radius: 20px;
   transition: all 0.3s ease;
 }
@@ -146,7 +160,7 @@
 .media-section h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: #ffd700;
+  color: rgb(19, 255, 78);
 }
 
 .media-grid {

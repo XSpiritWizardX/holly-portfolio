@@ -1,6 +1,6 @@
 import "./ContactPage.css";
 import { useState } from "react";
-import { FaPhone, FaLinkedin, FaGithub, FaYoutube } from "react-icons/fa";
+import { FaPhone, FaLinkedin, FaGithub, FaYoutube, FaDownload } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 
 function ContactPage() {
@@ -25,6 +25,17 @@ function ContactPage() {
     window.location.href = mailtoLink;
   };
 
+const handleResumeDownload = () => {
+  // Direct link approach - more reliable
+  const link = document.createElement('a');
+  link.href = '/Dustin_Bovee_Resume.pdf'; // Make sure this matches your exact filename
+  link.download = 'Dustin_Bovee_Resume.pdf';
+  link.target = '_blank';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
   return (
     <div className="contact-page">
       <div className="contact-header">
@@ -43,7 +54,6 @@ function ContactPage() {
                 <a href="tel:269-506-5112">269-506-5112</a>
               </div>
             </div>
-
             <div className="contact-method">
               <TfiEmail className="contact-icon" />
               <div>
@@ -52,6 +62,25 @@ function ContactPage() {
               </div>
             </div>
           </div>
+
+         <div className="resume-download">
+  <h3>Resume & Scheduling</h3>
+  <div className="action-buttons">
+    <button onClick={handleResumeDownload} className="resume-btn">
+      <FaDownload />
+      <span>Download Resume</span>
+    </button>
+    <a
+      href="https://calendly.com/dbovee824/30min"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="schedule-btn"
+    >
+
+      <span>Schedule A Meeting</span>
+    </a>
+  </div>
+</div>
 
           <div className="social-links">
             <h3>Connect With Me</h3>
@@ -93,7 +122,6 @@ function ContactPage() {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="email">Email *</label>
               <input
@@ -105,7 +133,6 @@ function ContactPage() {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="subject">Subject *</label>
               <input
@@ -117,7 +144,6 @@ function ContactPage() {
                 required
               />
             </div>
-
             <div className="form-group">
               <label htmlFor="message">Message *</label>
               <textarea
@@ -129,9 +155,8 @@ function ContactPage() {
                 required
               ></textarea>
             </div>
-
             <button type="submit" className="submit-btn">
-              Send Message 📧
+              Send Message
             </button>
           </form>
         </div>
@@ -141,12 +166,19 @@ function ContactPage() {
         <h2>Ready to Work Together?</h2>
         <p>I&apos;m actively seeking full-time opportunities as a software engineer. Let&apos;s discuss how I can contribute to your team!</p>
         <div className="cta-buttons">
-          <a href="mailto:dbovee824@gmail.com?subject=Job%20Opportunity" className="cta-btn primary">
-            💼 Discuss Opportunities
+          <a  href="https://calendly.com/dbovee824/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-btn primary">
+            Discuss Opportunities
           </a>
           <a href="tel:269-506-5112" className="cta-btn secondary">
-            📞 Call Me
+            Call Me
           </a>
+          <button onClick={handleResumeDownload} className="cta-btn resume">
+            <FaDownload />
+            Download Resume
+          </button>
         </div>
       </div>
     </div>

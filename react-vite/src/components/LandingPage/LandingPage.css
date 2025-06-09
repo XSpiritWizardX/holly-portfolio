@@ -3,7 +3,7 @@
 
 .landing-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #000000 35%, #047e94 100%) ;
+  background: linear-gradient(135deg, #000000 0%, #000000 55%, #047e94 100%) ;
   color: white;
 }
 
@@ -35,7 +35,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid rgba(255, 255, 255, 0.3);
-  box-shadow: -20px -20px 180px rgba(5, 215, 223, 0.541);
+  box-shadow: -60px -60px 180px rgba(5, 215, 223, 0.541);
   transition: transform 0.3s ease;
 }
 
@@ -46,7 +46,7 @@
   /* Add a border */
   border: 5px solid rgba(255, 255, 255, 0.5);
   /* Add a slight rotation */
-  transform: scale(1.05) rotate(-720deg);
+  transform: scale(1.05) rotate(5deg);
    transition: transform 2s ease;
 }
 
@@ -57,12 +57,22 @@
 
 .hero-name {
   font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: .5rem;
-  text-decoration: underline;
-  text-decoration-color: rgb(255, 255, 255);
-  text-decoration-thickness: 4px;
-  text-underline-offset: 5px;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, rgb(19, 255, 78) 0%, rgb(35, 29, 124) 20%, #fff 40%, #000000 50%,#692323 60%, #7c7b1c 80%,rgb(19, 255, 78) 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 12s linear infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -700% -500%;
+  }
 }
 
 .typewriter-container {
