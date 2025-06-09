@@ -13,7 +13,7 @@
 .portfolio-header h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+background: linear-gradient(45deg, #000000 0%, rgb(73, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -25,7 +25,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
     background-position: 100% 50%;
   }
   100% {
-    background-position: -700% -700%;
+    background-position: -500% -700%;
   }
 }
 .category-filters {

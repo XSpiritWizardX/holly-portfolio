@@ -1646,7 +1646,7 @@ function LandingPage() {
         <div className="hero-content">
           <div className="profile-section">
             <img
-              src="https://res.cloudinary.com/dl6ls3rgu/image/upload/e_background_removal/e_dropshadow:azimuth_220;elevation_60;spread_20/b_rgb:FFFFFF/f_png/v1747963856/472684932_8842676349115109_2028848718984112102_n_xm2fqm.jpg"
+              src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg"
               className="hero-profile-image"
               alt="Dustin Bovee"
             />
