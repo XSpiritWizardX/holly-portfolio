@@ -1607,13 +1607,11 @@ function LandingPage() {
 
   const phrases = [
     "Full-Stack Software Engineer...",
-    "Music Producer...",
-    "Game Developer...",
-    "Financial Educator...",
     "Digital Marketer...",
-    "Tech Enthusiast...",
-    "Creative Problem Solver...",
-    "The Man, The Myth, The Legend...",
+    "Financial Educator...",
+    "Game Developer...",
+    "Music Producer...",
+    "The Man, The Myth, The Legend..."
   ];
 
   useEffect(() => {

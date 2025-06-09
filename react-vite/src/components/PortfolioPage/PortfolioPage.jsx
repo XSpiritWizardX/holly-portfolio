@@ -1,5 +1,9 @@
 import "./PortfolioPage.css";
 import { useState } from "react";
+import SignTheWall from '../SignTheWall/SignTheWall';
+
+
+
 
 const projects = [
   {
@@ -64,12 +68,21 @@ function PortfolioPage() {
     ? projects
     : projects.filter(project => project.category === selectedCategory);
 
+
+
   return (
+
+
     <div className="portfolio-page">
       <div className="portfolio-header">
         <h1>My Portfolio</h1>
         <p>A showcase of my work and projects</p>
       </div>
+
+
+      <SignTheWall/>
+
+
 
       <div className="category-filters">
         {categories.map(category => (

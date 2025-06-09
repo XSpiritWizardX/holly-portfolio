@@ -34,7 +34,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
     background-position: 100% 50%;
   }
   100% {
-    background-position: -700% -700%;
+    background-position: -200% -300%;
   }
 }
 
@@ -50,13 +50,18 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   width: 100%;
   max-width: auto;
   border-radius: 20px;
-  border: 4px solid green;
+  border: 4px solid rgba(0, 255, 42, 0.89);
   box-shadow: 10px -10px 14px rgba(0, 255, 42, 0.89),
               20px -20px 14px rgba(9, 175, 226, 0.863),
               30px -30px 14px rgba(8, 28, 209, 0.842),
               40px -40px 14px rgba(116, 9, 216, 0.521);
 }
+.about-image img:hover{
+  border: 4px solid rgba(116, 9, 216, 0.521);
+  box-shadow: 10px -10px 34px rgba(116, 9, 216, 0.521);
+  translate: 40px -40px;
 
+}
 .about-sections {
   padding: 4rem 2rem;
   max-width: 1200px;
@@ -97,7 +102,8 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .education-item:hover {
-  transform: translateY(-5px);
+  background: rgba(0, 255, 106, 0.212);
+  transform: translateY(-15px);
 }
 
 .education-item h3 {
