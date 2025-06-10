@@ -50,7 +50,7 @@ const projects = [
     id: 5,
     title: "The Dark Musician",
     description: "An epic 2D platformer game featuring original music and custom artwork. Hobby project. Still in development.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747867182/melody_mih8nb.png",
+    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749514192/Screenshot_2025-06-09_200855_pnmnwa.png",
     liveUrl: "#",
     githubUrl: "#",
     technologies: ["Unity", "C#", "Blender", "Pro Tools", "Adobe Suite"],
@@ -58,7 +58,7 @@ const projects = [
   }
 ];
 
-const categories = ["All", "Web Development", "Game Development", "Music"];
+const categories = ["All", "Web Development", "Marketing", "Game Development", "Art"];
 
 function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -80,15 +80,14 @@ function PortfolioPage() {
       </div>
 
 
-      <SignTheWall/>
 
 
 
       <div className="category-filters">
         {categories.map(category => (
           <button
-            key={category}
-            className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
+          key={category}
+          className={`filter-btn ${selectedCategory === category ? 'active' : ''}`}
             onClick={() => setSelectedCategory(category)}
           >
             {category}
@@ -131,7 +130,7 @@ function PortfolioPage() {
       </div>
 
       <div className="media-section">
-        <h2>Featured Media</h2>
+        <h2>Featured Music</h2>
         <div className="media-grid">
           <div className="video-container">
             <iframe
@@ -140,7 +139,16 @@ function PortfolioPage() {
               title="Music Video 1"
               frameBorder="0"
               allowFullScreen
-            ></iframe>
+              ></iframe>
+          </div>
+           <div className="video-container">
+            <iframe
+              width="100%" height="315"
+              src="https://www.youtube.com/embed/xm7FOw1Hjpc?si=rNPakM6BsYixHfJR"
+              title="Music Video 2"
+              frameBorder="0"
+              allowFullScreen
+              ></iframe>
           </div>
           <div className="video-container">
             <iframe
@@ -149,10 +157,56 @@ function PortfolioPage() {
               title="Music Video 2"
               frameBorder="0"
               allowFullScreen
-            ></iframe>
+              ></iframe>
+          </div>
+           <div className="video-container">
+            <iframe
+              width="100%" height="315"
+              src="https://www.youtube.com/embed/CpsjVVIHBbc?si=c6AX8xpxxL92iPYr"
+              title="Music Video 2"
+              frameBorder="0"
+              allowFullScreen
+              ></iframe>
+          </div>
+           <div className="video-container">
+            <iframe
+              width="100%" height="315"
+              src="https://www.youtube.com/embed/5lYlp0zfmTo?si=imMrQCId-AOCTkDK"
+              title="Music Video 2"
+              frameBorder="0"
+              allowFullScreen
+              ></iframe>
+          </div>
+           <div className="video-container">
+            <iframe
+              width="100%" height="315"
+              src="https://www.youtube.com/embed/mSvZu6TGu_w?si=iW42gOPemo6JXlPk"
+              title="Music Video 2"
+              frameBorder="0"
+              allowFullScreen
+              ></iframe>
+          </div>
+           <div className="video-container">
+            <iframe
+              width="100%" height="315"
+              src="https://www.youtube.com/embed/o2_0RIKBgMA?si=NixcNInDKiUQ7DP4"
+              title="Music Video 2"
+              frameBorder="0"
+              allowFullScreen
+              ></iframe>
+          </div>
+           <div className="video-container">
+            <iframe
+              width="100%" height="315"
+              src="https://www.youtube.com/embed/DvcoxWyBYmA?si=_CZ4KiVai27-EMHs"
+              title="Music Video 2"
+              frameBorder="0"
+              allowFullScreen
+              ></iframe>
           </div>
         </div>
       </div>
+<SignTheWall/>
 
       {selectedProject && (
         <div className="project-modal" onClick={() => setSelectedProject(null)}>
