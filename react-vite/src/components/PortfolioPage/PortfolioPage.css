@@ -140,7 +140,8 @@ background: linear-gradient(45deg, #000000 0%, rgb(73, 29, 124) 15%, rgb(19, 255
 }
 
 .project-link {
-  color: white;
+  color: rgb(252, 252, 252);
+  background-color: #1c1d1d;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border: 1px solid rgb(19, 255, 78);
@@ -149,7 +150,8 @@ background: linear-gradient(45deg, #000000 0%, rgb(73, 29, 124) 15%, rgb(19, 255
 }
 
 .project-link:hover {
-  background: rgba(255, 255, 255, 0.1);
+  color: #000000;
+  background: linear-gradient(90deg, #000000,rgba(19, 255, 78, 0.514),rgb(255, 255, 255),rgba(19, 255, 78, 0.521), #000000);
 }
 
 .media-section {

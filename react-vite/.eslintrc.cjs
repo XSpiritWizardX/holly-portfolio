@@ -25,5 +25,51 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "react/prop-types": "off",
+    "react/no-unknown-property": [
+      "error",
+      {
+        ignore: [
+          // Three.js / React Three Fiber properties
+          "args",
+          "attach",
+          "position",
+          "rotation",
+          "scale",
+          "intensity",
+          "color",
+          "transparent",
+          "opacity",
+          "wireframe",
+          "side",
+          "visible",
+          "castShadow",
+          "receiveShadow",
+          "geometry",
+          "material",
+          "object",
+          "dispose",
+          "uuid",
+          "up",
+          "userData",
+          "frustumCulled",
+          "renderOrder",
+          "layers",
+          "matrixAutoUpdate",
+          "matrixWorldNeedsUpdate",
+          "onUpdate",
+          "onPointerOver",
+          "onPointerOut",
+          "onPointerDown",
+          "onPointerUp",
+          "onPointerMove",
+          "onClick",
+          "onDoubleClick",
+          "onWheel",
+          "onPointerMissed",
+          "onBeforeRender",
+          "onAfterRender"
+        ]
+      }
+    ]
   },
 };

@@ -54,7 +54,7 @@ const skillsData = [
   { name: "TensorFlow", level: 80, category: "Machine Learning" },
   { name: "Numpy", level: 60, category: "Machine Learning" },
   { name: "Jupyter", level: 70, category: "Machine Learning" },
-  // { name: "Digital Marketing", level: 90, category: "Business" },
+  { name: "Three.js", level: 77, category: "Frontend" },
   // { name: "Digital Marketing", level: 90, category: "Business" },
   // { name: "Digital Marketing", level: 90, category: "Business" },
   // { name: "Digital Marketing", level: 90, category: "Business" },

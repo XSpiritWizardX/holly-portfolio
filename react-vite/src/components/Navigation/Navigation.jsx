@@ -29,11 +29,7 @@ function Navigation() {
             href="/contact" >
               Contact
             </a>
-            <a
-            className="nav-link"
-            href="/games" >
-              Fun Icebreaker Game
-            </a>
+          
     </div>
   );
 }
