@@ -1,3 +1,20 @@
+
+
+html{
+  background-color: black;
+}
+
+.cursor-char {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  color: #0ff; /* Fun neon blue */
+  font-family: 'Courier New', monospace;
+  user-select: none;
+  text-shadow: 4px 4px 60px #0ff, 4px 4px 182px #0ff;
+  will-change: transform, opacity;
+}
+
 /* Navigation Layout CSS - Responsive for All Devices */
 
 .layout-container {

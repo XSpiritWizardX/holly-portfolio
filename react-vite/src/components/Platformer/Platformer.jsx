@@ -327,50 +327,54 @@ const Platformer = () => {
 
     const gameState = gameStateRef.current
 
-    switch(selectedTool) {
-      case 'platform':
-        gameState.platforms.push({
-          x: worldX - 50,
-          y: worldY - 10,
-          width: 100,
-          height: 20
-        })
-        break
-      case 'coin':
-        gameState.coins.push({
-          x: worldX - 10,
-          y: worldY - 10,
-          width: 20,
-          height: 20,
-          collected: false,
-          value: 10
-        })
-        break
-      case 'enemy':
-        gameState.enemies.push({
-          x: worldX - 12,
-          y: worldY - 12,
-          width: 25,
-          height: 25,
-          velocityX: 0.5,
-          minX: worldX - 100,
-          maxX: worldX + 100
-        })
-        break
-      case 'powerup':
-        const powerTypes = ['speed', 'jump', 'health']
-        gameState.powerUps.push({
-          x: worldX - 9,
-          y: worldY - 9,
-          width: 18,
-          height: 18,
-          type: powerTypes[Math.floor(Math.random() * powerTypes.length)],
-          collected: false
-        })
-        break
-      case 'delete':
+   switch(selectedTool) {
+  case 'platform': {
+    gameState.platforms.push({
+      x: worldX - 50,
+      y: worldY - 10,
+      width: 100,
+      height: 20
+    })
+    break
+  }
+  case 'coin': {
+    gameState.coins.push({
+      x: worldX - 10,
+      y: worldY - 10,
+      width: 20,
+      height: 20,
+      collected: false,
+      value: 10
+    })
+    break
+  }
+  case 'enemy': {
+    gameState.enemies.push({
+      x: worldX - 12,
+      y: worldY - 12,
+      width: 25,
+      height: 25,
+      velocityX: 0.5,
+      minX: worldX - 100,
+      maxX: worldX + 100
+    })
+    break
+  }
+  case 'powerup': {
+    const powerTypes = ['speed', 'jump', 'health']
+    gameState.powerUps.push({
+      x: worldX - 9,
+      y: worldY - 9,
+      width: 18,
+      height: 18,
+      type: powerTypes[Math.floor(Math.random() * powerTypes.length)],
+      collected: false
+    })
+    break
+  }
+  case 'delete': {
         // Delete nearest object
-        const deleteRadius = 30
+            const deleteRadius = 30
         gameState.platforms = gameState.platforms.filter(p =>
           Math.abs(p.x + p.width/2 - worldX) > deleteRadius ||
           Math.abs(p.y + p.height/2 - worldY) > deleteRadius
@@ -388,9 +392,9 @@ const Platformer = () => {
           Math.abs(p.y + p.height/2 - worldY) > deleteRadius
         )
         break
+      }
     }
   }
-
   const handleCanvasMouseMove = (e) => {
     const canvas = canvasRef.current
     const rect = canvas.getBoundingClientRect()

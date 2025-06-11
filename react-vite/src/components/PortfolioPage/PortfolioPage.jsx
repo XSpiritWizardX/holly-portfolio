@@ -88,7 +88,7 @@ const projects = [
     isInternal: true
   },
   {
-    id: 8,
+    id: 9,
     title: "Code Clicker",
     description: "A clicker game where you can also answer coding problems to advance. Built to help students to focus on coding while also taking some time to rest.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749614962/Screenshot_2025-06-11_000857_lz9nfu.png",
@@ -133,14 +133,14 @@ const projects = [
     id: 16,
     title: "CZ's Thrift Store",
     description: "Holiday Advertisement to encourage increase in-store visits.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749608701/Screenshot_2025-06-10_222312_dyugzg.png", // Add a thumbnail image
+    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749608701/Screenshot_2025-06-10_222312_dyugzg.png",
     video: "https://res.cloudinary.com/dl6ls3rgu/video/upload/v1749604588/czs_ad_2_k8ygvg.mp4",
     liveUrl: "#",
     githubUrl: "#",
     technologies: ["Google Ads", "Canva", "CapCut","YouTube"],
     category: "Marketing"
   },
-   {
+  {
     id: 17,
     title: "Concept Art",
     description: "Art",
@@ -150,7 +150,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 18,
     title: "Concept Art",
     description: "Art",
@@ -160,7 +160,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 19,
     title: "Concept Art",
     description: "Art",
@@ -170,7 +170,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 20,
     title: "Concept Art",
     description: "Art",
@@ -180,7 +180,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 21,
     title: "Concept Art",
     description: "Art",
@@ -190,7 +190,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 22,
     title: "Concept Art",
     description: "ART",
@@ -200,7 +200,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 23,
     title: "Concept Art",
     description: "ART",
@@ -210,7 +210,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 24,
     title: "Concept Art",
     description: "ART",
@@ -220,7 +220,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 25,
     title: "Concept Art",
     description: "ART",
@@ -230,7 +230,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-      {
+  {
     id: 26,
     title: "Concept Art",
     description: "ART",
@@ -256,10 +256,8 @@ function PortfolioPage() {
   const handleLiveUrlClick = (e, project) => {
     if (project.liveUrl !== "#") {
       if (project.isInternal) {
-        // Let Link component handle internal navigation
         return;
       } else {
-        // External link
         e.preventDefault();
         window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
       }
@@ -270,84 +268,103 @@ function PortfolioPage() {
     const isHovered = hoveredProject === project.id;
     const showVideo = project.video && isHovered;
 
-    return (
+      return (
+
+        <div
+        className="project-card-outti"
+        >
+
       <div
         className="project-card"
         onMouseEnter={() => setHoveredProject(project.id)}
         onMouseLeave={() => setHoveredProject(null)}
         onClick={() => setSelectedProject(project)}
       >
-        <div className="project-image">
-          {showVideo ? (
-            <video
-              className="project-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-            >
-              <source src={project.video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <img src={project.image} alt={project.title} />
-          )}
 
-          {project.video && (
-            <div className="video-indicator">
-              <span className="play-icon">▶</span>
+        <div className="project-card-inner">
+          <div className="project-image">
+            {showVideo ? (
+              <video
+                className="project-video"
+                autoPlay
+                muted
+                loop
+                playsInline
+              >
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <img src={project.image} alt={project.title} />
+            )}
+
+            {project.video && (
+              <div className="video-indicator">
+                <span className="play-icon">▶</span>
+              </div>
+            )}
+
+            <div className="project-overlay">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
             </div>
-          )}
 
-          <div className="project-overlay">
+
+
+
+          </div>
+
+          <div className="project-info">
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
-          </div>
-        </div>
-
-        <div className="project-info">
-          <h3>{project.title}</h3>
-          <div className="project-tech">
-            {project.technologies.map((tech, index) => (
-              <span key={index} className="tech-tag">{tech}</span>
-            ))}
-          </div>
-          <div className="project-links">
-            {project.liveUrl !== "#" && (
-              project.isInternal ? (
-                <Link
-                  to={project.liveUrl}
-                  className="project-link"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  Play Game
-                </Link>
-              ) : (
+            <div className="project-tech">
+              {project.technologies.map((tech, index) => (
+                <span key={index} className="tech-tag">{tech}</span>
+              ))}
+            </div>
+            <div className="project-links">
+              {project.liveUrl !== "#" && (
+                project.isInternal ? (
+                  <Link
+                    to={project.liveUrl}
+                    className="project-link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Play Game
+                  </Link>
+                ) : (
+                  <button
+                    className="project-link"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleLiveUrlClick(e, project);
+                    }}
+                  >
+                    Live Demo
+                  </button>
+                )
+              )}
+              {project.githubUrl !== "#" && (
                 <button
                   className="project-link"
                   onClick={(e) => {
                     e.stopPropagation();
-                    handleLiveUrlClick(e, project);
+                    window.open(project.githubUrl, '_blank', 'noopener,noreferrer');
                   }}
                 >
-                  Live Demo
+                  GitHub
                 </button>
-              )
-            )}
-            {project.githubUrl !== "#" && (
-              <button
-                className="project-link"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  window.open(project.githubUrl, '_blank', 'noopener,noreferrer');
-                }}
-              >
-                GitHub
-              </button>
-            )}
+              )}
+            </div>
           </div>
         </div>
+
+            </div>
+
       </div>
+
+
+
+
     );
   };
 
@@ -372,7 +389,13 @@ function PortfolioPage() {
 
       <div className="projects-grid">
         {filteredProjects.map(project => (
-          <ProjectCard key={project.id} project={project} />
+
+
+          < div
+          className="outside-project-card" key={project.id} 
+           >
+            <ProjectCard key={project.id} project={project}/>
+          </div>
         ))}
       </div>
 
@@ -399,7 +422,7 @@ function PortfolioPage() {
             ></iframe>
           </div>
 
-                  <div className="video-container">
+          <div className="video-container">
             <iframe
               width="100%" height="315"
               src="https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-"
