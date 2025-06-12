@@ -13,7 +13,7 @@
 .portfolio-header h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #06696d 0%, rgb(73, 29, 124) 15%, rgb(253, 255, 253) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 75%, #0ff8f8 100%);
+  background: linear-gradient(90deg, #06696d 0%, rgb(73, 29, 124) 15%, rgb(253, 255, 253) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 75%, #0ff8f8 100%);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,7 +97,7 @@
     #ff00ff,
     #ff0000
   );
-  animation: spin-border 1.25s linear infinite;
+  animation: spin-border 2s linear infinite;
   z-index: -2;
 }
 

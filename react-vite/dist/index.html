@@ -4,85 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dustin Bovee</title>
-    <script type="module" crossorigin src="/assets/index-52a46345.js"></script>
-    <link rel="stylesheet" href="/assets/index-1b6f26ed.css">
+    <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Merienda&family=Pacifico&family=Pinyon+Script&family=Playfair+Display&family=Satisfy&display=swap" rel="stylesheet">
+
+    <script type="module" crossorigin src="/assets/index-41cff35c.js"></script>
+    <link rel="stylesheet" href="/assets/index-d21a6b79.css">
   </head>
   <body>
-
-
-
-
-   <script>
-  const funChars =[
-  // Coding symbols
-  '{', '}', '[', ']', '(', ')', '<', '>', '/', '\\', '|', '=', '+', '-', '*', '&', '^', '%', '$', '#', '@', '!', '?', ':', ';',
-  '"', "'", '`', '~',
-  // Numbers
-  '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-  
-    '±', '÷', '×', '∑', '√', '∞', '≈', '≠', '≤', '≥', '∫', '∂', '∇', '∏', '∈', '∉', '∅', '∧', '∨', '⊕', '⊗',
-  // Fun symbols & emojis
-  '★', '☂', '∞', '♥', '♫', '☯',
-
-
-  // English letters
-  'A','B','C','D','E','F','G','H','I','J','K','L','M',
-  'N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
-  'a','b','c','d','e','f','g','h','i','j','k','l','m',
-  'n','o','p','q','r','s','t','u','v','w','x','y','z',
-
-  // Words of affirmation (split into letters)
-  'You Are Loved', 'Joy Is Easy', 'You Are Hopeful', 'Peace Is Abundant', 'You Are Calm', 'You Are Strong', 'You Are Brave', 'You Are Bold', 'You Are Smart', 'You Are Kind',
-  'You Are Grace', 'You Shine Brightly', 'You Are Happy', 'You Are Free', 'You Are Bright', 'Faith', 'Trust', 'Glow', 'Smile', 'Grow',
-  'Believe', 'Focus', 'Dream', 'Create', 'Courage', 'Passion', 'Inspire', 'Radiate', 'Respect', 'Balance'
-];
-
-  document.addEventListener('mousemove', (e) => {
-    const char = document.createElement('div');
-    char.className = 'cursor-char';
-    char.innerText = funChars[Math.floor(Math.random() * funChars.length)];
-    document.body.appendChild(char);
-
-    const size = Math.random() * 20 + 10;
-    const x = e.clientX;
-    const y = e.clientY;
-
-    char.style.left = `${x}px`;
-    char.style.top = `${y}px`;
-    char.style.fontSize = `${size}px`;
-    char.style.opacity = 1;
-
-    const driftX = (Math.random() - 0.5) * 100;
-    const driftY = Math.random() * -150 - 50; // upward like Matrix
-
-    const rotation = Math.random() * 360;
-    const duration = 800 + Math.random() * 400;
-
-    // Animate with requestAnimationFrame
-    const start = performance.now();
-    function animate(now) {
-      const elapsed = now - start;
-      const progress = elapsed / duration;
-
-      if (progress < 1) {
-        char.style.transform = `translate(${driftX * progress}px, ${driftY * progress}px) rotate(${rotation * progress}deg)`;
-        char.style.opacity = 1 - progress;
-        requestAnimationFrame(animate);
-      } else {
-        char.remove();
-      }
-    }
-    requestAnimationFrame(animate);
-  });
-</script>
-
-
-
-
-
-
-
-
     <div id="root"></div>
     
   </body>

@@ -13,7 +13,7 @@
 .contact-header h1 {
  font-size: 4rem;
   margin-bottom: 1rem;
-background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -51,7 +51,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .contact-info h2 {
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -82,7 +82,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .contact-method h3 {
   margin: 0 0 0.5rem 0;
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
 }
 
 .contact-method a {
@@ -96,10 +96,12 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .social-links h3 {
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
-
+.resumes{
+  color: white;
+}
 .social-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -132,7 +134,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .availability {
   margin-top: 2rem;
   padding: 1.5rem;
-  background: rgba(0, 255, 136, 0.1);
+  background: rgba(64, 170, 121, 0.1);
   border-radius: 10px;
   border-left: 4px solid #00ff88;
 }
@@ -155,7 +157,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .contact-form-container h2 {
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -173,7 +175,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .form-group label {
   margin-bottom: 0.5rem;
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
   font-weight: 600;
 }
 
@@ -201,27 +203,19 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .form-group textarea::placeholder {
   color: rgba(25, 216, 200, 0.6);
 }
-
-.submit-btn {
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 25px;
+.submit-butt{
   background: transparent;
+   font-size: 1.2rem;
+  color: white;
   border: 2px solid rgb(19, 255, 78);
-  color: rgb(230, 222, 222);
-  font-size: 1.2rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
+  height: 5cap;
+  border-radius: 15px;
 }
-
-.submit-btn:hover {
+.submit-butt:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
   color: rgb(0, 0, 0);
-
 }
 
 .cta-section {
@@ -236,7 +230,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .cta-section h2 {
   font-size: 2.5rem;
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
   margin-bottom: 1rem;
 }
 
@@ -335,7 +329,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .resume-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0px 35px rgba(19, 255, 78, 0.3);
+  box-shadow: 0 0px 135px rgba(19, 255, 78, 0.3);
 }
 
 .cta-btn.resume {
@@ -383,7 +377,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .schedule-btn:hover {
  transform: translateY(-2px);
-  box-shadow: 0 0px 35px rgba(19, 255, 78, 0.3);
+  box-shadow: 0 0px 135px rgba(19, 255, 78, 0.3);
 }
 
 .cta-btn.schedule {

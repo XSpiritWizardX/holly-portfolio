@@ -21,7 +21,7 @@
 .about-text h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -73,9 +73,9 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .about-section h2 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
   margin-bottom: 2rem;
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -107,7 +107,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .education-item h3 {
-  color: rgb(19, 255, 78);
+  color: rgba(21, 240, 75, 0.329);
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -142,7 +142,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .value-item h3 {
-  color: rgb(19, 255, 78);
+  color: rgba(21, 240, 75, 0.329);
   margin-bottom: 1rem;
 }
 
@@ -165,7 +165,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .hobby-item h3 {
-  color: rgb(19, 255, 78);
+  color: rgba(21, 240, 75, 0.329);
   margin-bottom: 0.5rem;
 }
 

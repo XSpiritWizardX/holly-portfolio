@@ -112,7 +112,7 @@
   font-size: 5.3rem;
   margin-bottom: 1rem;
   background: linear-gradient(
-    45deg,
+    90deg,
     rgb(19, 255, 78) 0%,
     rgb(35, 29, 124) 20%,
     #fff 40%,
@@ -145,8 +145,21 @@
 .typewriter-text {
   font-size: 2rem;
   font-weight: 500;
-  color: rgb(19, 255, 78);
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 1500% 1500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow 10s linear infinite;
 }
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 .cursor {
   font-size: 2rem;
@@ -181,28 +194,45 @@
 }
 
 .btn-primary {
-  background: rgb(4, 128, 107);
+  background: transparent;
+  border: 6px outset rgba(0, 0, 0, 0.8);
   color: #ffffff;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
-  background: #053117;
+  background: linear-gradient(90deg, #ffffff, #f0f0f0);
+  color: #111;
   transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-  color: rgb(19, 255, 78);
+  border-style: inset;
+  box-shadow: 0 4px 52px rgb(255, 255, 255);
 }
 
 .btn-secondary {
   background: transparent;
-  color: rgb(19, 255, 78);
-  border-color: white;
+  border: 6px outset rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn-secondary:hover {
-  background: white;
-  color: #333;
+  background: linear-gradient(90deg, #ffffff, #f0f0f0);
+  color: #111;
   transform: translateY(-2px);
+  border-style: inset;
+  box-shadow: 0 4px 52px rgb(255, 255, 255);
 }
+
 
 .quick-stats {
   display: flex;

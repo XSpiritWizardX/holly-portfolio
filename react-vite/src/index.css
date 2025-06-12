@@ -1,18 +1,56 @@
 
-
-html{
-  background-color: black;
+/* Font Stacks */
+:root {
+  --font-brand: 'Pacifico', cursive;
+  --font-heading: 'Great Vibes', cursive;
+  --font-alt: 'Satisfy', cursive;
+  --font-body: 'Merienda', cursive;
 }
 
-.cursor-char {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  color: #0ff; /* Fun neon blue */
-  font-family: 'Courier New', monospace;
-  user-select: none;
-  text-shadow: 4px 4px 60px #0ff, 4px 4px 182px #0ff;
-  will-change: transform, opacity;
+
+html {
+  background-color: black;
+  font-family: var(--font-body);
+  color: white;
+}
+
+/* Brand Logo */
+.nav-brand {
+  font-family: var(--font-brand);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-link,
+.mobile-nav-link {
+  font-family: var(--font-alt);
+  font-size: 1.15rem;
+}
+
+/* Headers / Special Text */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  text-shadow: 0 0 10px rgba(135, 206, 235, 0.2);
+}
+
+/* Optional: Hero Section Titles */
+.hero-title {
+  font-family: 'Pinyon Script', cursive;
+  font-size: 3rem;
+}
+h1, .hero-title {
+  color: #fff;
+  background: linear-gradient(90deg, #87ceeb, #ff69b4, #00ffff);
+  -webkit-background-clip: text;
+  background-clip: 0;
+  -webkit-text-fill-color: transparent;
+  animation: glowText 5s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+  0% { text-shadow: 0 0 5px #fff; }
+  100% { text-shadow: 0 0 80px #87ceeb; }
 }
 
 /* Navigation Layout CSS - Responsive for All Devices */
@@ -75,12 +113,14 @@ html{
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 2rem;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  border: 6px outset rgba(0, 0, 0, 0.8);
+
 }
 
 .nav-link::before {
@@ -99,10 +139,11 @@ html{
 }
 
 .nav-link:hover {
-  color: #87ceeb;
-  background: rgba(135, 206, 235, 0.1);
+  background: linear-gradient(90deg, #ffffff, #f0f0f0);
+  color: #111;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(135, 206, 235, 0.3);
+  border-style: inset;
+  box-shadow: 0 8px 22px rgb(255, 255, 255);
 }
 
 .nav-link.active {

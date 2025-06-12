@@ -2,7 +2,7 @@ import "./PortfolioPage.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import SignTheWall from '../SignTheWall/SignTheWall';
-
+import MouseTrail from '../MouseTrail/MouseTrail'
 const projects = [
   {
     id: 1,
@@ -370,6 +370,7 @@ function PortfolioPage() {
 
   return (
     <div className="portfolio-page">
+      <MouseTrail/>
       <div className="portfolio-header">
         <h1>My Portfolio</h1>
         <p>A showcase of my work and projects</p>
@@ -392,7 +393,7 @@ function PortfolioPage() {
 
 
           < div
-          className="outside-project-card" key={project.id} 
+          className="outside-project-card" key={project.id}
            >
             <ProjectCard key={project.id} project={project}/>
           </div>

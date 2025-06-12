@@ -1,6 +1,6 @@
 import "./ServicesPage.css";
 import { useEffect, useState } from "react";
-
+import MouseTrail from '../MouseTrail/MouseTrail'
 const skillsData = [
   { name: "JavaScript", level: 95, category: "Languages" },
   { name: "React", level: 95, category: "Frontend" },
@@ -211,6 +211,7 @@ function ServicesPage() {
 
   return (
     <div className="services-page">
+      <MouseTrail />
       <div className="services-header">
         <h1>Services & Skills</h1>
         <p>What I can do for you</p>

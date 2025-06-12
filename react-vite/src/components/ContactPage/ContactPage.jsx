@@ -1,8 +1,8 @@
 import "./ContactPage.css";
 import { useState } from "react";
-import { FaPhone, FaLinkedin, FaGithub, FaYoutube, FaDownload } from "react-icons/fa";
+import {  FaLinkedin, FaGithub, FaYoutube, FaDownload } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
-
+import MouseTrail from '../MouseTrail/MouseTrail'
 function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -38,8 +38,9 @@ const handleResumeDownload = () => {
 
   return (
     <div className="contact-page">
+      <MouseTrail />
       <div className="contact-header">
-        <h1>Get In Touch</h1>
+        <h1>Get in Touch</h1>
         <p>Let&apos;s work together to create something amazing</p>
       </div>
 
@@ -47,13 +48,7 @@ const handleResumeDownload = () => {
         <div className="contact-info">
           <h2>Contact Information</h2>
           <div className="contact-methods">
-            <div className="contact-method">
-              <FaPhone className="contact-icon" />
-              <div>
-                <h3>Phone</h3>
-                <a href="tel:269-506-5112">269-506-5112</a>
-              </div>
-            </div>
+
             <div className="contact-method">
               <TfiEmail className="contact-icon" />
               <div>
@@ -64,7 +59,9 @@ const handleResumeDownload = () => {
           </div>
 
          <div className="resume-download">
-  <h3>Resume & Scheduling</h3>
+  <h3
+  className="resumes"
+  >Resume & Scheduling</h3>
   <div className="action-buttons">
     <button onClick={handleResumeDownload} className="resume-btn">
       <FaDownload />
@@ -77,7 +74,11 @@ const handleResumeDownload = () => {
       className="schedule-btn"
     >
 
-      <span>Schedule A Meeting</span>
+      <span
+        className="resumes"
+      >
+        Schedule A Meeting
+      </span>
     </a>
   </div>
 </div>
@@ -109,7 +110,7 @@ const handleResumeDownload = () => {
         </div>
 
         <div className="contact-form-container">
-          <h2>Send Me a Message</h2>
+          <h2>Send a Message</h2>
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Name *</label>
@@ -155,7 +156,7 @@ const handleResumeDownload = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="submit-btn">
+            <button type="submit" className="submit-butt">
               Send Message
             </button>
           </form>

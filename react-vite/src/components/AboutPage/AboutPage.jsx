@@ -1,8 +1,9 @@
 import "./AboutPage.css";
-
+import MouseTrail from '../MouseTrail/MouseTrail'
 function AboutPage() {
   return (
     <div className="about-page">
+      <MouseTrail/>
       <div className="about-hero">
         <div className="about-content">
           <div className="about-text">

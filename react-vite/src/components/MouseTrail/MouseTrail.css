@@ -1,0 +1,26 @@
+.cursor-char {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet, red);
+  -webkit-background-clip: text;
+  background-clip: 0;
+  -webkit-text-fill-color: transparent;
+  animation: fadeUp 1s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -400%) scale(0.9);
+  }
+}

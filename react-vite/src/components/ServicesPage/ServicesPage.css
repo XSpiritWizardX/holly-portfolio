@@ -13,7 +13,7 @@
 .services-header h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
+background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
   background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,7 +61,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: rgb(19, 255, 78);
+  color: rgba(19, 255, 78, 0.404);
 }
 
 .service-features {
@@ -90,7 +90,7 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   text-align: center;
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
 }
 
 .category-filters {
@@ -114,9 +114,11 @@ background: linear-gradient(45deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: rgb(19, 255, 78);
-  color: #333;
+  background: linear-gradient(90deg, #ffffff, #f0f0f0);
+  color: #111;
   transform: translateY(-2px);
+  border-style: inset;
+  box-shadow: 0 4px 52px rgb(255, 255, 255);
 }
 
 .skills-container {

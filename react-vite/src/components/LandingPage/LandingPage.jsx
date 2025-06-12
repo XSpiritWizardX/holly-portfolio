@@ -5,7 +5,7 @@
 import "./LandingPage.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import MouseTrail from "../MouseTrail/MouseTrail"
 function LandingPage() {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,6 +47,7 @@ function LandingPage() {
 
   return (
     <div className="landing-container">
+      <MouseTrail/>
       <div className="hero-section">
         <div className="hero-content">
           <div className="profile-section">
@@ -75,6 +76,7 @@ function LandingPage() {
               <span className="typewriter-text">{displayText}</span>
               <span className="cursor">|</span>
             </div>
+            <br/>
             <p className="hero-subtitle">
               Passionately creating innovative solutions
             </p>
