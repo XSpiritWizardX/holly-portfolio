@@ -1,4 +1,5 @@
 import "./Navigation.css";
+// import SplineBrain from '../SplineBrain/SplineBrain'
 function Navigation() {
   return (
     <div
@@ -29,7 +30,8 @@ function Navigation() {
             href="/contact" >
               Contact
             </a>
-          
+
+            {/* <SplineBrain className='brain'/> */}
     </div>
   );
 }

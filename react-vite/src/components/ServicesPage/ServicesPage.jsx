@@ -1,7 +1,7 @@
 import "./ServicesPage.css";
 import SkillMeter from "../SkillMeter/SkillMeter";
 import MouseTrail from '../MouseTrail/MouseTrail'
-
+import SplineBrain from '../SplineBrain/SplineBrain'
 const services = [
   {
     title: "Full-Stack Web Development",
@@ -150,7 +150,7 @@ function ServicesPage() {
 
       <div className="skills-section">
 
-
+          <SplineBrain />
 
 
             <SkillMeter />
