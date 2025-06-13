@@ -50,7 +50,7 @@ function LandingPage() {
       <MouseTrail/>
       <div className="hero-section">
         <div className="hero-content">
-          <div className="profile-section">
+
 
 
             <div className="profile-section">
@@ -66,7 +66,7 @@ function LandingPage() {
                 {/* <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg" alt="Profile" class="hero-profile-image" /> */}
               </div>
 
-            </div>
+          
 
           </div>
 

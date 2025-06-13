@@ -58,30 +58,38 @@ const handleResumeDownload = () => {
             </div>
           </div>
 
-         <div className="resume-download">
-  <h3
-  className="resumes"
-  >Resume & Scheduling</h3>
-  <div className="action-buttons">
-    <button onClick={handleResumeDownload} className="resume-btn">
-      <FaDownload />
-      <span>Download Resume</span>
-    </button>
-    <a
-      href="https://calendly.com/dbovee824/30min"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="schedule-btn"
-    >
 
-      <span
-        className="resumes"
-      >
-        Schedule A Meeting
-      </span>
-    </a>
-  </div>
-</div>
+
+
+
+         <div className="resume-download">
+            <h3
+            className="resumes"
+            >Resume & Scheduling</h3>
+            <div className="action-buttons">
+              <button onClick={handleResumeDownload} className="resume-btn">
+                <FaDownload />
+                <span>
+                  Download Resume
+                </span>
+              </button>
+              <a
+                href="https://calendly.com/dbovee824/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="schedule-btn"
+              >
+
+                <span>
+                  Schedule A Meeting
+                </span>
+              </a>
+            </div>
+          </div>
+
+
+
+
 
           <div className="social-links">
             <h3>Connect With Me</h3>

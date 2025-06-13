@@ -1,6 +1,6 @@
 .contact-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #000000 35%, #047e94 100%) ;
+  background: linear-gradient(135deg, #000000 0%, #000000 55%, #3a4e53 100%);
   color: white;
   padding: 2rem;
 }
@@ -11,7 +11,7 @@
 }
 
 .contact-header h1 {
- font-size: 4rem;
+ font-size: 6rem;
   margin-bottom: 1rem;
 background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255, 78) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 80%, #ffffff 100%);
   background-size: 400% 400%;
@@ -53,7 +53,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .contact-info h2 {
   color: rgb(255, 255, 255);
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .contact-methods {
@@ -98,10 +98,9 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .social-links h3 {
   color: rgb(255, 255, 255);
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
-.resumes{
-  color: white;
-}
+
 .social-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -114,17 +113,18 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: black;
+  border: 8px outset grey;
+  color: rgb(255, 255, 255);
   border-radius: 10px;
   text-decoration: none;
-  color: white;
   transition: all 0.3s ease;
 }
 
 .social-link:hover {
-  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
-  color: #000000;
-  transform: translateY(-5px);
+  background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 .social-link svg {
@@ -136,17 +136,18 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   padding: 1.5rem;
   background: rgba(64, 170, 121, 0.1);
   border-radius: 10px;
-  border-left: 4px solid #00ff88;
+  border-left: 4px solid #ffffff;
 }
 
 .availability h3 {
-  color: #00ff88;
+  color: #00b35f;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
 .availability p {
   margin: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: .8rem;
 }
 
 .contact-form-container {
@@ -159,13 +160,14 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .contact-form-container h2 {
   color: rgb(255, 255, 255);
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  font-size: 1rem;
 }
 
 .form-group {
@@ -195,7 +197,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: rgb(19, 255, 78);
+  border-color: rgb(255, 255, 255);
   background: rgba(255, 255, 255, 0.15);
 }
 
@@ -204,18 +206,18 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   color: rgba(25, 216, 200, 0.6);
 }
 .submit-butt{
-  background: transparent;
-   font-size: 1.2rem;
-  color: white;
-  border: 2px solid rgb(19, 255, 78);
+  font-size: 1.2rem;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 6px outset grey;
   height: 5cap;
   border-radius: 15px;
 }
 .submit-butt:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
-  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 .cta-section {
@@ -258,29 +260,33 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .cta-btn.primary {
-   background: transparent;
+   background: black;
   color: white;
-  border: 2px solid rgb(19, 255, 78);
+  border: 6px outset grey;
 
 }
 .cta-btn.primary:hover {
-  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
-  color: #333;
+   background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 .cta-btn.secondary {
-  background: transparent;
+  background: black;
   color: white;
-  border: 2px solid rgb(19, 255, 78);
+  border: 6px outset grey;
 }
 
 .cta-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+
 }
 
 .cta-btn.secondary:hover {
-  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
-  color: #333;
+  background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 @media (max-width: 768px) {
@@ -309,19 +315,21 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .resume-download {
+  font-size: 2rem;
   margin: 2rem 0;
-  color: rgb(19, 255, 78);
+  color: rgb(255, 255, 255);
 }
 
 .resume-btn {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: transparent;
-  color: white;
-  border: 2px solid rgb(19, 255, 78);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
+    border: 6px outset grey;
+
   font-size: 1rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -329,55 +337,59 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 
 .resume-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0px 135px rgba(19, 255, 78, 0.3);
+    background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 .cta-btn.resume {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: transparent;
-  color: white;
+    border: 6px outset grey;
+
   text-decoration: none;
-  border: 2px solid rgb(19, 255, 78);
+   background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
 .cta-btn.resume:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(19, 255, 78, 0.3);
-  background: linear-gradient(90deg, #000000,rgb(19, 255, 78),rgb(255, 255, 255),rgb(19, 255, 78), #000000);
-  color: #333;
-  border: 2px solid rgb(19, 255, 78);
+ transform: translateY(-2px);
+    background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 
 
 .action-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
+
 }
 
 .schedule-btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  background: linear-gradient(135deg, #3498db, #2980b9);
+  gap: .5rem;
   color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
+    border: 6px outset grey;
+
   font-size: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-   background: transparent;
-  color: white;
-  border: 2px solid rgb(19, 255, 78);
-}
+   background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);}
 
 .schedule-btn:hover {
  transform: translateY(-2px);
-  box-shadow: 0 0px 135px rgba(19, 255, 78, 0.3);
+    background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 .cta-btn.schedule {
@@ -390,6 +402,8 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 }
 
 .cta-btn.schedule:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+ transform: translateY(-2px);
+    background: rgb(255, 255, 255);
+  color: black;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }

@@ -73,7 +73,13 @@ function SignTheWall() {
                 <h2>Sign My Wall</h2>
                 <p>Leave your mark and be part of my portfolio forever!</p>
                 <div className="signatures-wall">
+
+
                     {signatures.map((signature, index) => (
+                        <div key={signature.id || index}>
+
+                        <div className="signature-card rainbow-border">
+  {/* card content */}
                         <div
                             key={signature.id}
                             className="signature-card"
@@ -88,13 +94,21 @@ function SignTheWall() {
                                 {new Date(signature.created_at).toLocaleDateString()}
                             </div>
                         </div>
+                    </div>
+                    </div>
                     ))}
                 </div>
             </div>
 
+
+
+<div className="signature-form rainbow-border">
+  {/* form content */}
+
             <form onSubmit={handleSubmit} className="signature-form">
                 <div className="form-group">
                     <input
+
                         type="text"
                         name="name"
                         placeholder="Your name"
@@ -107,11 +121,13 @@ function SignTheWall() {
 
                 <div className="form-group">
                     <textarea
+
+                    maxLength={150}
                         name="message"
                         placeholder="Your message..."
                         value={formData.message}
                         onChange={handleChange}
-                        maxLength="200"
+
                         rows="3"
                         required
                     />
@@ -137,11 +153,17 @@ function SignTheWall() {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="submit-btn"
+                    className="submit-butty"
                 >
                     {isSubmitting ? 'Signing...' : 'Sign the Wall'}
                 </button>
             </form>
+</div>
+
+
+
+
+
 
         </div>
     );

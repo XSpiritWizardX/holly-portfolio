@@ -7,6 +7,10 @@
   --font-body: 'Merienda', cursive;
 }
 
+/*
+ ---->Rainbow box-shadows <----
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 450px violet, 0px 0px 50px white;
+*/
 
 html {
   background-color: black;
@@ -119,7 +123,7 @@ h1, .hero-title {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  border: 6px outset rgba(0, 0, 0, 0.8);
+  border: 6px outset grey;
 
 }
 
@@ -142,12 +146,13 @@ h1, .hero-title {
   background: linear-gradient(90deg, #ffffff, #f0f0f0);
   color: #111;
   transform: translateY(-2px);
-  border-style: inset;
-  box-shadow: 0 8px 22px rgb(255, 255, 255);
+  border-style: outset;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
 }
 
 .nav-link.active {
   color: #87ceeb;
+  border-style: outset;
   background: rgba(135, 206, 235, 0.2);
   box-shadow: 0 0 15px rgba(135, 206, 235, 0.4);
 }

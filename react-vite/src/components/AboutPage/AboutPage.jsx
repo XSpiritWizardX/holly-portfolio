@@ -10,12 +10,32 @@ function AboutPage() {
             <h1>About Dustin Bovee</h1>
             <p className="about-subtitle">Creative Visionary — Innovative Thinker</p>
           </div>
-          <div className="about-image">
+
+
+
+
+
+
+          <div
+          className="about-img-wrapper"
+          >
+
+          <div className="about-image-inner">
             <img
-              src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg"
+              className="about-image"
+              src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/462504050_8324973944218688_6095070514255415304_n_drhvmy.jpg"
               alt="Dustin Bovee"
             />
           </div>
+          </div>
+
+
+
+
+
+
+
+
         </div>
       </div>
 

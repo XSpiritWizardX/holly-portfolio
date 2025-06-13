@@ -1,5 +1,6 @@
 import "./PortfolioPage.css";
 import { useState } from "react";
+import VideoSlider from "../VideoSlider/VideoSlider";
 import { Link } from "react-router-dom";
 import SignTheWall from '../SignTheWall/SignTheWall';
 import MouseTrail from '../MouseTrail/MouseTrail'
@@ -141,16 +142,6 @@ const projects = [
     category: "Marketing"
   },
   {
-    id: 17,
-    title: "Concept Art",
-    description: "Art",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749601691/Screenshot_2025-06-09_201756_z5i0yl.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
-  {
     id: 18,
     title: "Concept Art",
     description: "Art",
@@ -170,26 +161,8 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-  {
-    id: 20,
-    title: "Concept Art",
-    description: "Art",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603633/frwr1lZIxoRyvNGGl3Dk--1--7a0i8-removebg-preview_xvd1tk.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
-  {
-    id: 21,
-    title: "Concept Art",
-    description: "Art",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603633/fj2ECSAhOa96TO14MCLV--1--ra4jt-removebg-preview_iqvfvq.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
+
+
   {
     id: 22,
     title: "Concept Art",
@@ -200,16 +173,7 @@ const projects = [
     technologies: ["Blender", "Adobe Suite", "gimp"],
     category: "Art"
   },
-  {
-    id: 23,
-    title: "Concept Art",
-    description: "ART",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603633/e2zU3VqY1qS6Nc45UaLL--1--nfvne-removebg-preview_avpqih.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
+
   {
     id: 24,
     title: "Concept Art",
@@ -244,8 +208,30 @@ const projects = [
 
 const categories = ["All", "Web Development", "Marketing", "Game Development", "Art"];
 
+
+
+
+const videoData = [
+  { src: 'https://www.youtube.com/embed/xnXgBuqI-1g?si=6wtGMT3SMcQURKOw', caption: 'Cool Project 1' },
+  { src: 'https://www.youtube.com/embed/xm7FOw1Hjpc?si=rNPakM6BsYixHfJR', caption: 'Another Project' },
+  { src: 'https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-', caption: 'The Best One Yet' },
+  { src: 'https://www.youtube.com/embed/CpsjVVIHBbc?si=c6AX8xpxxL92iPYr', caption: 'The Best One Yet' },
+  { src: 'https://www.youtube.com/embed/5lYlp0zfmTo?si=imMrQCId-AOCTkDK', caption: 'The Best One Yet' },
+  { src: 'https://www.youtube.com/embed/mSvZu6TGu_w?si=iW42gOPemo6JXlPk', caption: 'The Best One Yet' },
+  { src: 'https://www.youtube.com/embed/o2_0RIKBgMA?si=NixcNInDKiUQ7DP4', caption: 'The Best One Yet' },
+  { src: 'https://www.youtube.com/embed/DvcoxWyBYmA?si=_CZ4KiVai27-EMHs', caption: 'The Best One Yet' },
+];
+
+
+
+
+
+
+
 function PortfolioPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+
+
+  const [selectedCategory, setSelectedCategory] = useState("Web Development");
   const [selectedProject, setSelectedProject] = useState(null);
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -388,101 +374,24 @@ function PortfolioPage() {
         ))}
       </div>
 
+
+
+
+
       <div className="projects-grid">
         {filteredProjects.map(project => (
-
-
-          < div
-          className="outside-project-card" key={project.id}
-           >
             <ProjectCard key={project.id} project={project}/>
-          </div>
         ))}
       </div>
 
+
+
       <div className="media-section">
-        <h2>Featured Music</h2>
-        <div className="media-grid">
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/xnXgBuqI-1g?si=6wtGMT3SMcQURKOw"
-              title="Music Video 1"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
 
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/xm7FOw1Hjpc?si=rNPakM6BsYixHfJR"
-              title="Music Video 2"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
+        <VideoSlider videos={videoData}/>
 
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-"
-              title="Music Video 3"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
 
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/CpsjVVIHBbc?si=c6AX8xpxxL92iPYr"
-              title="Music Video 4"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
 
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/5lYlp0zfmTo?si=imMrQCId-AOCTkDK"
-              title="Music Video 5"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/mSvZu6TGu_w?si=iW42gOPemo6JXlPk"
-              title="Music Video 6"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/o2_0RIKBgMA?si=NixcNInDKiUQ7DP4"
-              title="Music Video 7"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-
-          <div className="video-container">
-            <iframe
-              width="100%" height="315"
-              src="https://www.youtube.com/embed/DvcoxWyBYmA?si=_CZ4KiVai27-EMHs"
-              title="Music Video 8"
-              frameBorder="0"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
       </div>
 
       <SignTheWall/>
