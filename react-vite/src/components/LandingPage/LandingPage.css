@@ -212,7 +212,7 @@
   color: #111;
   transform: translateY(-2px);
   border-style: outset;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 .btn-secondary {
@@ -232,7 +232,7 @@
   color: #111;
   transform: translateY(-2px);
   border-style: inset;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 

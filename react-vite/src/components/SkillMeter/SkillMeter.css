@@ -51,7 +51,7 @@ padding: 3rem;
     background-color: white;
     font-size: 1.5rem;
     border: 8px outset grey;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
     cursor: pointer;
 }
 
@@ -59,7 +59,7 @@ padding: 3rem;
 
 /* Skill Block Styles */
 .skill-block-container {
-  background: #444444;
+  background: #38383867;
   padding: 1.5rem;
   border-radius: 16px;
   box-shadow: 0 0 15px rgba(0, 255, 204, 0.08);
@@ -88,13 +88,13 @@ padding: 3rem;
   width: 14px;
   height: 20px;
   border-radius: 4px;
-  background: #777777;
+  background: #000000;
   box-shadow: inset 0 0 3px #000;
   transition: background 0.3s, box-shadow 0.3s;
 }
 
 .block.active {
-  background: #00ffcc;
+  background: #ffffff;
   box-shadow: 0 0 6px #00ffcc, 0 0 10px rgba(0, 255, 204, 0.5);
   animation: pulseBlock 1.5s infinite alternate;
 }

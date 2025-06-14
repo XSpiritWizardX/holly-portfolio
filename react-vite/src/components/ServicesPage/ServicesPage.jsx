@@ -1,7 +1,8 @@
 import "./ServicesPage.css";
 import SkillMeter from "../SkillMeter/SkillMeter";
 import MouseTrail from '../MouseTrail/MouseTrail'
-import SplineBrain from '../SplineBrain/SplineBrain'
+// I commented out spline brain until i figure out how to let actions pass through
+// import SplineBrain from '../SplineBrain/SplineBrain'
 const services = [
   {
     title: "Full-Stack Web Development",
@@ -149,8 +150,8 @@ function ServicesPage() {
       </div>
 
       <div className="skills-section">
-
-          <SplineBrain />
+{/*
+          <SplineBrain /> */}
 
 
             <SkillMeter />

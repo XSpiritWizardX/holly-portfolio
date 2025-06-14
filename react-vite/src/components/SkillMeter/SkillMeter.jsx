@@ -1,19 +1,6 @@
 import  { useState } from "react";
 import "./SkillMeter.css";
 
-const categories = [
-  "All",
-  "Languages",
-  "Frontend",
-  "Backend",
-  "Tools",
-  "Machine Learning",
-  "Cloud",
-  "DevOps",
-  "Creative",
-  "Business",
-];
-
 
 
 const skillsData = [
@@ -21,7 +8,6 @@ const skillsData = [
   { name: "React", level: 95, category: "Frontend" },
   { name: "Python", level: 90, category: "Languages" },
   { name: "Node.js", level: 95, category: "Backend" },
-  { name: "CSS/HTML", level: 92, category: "Frontend" },
   { name: "Flask", level: 90, category: "Backend" },
   { name: "Express", level: 92, category: "Backend" },
   { name: "Redux", level: 95, category: "Frontend" },
@@ -29,14 +15,6 @@ const skillsData = [
   { name: "Git", level: 90, category: "Tools" },
   { name: "AWS", level: 70, category: "Cloud" },
   { name: "Docker", level: 80, category: "DevOps" },
-  { name: "Music Production", level: 95, category: "Creative" },
-  { name: "Game Development", level: 80, category: "Creative" },
-  { name: "Video Editing", level: 85, category: "Creative" },
-  { name: "2D / 3D Modeling", level: 75, category: "Creative" },
-  { name: "Digital Marketing", level: 90, category: "Business" },
-  { name: "Microsoft Suite", level: 70, category: "Business" },
-  { name: "Adobe Suite", level: 75, category: "Creative" },
-  { name: "Visual Studio Code", level: 90, category: "Tools" },
   { name: "Linux", level: 82, category: "DevOps" },
   { name: "HTML", level: 90, category: "Languages" },
   { name: "CSS", level: 90, category: "Languages" },
@@ -65,12 +43,37 @@ const skillsData = [
   { name: "Ollama", level: 70, category: "Machine Learning" },
   { name: "Gemma 3", level: 70, category: "Machine Learning" },
   { name: "Pandas", level: 65, category: "Machine Learning" },
+  { name: "Music Production", level: 95, category: "Creative" },
+  { name: "Game Development", level: 80, category: "Creative" },
+  { name: "Video Editing", level: 85, category: "Creative" },
+  { name: "2D / 3D Modeling", level: 75, category: "Creative" },
+  { name: "Digital Marketing", level: 90, category: "Business" },
+  { name: "Microsoft Suite", level: 70, category: "Business" },
+  { name: "Adobe Suite", level: 75, category: "Creative" },
+  { name: "Visual Studio Code", level: 90, category: "Tools" },
   { name: "PyTorch", level: 74, category: "Machine Learning" },
   { name: "TensorFlow", level: 80, category: "Machine Learning" },
   { name: "Numpy", level: 60, category: "Machine Learning" },
   { name: "Jupyter", level: 70, category: "Machine Learning" },
-  { name: "Three.js", level: 77, category: "Frontend" }
+  { name: "Three.js", level: 77, category: "Frontend" },
+  { name: "ProTools", level: 87, category: "Creative" },
 ];
+
+
+const categories = [
+  "All",
+  "Languages",
+  "Frontend",
+  "Backend",
+  "Tools",
+  "Machine Learning",
+  "Cloud",
+  "DevOps",
+  "Creative",
+  "Business",
+];
+
+
 
 const SkillBlock = ({ name, level }) => {
   const totalBlocks = 20;

@@ -124,7 +124,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .social-link:hover {
   background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 .social-link svg {
@@ -217,7 +217,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   transform: translateY(-2px);
   background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 .cta-section {
@@ -268,7 +268,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .cta-btn.primary:hover {
    background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 .cta-btn.secondary {
   background: black;
@@ -279,14 +279,14 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
 .cta-btn:hover {
   background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 
 }
 
 .cta-btn.secondary:hover {
   background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 @media (max-width: 768px) {
@@ -339,7 +339,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
   transform: translateY(-2px);
     background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 .cta-btn.resume {
@@ -358,7 +358,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
  transform: translateY(-2px);
     background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 
@@ -389,7 +389,7 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
  transform: translateY(-2px);
     background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
 
 .cta-btn.schedule {
@@ -405,5 +405,5 @@ background: linear-gradient(90deg, #000000 0%, rgb(35, 29, 124) 15%, rgb(19, 255
  transform: translateY(-2px);
     background: rgb(255, 255, 255);
   color: black;
-    box-shadow: 0px 0px 10px white, 0px 0px 20px cyan;
+    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
 }
