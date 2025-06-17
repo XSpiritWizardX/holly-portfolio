@@ -12,6 +12,64 @@ const ClickerGame = () => {
   const [userAnswer, setUserAnswer] = useState('')
   const [challengeStreak, setChallengeStreak] = useState(0)
   const [moneySpent, setMoneySpent] = useState(0) // Track money spent on upgrades
+  const [bonusItems, setBonusItems] = useState([]) // New state for bonus items
+
+  // Bonus items configuration
+  const bonusTypes = [
+    {
+      id: 'bug',
+      emoji: '🐛',
+      name: 'Bug',
+      description: 'Click to squash!',
+      reward: { type: 'money', amount: 50 },
+      rarity: 0.4, // 40% chance
+      duration: 8000, // 8 seconds
+      color: '#ff6b6b'
+    },
+    {
+      id: 'coffee',
+      emoji: '☕',
+      name: 'Coffee Break',
+      description: 'Energy boost!',
+      reward: { type: 'lines', amount: 100 },
+      rarity: 0.3, // 30% chance
+      duration: 6000, // 6 seconds
+      color: '#8b4513'
+    },
+    {
+      id: 'lightbulb',
+      emoji: '💡',
+      name: 'Inspiration',
+      description: 'Brilliant idea!',
+      reward: { type: 'clickPower', amount: 2, temporary: true, duration: 30000 },
+      rarity: 0.15, // 15% chance
+      duration: 10000, // 10 seconds
+      color: '#ffd700'
+    },
+    {
+      id: 'rocket',
+      emoji: '🚀',
+      name: 'Productivity Boost',
+      description: 'Speed coding!',
+      reward: { type: 'linesBoost', multiplier: 2, duration: 15000 },
+      rarity: 0.1, // 10% chance
+      duration: 7000, // 7 seconds
+      color: '#4ecdc4'
+    },
+    {
+      id: 'gem',
+      emoji: '💎',
+      name: 'Rare Gem',
+      description: 'Jackpot!',
+      reward: { type: 'money', amount: 500 },
+      rarity: 0.05, // 5% chance
+      duration: 12000, // 12 seconds
+      color: '#9b59b6'
+    }
+  ]
+
+  // Temporary effects state
+  const [temporaryEffects, setTemporaryEffects] = useState([])
 
   // Coding challenges
   const challenges = [
@@ -273,7 +331,7 @@ const ClickerGame = () => {
       question: 'Which method removes the first element from an array?',
       options: ['shift()', 'unshift()', 'pop()', 'push()'],
       answer: 'shift()',
-      explanation: 'shift() removes and returns the first element of an array'
+            explanation: 'shift() removes and returns the first element of an array'
     },
     {
       id: 32,
@@ -316,7 +374,7 @@ const ClickerGame = () => {
       answer: '2',
       explanation: '!![] is true, +true is 1, so 1 + 1 = 2'
     },
-      {
+    {
       id: 37,
       difficulty: 'Easy',
       reward: 85,
@@ -343,7 +401,7 @@ const ClickerGame = () => {
     intern: { count: 0, cost: 2000, power: 50 },
     developer: { count: 0, cost: 10000, power: 200 },
     senior: { count: 0, cost: 50000, power: 1000 },
-    architect: { count: 0, cost: 250000, power: 5000 }
+    hacker: { count: 0, cost: 0, power: 5000 }
   })
 
   const upgradeData = {
@@ -353,7 +411,144 @@ const ClickerGame = () => {
     intern: { name: "Hire Intern", emoji: "👨‍💻", desc: "Writes basic code" },
     developer: { name: "Junior Dev", emoji: "👩‍💻", desc: "Solid coding skills" },
     senior: { name: "Senior Dev", emoji: "🧑‍💼", desc: "Expert programmer" },
-    architect: { name: "Tech Lead", emoji: "👑", desc: "Designs systems" }
+    hacker: { name: "Hacker", emoji: "👑", desc: "Hacks systems" }
+  }
+
+  // Spawn bonus items randomly
+  useEffect(() => {
+    const spawnInterval = setInterval(() => {
+      // Only spawn if there are less than 3 bonus items and player has some progress
+      if (bonusItems.length < 3 && lines > 50) {
+        const shouldSpawn = Math.random() < 0.9 // 90% chance every interval
+
+        if (shouldSpawn) {
+          // Select random bonus type based on rarity
+          const randomValue = Math.random()
+          let cumulativeRarity = 0
+          let selectedBonus = null
+
+          for (const bonus of bonusTypes) {
+            cumulativeRarity += bonus.rarity
+            if (randomValue <= cumulativeRarity) {
+              selectedBonus = bonus
+              break
+            }
+          }
+
+          if (selectedBonus) {
+            const newBonus = {
+              ...selectedBonus,
+              id: Date.now() + Math.random(), // Unique ID
+              x: Math.random() * 70 + 10, // Random position (10-80% from left)
+              y: Math.random() * 60 + 20, // Random position (20-80% from top)
+              createdAt: Date.now()
+            }
+
+            setBonusItems(prev => [...prev, newBonus])
+
+            // Auto-remove after duration
+            setTimeout(() => {
+              setBonusItems(prev => prev.filter(item => item.id !== newBonus.id))
+            }, selectedBonus.duration)
+          }
+        }
+      }
+    }, 1000) // Check every 5 seconds
+
+    return () => clearInterval(spawnInterval)
+  }, [bonusItems.length, lines])
+
+  // Handle bonus item click
+  const handleBonusClick = (bonusItem) => {
+    const reward = bonusItem.reward
+
+    // Apply reward based on type
+    switch (reward.type) {
+      case 'money':
+        setMoneySpent(prev => prev - reward.amount) // Add money by reducing money spent
+        break
+      case 'lines':
+        setLines(prev => prev + reward.amount)
+        break
+      case 'clickPower':
+        if (reward.temporary) {
+          // Add temporary click power boost
+          setTemporaryEffects(prev => [...prev, {
+            type: 'clickPower',
+            amount: reward.amount,
+            endTime: Date.now() + reward.duration,
+            id: Date.now()
+          }])
+
+          // Remove effect after duration
+          setTimeout(() => {
+            setTemporaryEffects(prev => prev.filter(effect =>
+              !(effect.type === 'clickPower' && effect.amount === reward.amount)
+            ))
+          }, reward.duration)
+        } else {
+          setClickPower(prev => prev + reward.amount)
+        }
+        break
+      case 'linesBoost':
+        // Temporarily boost lines per second
+        setTemporaryEffects(prev => [...prev, {
+          type: 'linesBoost',
+          multiplier: reward.multiplier,
+          endTime: Date.now() + reward.duration,
+          id: Date.now()
+        }])
+
+        setTimeout(() => {
+          setTemporaryEffects(prev => prev.filter(effect =>
+            !(effect.type === 'linesBoost' && effect.multiplier === reward.multiplier)
+          ))
+        }, reward.duration)
+        break
+    }
+
+    // Show reward notification
+    const rewardText = reward.type === 'money' ? `+$${reward.amount}` :
+                      reward.type === 'lines' ? `+${reward.amount} lines` :
+                      reward.type === 'clickPower' ? `+${reward.amount} click power${reward.temporary ? ' (30s)' : ''}` :
+                      reward.type === 'linesBoost' ? `${reward.multiplier}x lines/sec (15s)` : ''
+
+    // Create floating text effect
+    const floatingText = document.createElement('div')
+    floatingText.textContent = `${bonusItem.emoji} ${rewardText}`
+    floatingText.style.cssText = `
+      position: fixed;
+      left: ${bonusItem.x}%;
+      top: ${bonusItem.y}%;
+      color: ${bonusItem.color};
+      font-weight: bold;
+      font-size: 18px;
+      pointer-events: none;
+      z-index: 1000;
+      animation: floatUp 2s ease-out forwards;
+    `
+
+    document.body.appendChild(floatingText)
+    setTimeout(() => document.body.removeChild(floatingText), 2000)
+
+    // Remove the bonus item
+    setBonusItems(prev => prev.filter(item => item.id !== bonusItem.id))
+  }
+
+  // Calculate effective click power (including temporary effects)
+  const getEffectiveClickPower = () => {
+    const tempClickPowerBonus = temporaryEffects
+      .filter(effect => effect.type === 'clickPower')
+      .reduce((sum, effect) => sum + effect.amount, 0)
+    return clickPower + tempClickPowerBonus
+  }
+
+  // Calculate effective lines per second (including temporary effects)
+  const getEffectiveLinesPerSecond = () => {
+    const linesBoostMultiplier = temporaryEffects
+      .filter(effect => effect.type === 'linesBoost')
+      .reduce((multiplier, effect) => multiplier * effect.multiplier, 1)
+    return Math.floor(linesPerSecond * linesBoostMultiplier)
   }
 
   // Money from lines (1 dollar per 5 lines) - accounting for money spent
@@ -362,16 +557,17 @@ const ClickerGame = () => {
     setMoney(earnedMoney - moneySpent)
   }, [lines, moneySpent])
 
-  // Auto-generate lines per second
+  // Auto-generate lines per second (using effective LPS)
   useEffect(() => {
+    const effectiveLPS = getEffectiveLinesPerSecond()
     const interval = setInterval(() => {
-      if (linesPerSecond > 0) {
-        setLines(prev => prev + linesPerSecond)
+      if (effectiveLPS > 0) {
+        setLines(prev => prev + effectiveLPS)
       }
     }, 1000)
 
     return () => clearInterval(interval)
-  }, [linesPerSecond])
+  }, [linesPerSecond, temporaryEffects])
 
   // Calculate lines per second from upgrades
   useEffect(() => {
@@ -390,10 +586,10 @@ const ClickerGame = () => {
     }
   }, [lines, level])
 
-  // Click handler
+  // Click handler (using effective click power)
   const handleClick = useCallback(() => {
-    setLines(prev => prev + clickPower)
-  }, [clickPower])
+    setLines(prev => prev + getEffectiveClickPower())
+  }, [clickPower, temporaryEffects])
 
   // Buy upgrade - properly subtract money
   const buyUpgrade = (upgradeKey) => {
@@ -439,7 +635,7 @@ const ClickerGame = () => {
       setChallengeStreak(prev => prev + 1)
 
       // Show success message
-      alert(`🎉 Correct! You earned $${reward}!\nStreak: ${challengeStreak + 1}\n\n${currentChallenge.explanation}`)
+      alert(`🎉 Correct! You earned ${reward}!\nStreak: ${challengeStreak + 1}\n\n${currentChallenge.explanation}`)
     } else {
       setChallengeStreak(0)
       alert(`❌ Incorrect. The answer was: ${currentChallenge.answer}\n\n${currentChallenge.explanation}`)
@@ -468,6 +664,8 @@ const ClickerGame = () => {
       setLevel(1)
       setChallengeStreak(0)
       setMoneySpent(0)
+      setBonusItems([])
+      setTemporaryEffects([])
       setUpgrades({
         keyboard: { count: 0, cost: 15, power: 1 },
         monitor: { count: 0, cost: 100, power: 5 },
@@ -490,7 +688,7 @@ const ClickerGame = () => {
       </div>
 
       <div className="game-container">
-        {/* Stats Panel */}
+                {/* Stats Panel */}
         <div className="stats-panel">
           <div className="stat">
             <span className="stat-label">Lines of Code:</span>
@@ -506,16 +704,29 @@ const ClickerGame = () => {
           </div>
           <div className="stat">
             <span className="stat-label">Lines/sec:</span>
-            <span className="stat-value">{formatNumber(linesPerSecond)}</span>
+            <span className="stat-value">{formatNumber(getEffectiveLinesPerSecond())}</span>
           </div>
           <div className="stat">
             <span className="stat-label">Click Power:</span>
-            <span className="stat-value">{clickPower}</span>
+            <span className="stat-value">{getEffectiveClickPower()}</span>
           </div>
           <div className="stat streak-stat">
             <span className="stat-label">Challenge Streak:</span>
             <span className="stat-value">{challengeStreak}🔥</span>
           </div>
+          {temporaryEffects.length > 0 && (
+            <div className="stat effects-stat">
+              <span className="stat-label">Active Effects:</span>
+              <div className="effects-list">
+                {temporaryEffects.map(effect => (
+                  <div key={effect.id} className="effect-item">
+                    {effect.type === 'clickPower' && `+${effect.amount} Click Power`}
+                    {effect.type === 'linesBoost' && `${effect.multiplier}x Lines/sec`}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Main Game Area */}
@@ -528,7 +739,7 @@ const ClickerGame = () => {
               <div className="click-content">
                 <div className="code-icon">💻</div>
                 <div className="click-text">Write Code!</div>
-                <div className="click-power">+{clickPower} lines</div>
+                <div className="click-power">+{getEffectiveClickPower()} lines</div>
               </div>
             </button>
           </div>
@@ -590,6 +801,29 @@ const ClickerGame = () => {
           </div>
         </div>
       </div>
+
+      {/* Floating Bonus Items */}
+      {bonusItems.map(bonusItem => (
+        <div
+          key={bonusItem.id}
+          className="bonus-item"
+          style={{
+            position: 'absolute',
+            left: `${bonusItem.x}%`,
+            top: `${bonusItem.y}%`,
+            fontSize: '2rem',
+            cursor: 'pointer',
+            zIndex: 100,
+            animation: 'bounce 1s infinite',
+            filter: 'drop-shadow(0 0 10px rgba(255,255,255,0.8))',
+            userSelect: 'none'
+          }}
+          onClick={() => handleBonusClick(bonusItem)}
+          title={`${bonusItem.name}: ${bonusItem.description}`}
+        >
+          {bonusItem.emoji}
+        </div>
+      ))}
 
       {/* Challenge Modal */}
       {showChallengeModal && currentChallenge && (
@@ -671,6 +905,7 @@ const ClickerGame = () => {
           </div>
         </div>
       )}
+
       {/* Achievements */}
       <div className="achievements">
         <h3>🏆 Achievements</h3>
@@ -684,11 +919,12 @@ const ClickerGame = () => {
           {challengeStreak >= 3 && <div className="achievement">Challenge Streak x3</div>}
           {challengeStreak >= 5 && <div className="achievement">Challenge Master</div>}
           {challengeStreak >= 10 && <div className="achievement">Coding Genius</div>}
+          {bonusItems.length > 0 && <div className="achievement">Bonus Hunter</div>}
         </div>
       </div>
+
     </div>
   )
 }
 
 export default ClickerGame
-
