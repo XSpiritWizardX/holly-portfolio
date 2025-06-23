@@ -1,22 +1,29 @@
 .skill-meter {
   padding: 3rem 2rem;
-  background: #0f0f0f;
   border-radius: 20px;
   margin-top: 4rem;
-  box-shadow: 0 0 30px rgb(255, 255, 255);
-  border: 1px solid #1a1a1a;
+
 }
 
 .skills-title {
-  font-size: 3rem;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-shadow: 0 0 10px rgba(120, 236, 165, 0.603);
+ font-size: 5rem;
+ justify-self: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #06696d 0%, rgb(73, 29, 124) 15%, rgb(253, 255, 253) 30%, #692323 45%, #7c7b1c 60%, rgb(19, 255, 78) 75%, #0ff8f8 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 10s linear infinite;
 }
-
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: -500% -700%;
+  }
+}
 .skill-meter-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

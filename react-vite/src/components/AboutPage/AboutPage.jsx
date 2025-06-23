@@ -1,155 +1,3 @@
-// import "./AboutPage.css";
-// import MouseTrail from '../MouseTrail/MouseTrail'
-// function AboutPage() {
-//   return (
-//     <div className="about-page">
-//       <MouseTrail/>
-//       <div className="about-hero">
-//         <div className="about-content">
-//           <div className="about-text">
-//             <h1>About Dustin Bovee</h1>
-//             <p className="about-subtitle">Creative Visionary — Innovative Thinker</p>
-//           </div>
-
-
-
-
-
-
-//           <div
-//           className="about-img-wrapper"
-//           >
-
-//           <div className="about-image-inner">
-//             <img
-//               className="about-image"
-//               src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/462504050_8324973944218688_6095070514255415304_n_drhvmy.jpg"
-//               alt="Dustin Bovee"
-//             />
-//           </div>
-//           </div>
-
-
-
-
-
-
-
-
-//         </div>
-//       </div>
-
-//       <div className="about-sections">
-//         <section className="about-section">
-//           <h2>My Story</h2>
-// <p>
-
-// </p>
-
-// <p>
-
-// </p>
-
-
-//         </section>
-
-//         <section className="about-section">
-//           <h2>Education & Certifications</h2>
-//           <div className="education-grid">
-//             <div className="education-item">
-//               <h3>App Academy</h3>
-//               <p>Full Stack Software Engineering Bootcamp</p>
-//               <span>2025 • 888+ hours • less than 3% acceptance rate</span>
-//             </div>
-//               <div className="education-item">
-//               <h3>Michigan Department of Insurance and Financial Services</h3>
-//               <p>MI Life Health and Accident producer</p>
-//               <span>2023 • Life, Accident, Health • <a className="anchorsaway" href="https://difs.state.mi.us/locators?searchtype=InsAgent" >20620121</a> </span>
-//             </div>
-//             <div className="education-item">
-//               <h3>Google Certifications</h3>
-//               <p>Digital Marketing & e-commerce</p>
-//               <span>2023 • 7 courses • 7 certifications</span>
-//             </div>
-//             <div className="education-item">
-//               <h3>Glen Oaks Community College</h3>
-//               <p>Associates of General Studies</p>
-//               <span>2023</span>
-//             </div>
-//              <div className="education-item">
-//               <h3>Glen Oaks Community College</h3>
-//               <p>Certified Emergency Nurse Aide</p>
-//               <span>2017 • C.E.N.A. • Basic Life Support • CPR • First Responder</span>
-//             </div>
-//              <div className="education-item">
-//               <h3>Full Sail University</h3>
-//               <p>Bachelors of Music</p>
-//               <span>2013 </span>
-//             </div>
-//           </div>
-//         </section>
-
-//         <section className="about-section">
-//           <h2>What Drives Me</h2>
-//           <div className="values-grid">
-//             <div className="value-item">
-//               <div className="value-icon">👨‍👩‍👧‍👦</div>
-//               <h3>Family First</h3>
-//               <p>My wife and five kids are my biggest motivation and inspiration for everything I create and work for.</p>
-//             </div>
-//             <div className="value-item">
-//               <div className="value-icon">🚀</div>
-//               <h3>Continuous Learning</h3>
-//               <p>I&apos;m passionate about staying current with new technologies and constantly improving my skills.</p>
-//             </div>
-//             <div className="value-item">
-//               <div className="value-icon">🎨</div>
-//               <h3>Creative Problem Solving</h3>
-//               <p>I bring a unique creative perspective to technical challenges, finding innovative solutions.</p>
-//             </div>
-//             <div className="value-item">
-//               <div className="value-icon">🤝</div>
-//               <h3>Collaboration</h3>
-//               <p>I thrive in team environments where diverse perspectives lead to breakthrough solutions.</p>
-//             </div>
-//           </div>
-//         </section>
-
-//         <section className="about-section">
-//           <h2>Beyond Coding</h2>
-//           <div className="hobbies-grid">
-//             <div className="hobby-item">
-//               <h3>Music Production</h3>
-//               <p>Creating original music in my home studio with Pro-Tools. Over 100+ songs written... You probably heard one of mine and you didn&apos;t even know it.</p>
-//             </div>
-//             <div className="hobby-item">
-//               <h3>Film Making</h3>
-//               <p>Creating visually stunning works of art in videos. Studying Film theory, video editing tips and tricks, and Directing.</p>
-//             </div>
-//             <div className="hobby-item">
-//               <h3>Travel</h3>
-//               <p>Exploring new cultures and dreaming of retirement in the Caribbean. I love being out in nature and exploring the earth.</p>
-//             </div>
-//             <div className="hobby-item">
-//               <h3>Sports</h3>
-//               <p>Playing and watching sports, especially Football and Hockey. </p>
-//             </div>
-//           </div>
-//         </section>
-
-
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default AboutPage;
-
-
-
-
-
-
 
 import "./AboutPage.css";
 import MouseTrail from '../MouseTrail/MouseTrail'
@@ -208,7 +56,7 @@ function AboutPage() {
     fullsail: {
       title: "Full Sail University",
       subtitle: "Bachelor of Music",
-      duration: "2013",
+      duration: "2013 • Recording Arts • Music Production • Performing Arts",
       image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/fullsail-logo_example.jpg",
       description: "Comprehensive music education covering music production, audio engineering, music theory, and creative composition. Hands-on experience with industry-standard equipment and software.",
       link: "https://www.fullsail.edu/",
@@ -222,17 +70,17 @@ function AboutPage() {
       company: "Self-Employed",
       duration: "2025 - Present",
       image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/freelance-work_example.jpg",
-      description: "Full-stack web development and creative services for diverse clients. Specializing in React applications, Python backends, and multimedia content creation. Successfully delivered 15+ projects ranging from e-commerce platforms to creative portfolios.",
-      achievements: ["Built 15+ full-stack applications", "Increased client web traffic by 200% average", "Maintained 98% client satisfaction rate"],
+      description: "Full-stack web development and creative services for diverse clients. Specializing in React applications, Python backends, and multimedia content creation. Successfully delivered 4+ projects ranging from e-commerce platforms to creative portfolios.",
+      achievements: ["Built 4+ full-stack applications"],
       skills: ["React", "Python", "JavaScript", "Web Design", "Client Relations", "Project Management"]
     },
     insurance_agent: {
       title: "Insurance Producer",
       company: "Independent Agent",
-      duration: "2023 - Present",
+      duration: "2023 - 2024",
       image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/insurance-agent_example.jpg",
       description: "Licensed insurance producer helping families and individuals secure their financial future through comprehensive insurance solutions. Specialized in life, health, and accident coverage with focus on client education and long-term relationships.",
-      achievements: ["Maintained 95% client retention rate", "Processed $500K+ in annual premiums", "Earned top producer recognition"],
+      achievements: ["Maintained 95% client retention rate"],
       skills: ["Sales", "Risk Assessment", "Financial Planning", "Client Consultation", "Regulatory Compliance"]
     },
     music_producer: {
@@ -243,6 +91,15 @@ function AboutPage() {
       description: "Professional music production and audio engineering services. Created 100+ original compositions and provided production services for various artists.",
       achievements: ["Produced 100+ original songs", "Worked with 50+ independent artists", "Songs featured in commercial projects"],
       skills: ["Pro Tools", "Big Show Events", "Audio Engineering", "Music Composition", "Mixing & Mastering", "Recording Arts", "Creative Direction"]
+    },
+    Welder: {
+      title: "Aluminum and Steel Fabricator",
+      company: "Heartland RV",
+      duration: "2020 - 2022",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/music-studio_example.jpg",
+      description: "Skilled in aluminum and steel fabrication, specializing in the production of high-quality RV components. Experienced in welding, assembly, and quality control.",
+      achievements: ["Improved production efficiency by approximately 20% reducing overall hours worked"],
+      skills: ["Welding", "Metal Fabrication", "Blueprint Reading", "Quality Control", "Team Collaboration"]
     },
     management: {
       title: "Assistant Supervisor",
@@ -286,7 +143,12 @@ function AboutPage() {
         <section className="about-section">
           <h2>My Story</h2>
           <p>
-            My story is simple.
+            Hello. My name is Dustin and I&apos;m a creative visionary with a passion for technology and innovation. I have a diverse background that combines software engineering, music production, and digital marketing. My journey has taken me from the world of music to the fast-paced tech industry, where I thrive on solving complex problems and creating impactful solutions. <br /> <br/>I am a husband to  an amazing wife and a father to five incredible kids. They are my biggest motivation and inspiration for everything I create and work for. I believe in work-life balance and strive to bring that philosophy into my professional life. I am always looking for new challenges and opportunities to grow, both personally and professionally.
+            <br/> <br/>I grew up in a small town in the Midwest, where I developed a love for music and technology at a young age. I started playing the piano and experimenting with music production software, which ignited my passion for creating and innovating. Joining a touring band in my teens as a lead guitarist presented challenges and difficulties. The band taught me how to collaborate in a team and how to navigate a smooth workflow with countless moving parts.
+            <br/> <br/>
+             From there, I pursued a degree in music and later transitioned into skilled trades where i spent several years honing my skills in welding and fabrication. I used this expertise to help create a business by engineering the driving force behind the services offered. After several years in fabrication and single handedly engineering a work vessel, i transitioned into digital marketing where i connected with local businesses and offered consultations on how to improve their online presence. This experience led me to discover my true passion for software engineering, where I could combine my love for technology with my creative problem-solving skills. I got licensed as an insurance producer and worked with families to help them secure their financial future through comprehensive insurance solutions. This experience taught me the importance of client relations and how to effectively communicate complex ideas in a simple way.
+            <br /> <br/>I then enrolled in App Academy, a highly selective software engineering bootcamp, where I honed my skills in full-stack development. The program was intense and challenging, but it solidified my passion for coding and problem-solving. I learned to build robust web applications using technologies like JavaScript, Python, React, and Flask. The experience taught me the value of perseverance and adaptability, as I had to overcome numerous challenges and push through difficult projects. <br />
+             <br /> <br/>Today, I am a full-stack software engineer with a focus on building innovative web applications and digital solutions. I am constantly learning and adapting to new technologies, and I thrive in collaborative environments where I can share ideas and learn from others.
           </p>
 
 
@@ -364,7 +226,7 @@ function AboutPage() {
             </div>
             <div className="hobby-item">
               <h3>Sports</h3>
-              <p>Playing and watching sports, especially Football and Hockey.</p>
+              <p>Playing and watching sports, especially Football and Hockey. LETS GO DETROIT!!!</p>
             </div>
           </div>
         </section>

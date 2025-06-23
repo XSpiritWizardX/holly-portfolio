@@ -27,6 +27,11 @@ function Navigation() {
             </a>
             <a
             className="nav-link"
+            href="/skills" >
+              Skills
+            </a>
+            <a
+            className="nav-link"
             href="/contact" >
               Contact
             </a>

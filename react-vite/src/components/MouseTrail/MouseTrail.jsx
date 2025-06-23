@@ -22,7 +22,7 @@ const AffirmationTrail = () => {
     let funChars = [...funCharsOriginal];
     let index = 0;
     let lastTriggerTime = 0;
-    const delay = 750;
+    const delay = 5000;
 
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
@@ -48,7 +48,7 @@ const AffirmationTrail = () => {
       char.innerText = funChars[index++];
       document.body.appendChild(char);
 
-     
+
 
    char.style.position = 'absolute';
 char.style.left = `${e.pageX}px`;

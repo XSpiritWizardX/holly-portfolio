@@ -13,7 +13,6 @@ function LandingPage() {
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
 
   const phrases = [
-    "Full-Stack Software Engineer...",
     "Digital Marketer...",
     "Financial Educator...",
     "Game Developer...",
@@ -59,21 +58,21 @@ function LandingPage() {
                  <div className="profile-inner">
                   <img
                     className="hero-profile-image"
-                    src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg"
+                    src="https://res.cloudinary.com/dl6ls3rgu/image/upload/c_crop,w_800,h_800,ar_1:1,g_auto/v1748132681/485807983_9289284137787659_7415467271367767227_n_vytilr.jpg"
                     alt="Profile"
                   />
                 </div>
                 {/* <img src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132663/486354092_9289268864455853_8457108257314763719_n_nrrd2m.jpg" alt="Profile" class="hero-profile-image" /> */}
               </div>
 
-          
+
 
           </div>
 
           <div className="hero-text">
-            <h1 className="hero-name">Dustin Bovee</h1>
+            <h1 className="hero-name">Dustin Bovee </h1>
             <div className="typewriter-container">
-              <span className="typewriter-text">{displayText}</span>
+              <span className="typewriter-text">Full-Stack Software Engineer and {displayText}</span>
               <span className="cursor">|</span>
             </div>
             <br/>

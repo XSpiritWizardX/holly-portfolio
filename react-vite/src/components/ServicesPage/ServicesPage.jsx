@@ -1,5 +1,4 @@
 import "./ServicesPage.css";
-import SkillMeter from "../SkillMeter/SkillMeter";
 import MouseTrail from '../MouseTrail/MouseTrail'
 // I commented out spline brain until i figure out how to let actions pass through
 // import SplineBrain from '../SplineBrain/SplineBrain'
@@ -154,7 +153,7 @@ function ServicesPage() {
           <SplineBrain /> */}
 
 
-            <SkillMeter />
+
 
 
 

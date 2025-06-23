@@ -9,6 +9,7 @@ import Layout from './Layout';
 import ThreeJSGame from '../components/ThreeJsGame/ThreeJsGame';
 import Platformer from '../components/Platformer/Platformer';
 import ClickerGame from '../components/ClickerGame/ClickerGame';
+import SkillMeter from '../components/SkillMeter/SkillMeter';
 export const router = createBrowserRouter([
   {
     element: <Layout />,
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
       {
         path: "/services",
         element: <ServicesPage />,
+      },
+      {
+        path: "/skills",
+        element: <SkillMeter />,
       },
       {
         path: "/contact",

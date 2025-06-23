@@ -120,8 +120,8 @@ textarea {
   left: -3px;
   right: -3px;
   bottom: -3px;
-  background: linear-gradient(
-    90deg,
+  background: conic-gradient(
+    from 0deg,
     white,
     black,
     red,
@@ -137,13 +137,15 @@ textarea {
   background-size: 400% 400%;
   border-radius: inherit;
   z-index: -1;
-  animation: rainbowShift 10s linear infinite;
+  animation:  10s linear infinite;
 }
-
-@keyframes rainbowShift {
-  0% { background-position: 0% 0%; }
-  50% { background-position: 100% 100%; }
-  100% { background-position: 0% 0%; }
+@keyframes spin-border {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .error-message {

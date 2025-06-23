@@ -7,12 +7,12 @@ import MouseTrail from '../MouseTrail/MouseTrail'
 const projects = [
   {
     id: 1,
-    title: "Football BnB",
-    description: "A full-stack application focused on football stadium accommodations.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492501/Screenshot_2025-06-09_135539_d2yhba.png",
-    liveUrl: "https://footballbnb.onrender.com/",
-    githubUrl: "https://github.com/XSpiritWizardX/footballbnb",
-    technologies: ["React", "Redux", "node.js","PostgreSQL", "SQLite", "Express", "Sequelize", "CSS", "HTML", "JavaScript"],
+    title: "Arcana Academy",
+    description: "A Repository for all adventure game assets. This application allows users to upload their own assets, and use them in their games. Built with scalability in mind.",
+    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492508/Screenshot_2025-06-09_140158_srgr94.png",
+    liveUrl: "https://arcana-academy.onrender.com/",
+    githubUrl: "https://github.com/XSpiritWizardX/arcana-academy",
+    technologies: ["React", "Redux", "Python", "Flask", "PostgreSQL", "CSS", "HTML", "AWS", "Docker"],
     category: "Web Development"
   },
   {
@@ -27,12 +27,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "Arcana Academy",
-    description: "A Repository for all adventure game assets. This application allows users to upload their own assets, and use them in their games. Built with scalability in mind.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492508/Screenshot_2025-06-09_140158_srgr94.png",
-    liveUrl: "https://arcana-academy.onrender.com/",
-    githubUrl: "https://github.com/XSpiritWizardX/arcana-academy",
-    technologies: ["React", "Redux", "Python", "Flask", "PostgreSQL", "CSS", "HTML", "AWS", "Docker"],
+    title: "Football BnB",
+    description: "A full-stack application focused on football stadium accommodations.",
+    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492501/Screenshot_2025-06-09_135539_d2yhba.png",
+    liveUrl: "https://footballbnb.onrender.com/",
+    githubUrl: "https://github.com/XSpiritWizardX/footballbnb",
+    technologies: ["React", "Redux", "node.js","PostgreSQL", "SQLite", "Express", "Sequelize", "CSS", "HTML", "JavaScript"],
     category: "Web Development"
   },
   {
