@@ -14,7 +14,8 @@ const VideoSlider = ({ videos }) => {
 
   return (
     <div className="video-slider-wrapper">
-      <h2 className="slider-title">Featured Music</h2>
+      <h2 className="slider-title">Original Music</h2>
+      <p>I wrote every part of every song by myself. I played all the instruments and sang to the best of my abilities. <br/> Please enjoy my music videos from the album &quot;Mirrors&quot;</p>
       <div className="slider-container">
         <button className="slider-arrow left" onClick={() => scroll('left')}>&larr;</button>
         <div className="video-slider" ref={sliderRef}>

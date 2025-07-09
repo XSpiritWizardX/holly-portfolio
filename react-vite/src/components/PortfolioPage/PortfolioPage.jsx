@@ -29,7 +29,7 @@ const projects = [
     id: 3,
     title: "Football BnB",
     description: "A full-stack application focused on football stadium accommodations.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492501/Screenshot_2025-06-09_135539_d2yhba.png",
+    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752018180/Screenshot_2025-07-08_193956_gbpdyi.png",
     liveUrl: "https://footballbnb.onrender.com/",
     githubUrl: "https://github.com/XSpiritWizardX/footballbnb",
     technologies: ["React", "Redux", "node.js","PostgreSQL", "SQLite", "Express", "Sequelize", "CSS", "HTML", "JavaScript"],

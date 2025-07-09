@@ -12,7 +12,7 @@ function AboutPage() {
       title: "App Academy",
       subtitle: "Full Stack Software Engineering Bootcamp",
       duration: "2025 • 888+ hours • less than 3% acceptance rate",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/app-academy-logo_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020176/Screenshot_2025-07-08_201439_nblpc9.png",
       description: "Intensive full-stack software engineering program covering JavaScript, Python, React, Redux, Flask, SQLAlchemy, and more. Rigorous curriculum with less than 3% acceptance rate, focusing on real-world project development and industry best practices.",
       link: "https://www.appacademy.io/",
       skills: ["JavaScript", "Python", "React", "Redux", "Flask", "PostgreSQL", "Git", "Agile Development"]
@@ -21,7 +21,7 @@ function AboutPage() {
       title: "Michigan Department of Insurance and Financial Services",
       subtitle: "MI Life Health and Accident Producer",
       duration: "2023 • Life, Accident, Health • License #20620121",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/michigan-insurance-logo_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020553/Screenshot_2025-07-08_202218_pimujp.png",
       description: "Licensed insurance producer specializing in life, health, and accident insurance products. Comprehensive understanding of insurance regulations, risk assessment, and client consultation.",
       link: "https://difs.state.mi.us/locators?searchtype=InsAgent",
       skills: ["Risk Assessment", "Client Relations", "Insurance Law", "Financial Planning"]
@@ -30,7 +30,7 @@ function AboutPage() {
       title: "Google Certifications",
       subtitle: "Digital Marketing & E-commerce",
       duration: "2023 • 7 courses • 7 certifications",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/google-certs-logo_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020989/Screenshot_2025-07-08_202937_rah2gi.png",
       description: "Comprehensive digital marketing and e-commerce certification program covering SEO, SEM, social media marketing, analytics, and e-commerce strategy. Hands-on experience with Google Ads, Analytics, and other marketing tools.",
       link: "https://grow.google/certificates/",
       skills: ["SEO/SEM", "Google Analytics", "Social Media Marketing", "E-commerce Strategy", "Data Analysis"]
@@ -39,7 +39,7 @@ function AboutPage() {
       title: "Glen Oaks Community College",
       subtitle: "Associates of General Studies",
       duration: "2023",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/glen-oaks-logo_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020682/Screenshot_2025-07-08_202425_tqw9ih.png",
       description: "Well-rounded education covering liberal arts, sciences, and foundational courses. Strong emphasis on critical thinking, communication, and analytical skills.",
       link: "https://www.glenoaks.edu/",
       skills: ["Critical Thinking", "Written Communication", "Research", "Problem Solving"]
@@ -48,7 +48,7 @@ function AboutPage() {
       title: "Glen Oaks Community College",
       subtitle: "Certified Emergency Nurse Aide",
       duration: "2017 • C.E.N.A. • Basic Life Support • CPR • First Responder",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/cena-cert-logo_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020682/Screenshot_2025-07-08_202425_tqw9ih.png",
       description: "Certified Emergency Nurse Aide with comprehensive training in patient care, emergency response, and medical assistance. Includes CPR certification and first responder training.",
       link: "https://www.glenoaks.edu/",
       skills: ["Patient Care", "Emergency Response", "CPR", "Medical Assistance", "Crisis Management"]
@@ -57,7 +57,7 @@ function AboutPage() {
       title: "Full Sail University",
       subtitle: "Bachelor of Music",
       duration: "2013 • Recording Arts • Music Production • Performing Arts",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/fullsail-logo_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752021426/Screenshot_2025-07-08_203311_sp6ilx.png",
       description: "Comprehensive music education covering music production, audio engineering, music theory, and creative composition. Hands-on experience with industry-standard equipment and software.",
       link: "https://www.fullsail.edu/",
       skills: ["Music Production", "Audio Engineering", "Creative Composition", "Pro Tools", "Sound Design"]
@@ -78,7 +78,7 @@ function AboutPage() {
       title: "Insurance Producer",
       company: "Independent Agent",
       duration: "2023 - 2024",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1747963870/insurance-agent_example.jpg",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020441/Screenshot_2025-07-08_202018_fmjlpj.png",
       description: "Licensed insurance producer helping families and individuals secure their financial future through comprehensive insurance solutions. Specialized in life, health, and accident coverage with focus on client education and long-term relationships.",
       achievements: ["Maintained 95% client retention rate"],
       skills: ["Sales", "Risk Assessment", "Financial Planning", "Client Consultation", "Regulatory Compliance"]
