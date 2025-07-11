@@ -181,9 +181,6 @@ const handleResumeDownload = () => {
               className="cta-btn primary">
             Discuss Opportunities
           </a>
-          <a href="tel:269-506-5112" className="cta-btn secondary">
-            Call Me
-          </a>
           <button onClick={handleResumeDownload} className="cta-btn resume">
             <FaDownload />
             Download Resume
