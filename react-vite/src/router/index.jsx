@@ -6,8 +6,7 @@ import PortfolioPage from '../components/PortfolioPage/PortfolioPage';
 import ContactPage from '../components/ContactPage/ContactPage';
 import GamePage from '../components/GamePage/GamePage';
 import Layout from './Layout';
-import ThreeJSGame from '../components/ThreeJsGame/ThreeJsGame';
-import Platformer from '../components/Platformer/Platformer';
+
 import ClickerGame from '../components/ClickerGame/ClickerGame';
 import SkillMeter from '../components/SkillMeter/SkillMeter';
 export const router = createBrowserRouter([
@@ -42,14 +41,7 @@ export const router = createBrowserRouter([
         path: "/maze-game",
         element: <GamePage />,
       },
-      {
-        path: "space-game",
-        element: <ThreeJSGame />
-      },
-      {
-        path: "platform-editor",
-        element: <Platformer />
-      },
+
       {
         path: "/clicker",
         element: <ClickerGame />

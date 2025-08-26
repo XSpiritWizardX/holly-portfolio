@@ -5,78 +5,11 @@ import { Link } from "react-router-dom";
 import SignTheWall from '../SignTheWall/SignTheWall';
 import MouseTrail from '../MouseTrail/MouseTrail'
 const projects = [
-  {
-    id: 1,
-    title: "Arcana Academy",
-    description: "A Repository for all adventure game assets. This application allows users to upload their own assets, and use them in their games. Built with scalability in mind.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492508/Screenshot_2025-06-09_140158_srgr94.png",
-    liveUrl: "https://arcana-academy.onrender.com/",
-    githubUrl: "https://github.com/XSpiritWizardX/arcana-academy",
-    technologies: ["React", "Redux", "Python", "Flask", "PostgreSQL", "CSS", "HTML", "AWS", "Docker"],
-    category: "Web Development"
-  },
-  {
-    id: 2,
-    title: "Trade Toad",
-    description: "A trading simulation platform with real-time market data and learning center. Built to handle high volume data and integration options for predictive a.i. and trading bots.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492504/Screenshot_2025-06-09_135837_mmp9y1.png",
-    liveUrl: "https://tradetoad.onrender.com/",
-    githubUrl: "https://github.com/XSpiritWizardX/tradetoad",
-    technologies: ["React", "Redux", "Python", "Flask", "PostgreSQL", "CSS", "HTML", "Polygon", "React Charts"],
-    category: "Web Development"
-  },
-  {
-    id: 3,
-    title: "Football BnB",
-    description: "A full-stack application focused on football stadium accommodations.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752018180/Screenshot_2025-07-08_193956_gbpdyi.png",
-    liveUrl: "https://footballbnb.onrender.com/",
-    githubUrl: "https://github.com/XSpiritWizardX/footballbnb",
-    technologies: ["React", "Redux", "node.js","PostgreSQL", "SQLite", "Express", "Sequelize", "CSS", "HTML", "JavaScript"],
-    category: "Web Development"
-  },
-  {
-    id: 4,
-    title: "Joezano's Pizza",
-    description: "A single page webapp built according to wireframe. Has scalability in mind for future features.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749492707/Screenshot_2025-06-09_141135_n2aq29.png",
-    liveUrl: "https://joezanos-pizza.onrender.com/",
-    githubUrl: "https://github.com/XSpiritWizardX/joezanos-pizza",
-    technologies: ["React", "Redux", "Flask", "PostgreSQL", "Wireframe", "CSS", "HTML", "JavaScript", "Python"],
-    category: "Web Development"
-  },
-  {
-    id: 5,
-    title: "The Dark Musician",
-    description: "An epic metroidvania style hack and slash game featuring original music and custom artwork. Hobby project. Still in development.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749514192/Screenshot_2025-06-09_200855_pnmnwa.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Unity", "C#", "Blender", "Pro Tools", "Adobe Suite"],
-    category: "Game Development"
-  },
-  {
-    id: 6,
-    title: "Platform Editor",
-    description: "A 2D platformer editing tool built to make 2d platformer development easier.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749601691/Screenshot_2025-06-10_201154_jvax3i.png",
-    liveUrl: "/platform-editor",
-    githubUrl: "#",
-    technologies: ["React", "Canvas API", "WebGL"],
-    category: "Game Development",
-    isInternal: true
-  },
-  {
-    id: 7,
-    title: "Space Flight Simulator",
-    description: "An epic 3D space flight simulator. Planning to template and expand on this later.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749601692/Screenshot_2025-06-10_202642_bqwfoj.png",
-    liveUrl: "/space-game",
-    githubUrl: "#",
-    technologies: ["React", "Three.js","WebGL"],
-    category: "Game Development",
-    isInternal: true
-  },
+
+
+
+
+
   {
     id: 8,
     title: "Maze Hunter",
@@ -99,114 +32,10 @@ const projects = [
     category: "Game Development",
     isInternal: true
   },
-  {
-    id: 13,
-    title: "Tra Riverz Album",
-    description: "Event Marketing New album release campaign",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749604847/tra_riverz_ist_quarter_pressure_rmwvcc.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Google Ads", "Canva", "CapCut","YouTube"],
-    category: "Marketing"
-  },
-  {
-    id: 14,
-    title: "Kevin Gates Event",
-    description: "Event Marketing campaign for concert promotion",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749604847/tra_riverz_kevin_gates_upcoming_show_wqga68.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Google Ads", "Canva", "CapCut","YouTube"],
-    category: "Marketing"
-  },
-  {
-    id: 15,
-    title: "The Goat Campaign",
-    description: "Brand Awareness Campaign to increase impressions and community.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749608702/Screenshot_2025-06-10_222434_p0pvhw.png",
-    video: "https://res.cloudinary.com/dl6ls3rgu/video/upload/v1749604773/The_Goat__Long_Form_PROMO__txka7g.mp4",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Google Ads", "Canva", "CapCut","YouTube"],
-    category: "Marketing"
-  },
-  {
-    id: 16,
-    title: "CZ's Thrift Store",
-    description: "Holiday Advertisement to encourage increase in-store visits.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749608701/Screenshot_2025-06-10_222312_dyugzg.png",
-    video: "https://res.cloudinary.com/dl6ls3rgu/video/upload/v1749604588/czs_ad_2_k8ygvg.mp4",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Google Ads", "Canva", "CapCut","YouTube"],
-    category: "Marketing"
-  },
-  {
-    id: 18,
-    title: "Concept Art",
-    description: "Art",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603643/Zhe6NXQ0n29V6fcfh1xu--1--ap4p1-removebg-preview_qqblch.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
-  {
-    id: 19,
-    title: "Concept Art",
-    description: "Art",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603642/tu1Cy1TPqCCD32HIx2sQ--1--1sipg-removebg-preview_j6l3ze.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
 
-
-  {
-    id: 22,
-    title: "Concept Art",
-    description: "ART",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603632/0HBSocJ2b6Urg7vSO4sh--1--n9oel-removebg-preview_gdghqp.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
-
-  {
-    id: 24,
-    title: "Concept Art",
-    description: "ART",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603632/9eM8hpH9dherSlG3SC6M--1--zy0rk-removebg-preview_ivuju0.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
-  {
-    id: 25,
-    title: "Concept Art",
-    description: "ART",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603632/Bh9BOmTD0ISRbkam8wqJ--1--nm1vv-removebg-preview_mimmgt.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
-  {
-    id: 26,
-    title: "Concept Art",
-    description: "ART",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749603632/5nfiq5aP8W9XUGrzbyxG--1--t09e8-removebg-preview_lnvp0x.png",
-    liveUrl: "#",
-    githubUrl: "#",
-    technologies: ["Blender", "Adobe Suite", "gimp"],
-    category: "Art"
-  },
 ];
 
-const categories = ["All", "Web Development", "Marketing", "Game Development", "Art"];
+const categories = ["All", "Acting", "Modeling", "Games", "Photos", "Charity"];
 
 
 
@@ -231,7 +60,7 @@ const videoData = [
 function PortfolioPage() {
 
 
-  const [selectedCategory, setSelectedCategory] = useState("Web Development");
+  const [selectedCategory, setSelectedCategory] = useState("Photos");
   const [selectedProject, setSelectedProject] = useState(null);
   const [hoveredProject, setHoveredProject] = useState(null);
 
