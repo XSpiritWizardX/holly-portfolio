@@ -88,21 +88,8 @@ function LandingPage() {
         </div>
       </div>
 
-      <div className="quick-stats">
-        <div className="stat-item">
-          <h3>4+</h3>
-          <p>Active Apps</p>
-        </div>
-        <div className="stat-item">
-          <h3>12+</h3>
-          <p>Extremely Satisfied Clients </p>
-        </div>
-        <div className="stat-item">
-          <h3>50+</h3>
-          <p>Technologies</p>
-        </div>
 
-      </div>
+
 
 
     </div>

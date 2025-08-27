@@ -1,5 +1,5 @@
 .landing-container {
-  min-height: 100vh;
+  max-height: 100%;
   background: linear-gradient(135deg, #000000 0%, #000000 55%, #3a4e53 100%);
   color: white;
 }
@@ -50,15 +50,37 @@
   padding: 18px;
   background: conic-gradient(
     from 0deg,
-    #ff0000,
-    #ff8800,
-    #ffff00,
-    #00ff00,
-    #00ffff,
+    #fffb02,
+    #ffffff,
+    #00ffd5,
+    #ffffff,
     #ff00ff,
-    #ff0000
+    #ff00ff,
+    #ffffff,
+    #fffb02,
+    #ffffff,
+    #00ffd5,
+    #ffffff,
+    #ff00ff,
+    #ff00ff,
+    #ffffff,
+    #fffb02,
+    #ffffff,
+    #00ffd5,
+    #ffffff,
+    #ff00ff,
+    #ff00ff,
+    #ffffff,
+    #fffb02,
+    #ffffff,
+    #00ffd5,
+    #ffffff,
+    #ff00ff,
+    #ff00ff,
+    #ffffff,
+    #fffb02
   );
-  animation: spin-border 2s linear infinite;
+  animation: spin-border 7s linear infinite;
   z-index: 0;
 }
 
@@ -115,13 +137,9 @@
   margin-bottom: 1rem;
   background: linear-gradient(
     90deg,
-    #ff0000 0%,
-    #ff8800 20%,
-    #ffff00 40%,
-    #00ff00 50%,
-    #00ffff 60%,
-    #ff00ff 80%,
-    #ff0000 100%
+    #ffff00 0%,
+    #00ffff 50%,
+    #ff00ff 100%,
   );
   background-size: 400% 400%;
   -webkit-background-clip: text;
@@ -147,7 +165,7 @@
 .typewriter-text {
   font-size: 2rem;
   font-weight: 500;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet, red);
+  background: linear-gradient(90deg, rgb(255, 2, 171),  yellow, rgb(3, 255, 150), rgb(11, 157, 255), indigo, violet, red);
   background-size: 1500% 1500%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -212,7 +230,7 @@
   color: #111;
   transform: translateY(-2px);
   border-style: outset;
-    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
+  box-shadow: 0px 0px 20px #ff00ff;
 }
 
 .btn-secondary {
@@ -232,34 +250,9 @@
   color: #111;
   transform: translateY(-2px);
   border-style: inset;
-    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
+  box-shadow: 0px 0px 20px #ff00ff;
 }
 
-
-.quick-stats {
-  display: flex;
-  justify-content: center;
-  gap: 4rem;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #000000 0%, #000000 35%, #3a4e53 100%);
-  backdrop-filter: blur(10px);
-}
-
-.stat-item {
-  text-align: center;
-}
-
-.stat-item h3 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #09b311a6;
-  margin-bottom: 0.5rem;
-}
-
-.stat-item p {
-  font-size: 1.1rem;
-  opacity: 0.9;
-}
 
 
 
@@ -276,11 +269,6 @@
 
   .typewriter-text {
     font-size: 1.5rem;
-  }
-
-  .quick-stats {
-    flex-wrap: wrap;
-    gap: 2rem;
   }
 
   .hero-buttons {

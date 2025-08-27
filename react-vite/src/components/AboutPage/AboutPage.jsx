@@ -9,60 +9,44 @@ function AboutPage() {
   const slidesRef = useRef(null);
 
   const educationData = {
-    appacademy: {
-      title: "App Academy",
-      subtitle: "Full Stack Software Engineering Bootcamp",
-      duration: "2025 • 888+ hours • less than 3% acceptance rate",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020176/Screenshot_2025-07-08_201439_nblpc9.png",
-      description: "Intensive full-stack software engineering program covering JavaScript, Python, React, Redux, Flask, SQLAlchemy, and more. Rigorous curriculum with less than 3% acceptance rate, focusing on real-world project development and industry best practices.",
-      link: "https://www.appacademy.io/",
-      skills: ["JavaScript", "Python", "React", "Redux", "Flask", "PostgreSQL", "Git", "Agile Development"]
-    },
-    insurance: {
-      title: "Michigan Department of Insurance and Financial Services",
-      subtitle: "MI Life Health and Accident Producer",
-      duration: "2023 • Life, Accident, Health • License #20620121",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020553/Screenshot_2025-07-08_202218_pimujp.png",
-      description: "Licensed insurance producer specializing in life, health, and accident insurance products. Comprehensive understanding of insurance regulations, risk assessment, and client consultation.",
-      link: "https://difs.state.mi.us/locators?searchtype=InsAgent",
-      skills: ["Risk Assessment", "Client Relations", "Insurance Law", "Financial Planning"]
-    },
-    google: {
-      title: "Google Certifications",
-      subtitle: "Digital Marketing & E-commerce",
-      duration: "2023 • 7 courses • 7 certifications",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020989/Screenshot_2025-07-08_202937_rah2gi.png",
-      description: "Comprehensive digital marketing and e-commerce certification program covering SEO, SEM, social media marketing, analytics, and e-commerce strategy. Hands-on experience with Google Ads, Analytics, and other marketing tools.",
-      link: "https://grow.google/certificates/",
-      skills: ["SEO/SEM", "Google Analytics", "Social Media Marketing", "E-commerce Strategy", "Data Analysis"]
-    },
     associates: {
-      title: "Glen Oaks Community College",
-      subtitle: "Associates of General Studies",
-      duration: "2023",
+      title: "Home School",
+      subtitle: "Grade 3",
+      duration: "2025 - current",
       image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020682/Screenshot_2025-07-08_202425_tqw9ih.png",
       description: "Well-rounded education covering liberal arts, sciences, and foundational courses. Strong emphasis on critical thinking, communication, and analytical skills.",
       link: "https://www.glenoaks.edu/",
       skills: ["Critical Thinking", "Written Communication", "Research", "Problem Solving"]
     },
-    cena: {
-      title: "Glen Oaks Community College",
-      subtitle: "Certified Emergency Nurse Aide",
-      duration: "2017 • C.E.N.A. • Basic Life Support • CPR • First Responder",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020682/Screenshot_2025-07-08_202425_tqw9ih.png",
-      description: "Certified Emergency Nurse Aide with comprehensive training in patient care, emergency response, and medical assistance. Includes CPR certification and first responder training.",
-      link: "https://www.glenoaks.edu/",
-      skills: ["Patient Care", "Emergency Response", "CPR", "Medical Assistance", "Crisis Management"]
+    google: {
+      title: "Barbizon",
+      subtitle: "Acting and Modeling",
+      duration: "2025 - current ",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020989/Screenshot_2025-07-08_202937_rah2gi.png",
+      description: "Comprehensive digital marketing and e-commerce certification program covering SEO, SEM, social media marketing, analytics, and e-commerce strategy. Hands-on experience with Google Ads, Analytics, and other marketing tools.",
+      link: "https://grow.google/certificates/",
+      skills: ["SEO/SEM", "Google Analytics", "Social Media Marketing", "E-commerce Strategy", "Data Analysis"]
     },
-    fullsail: {
-      title: "Full Sail University",
-      subtitle: "Bachelor of Music",
-      duration: "2013 • Recording Arts • Music Production • Performing Arts",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752021426/Screenshot_2025-07-08_203311_sp6ilx.png",
-      description: "Comprehensive music education covering music production, audio engineering, music theory, and creative composition. Hands-on experience with industry-standard equipment and software.",
-      link: "https://www.fullsail.edu/",
-      skills: ["Music Production", "Audio Engineering", "Creative Composition", "Pro Tools", "Sound Design"]
-    }
+    byjus: {
+      title: "Byju's University",
+      subtitle: "Game Developer",
+      duration: "2023",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020176/Screenshot_2025-07-08_201439_nblpc9.png",
+      description: "Intensive full-stack software engineering program covering JavaScript, Python, React, Redux, Flask, SQLAlchemy, and more. Rigorous curriculum with less than 3% acceptance rate, focusing on real-world project development and industry best practices.",
+      link: "https://www.appacademy.io/",
+      skills: ["Game Development", "Lua", "Code Blocks", "Code.org"]
+    },
+    insurance: {
+      title: "Sturgis Academy Of Martial Arts",
+      subtitle: "Yellow Belt Black Stripe",
+      duration: "2023",
+      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752020553/Screenshot_2025-07-08_202218_pimujp.png",
+      description: "Licensed insurance producer specializing in life, health, and accident insurance products. Comprehensive understanding of insurance regulations, risk assessment, and client consultation.",
+      link: "https://difs.state.mi.us/locators?searchtype=InsAgent",
+      skills: ["Risk Assessment", "Client Relations", "Insurance Law", "Financial Planning"]
+    },
+
+
   };
 
   const experienceData = {
@@ -83,56 +67,8 @@ function AboutPage() {
       description: "Licensed insurance producer helping families and individuals secure their financial future through comprehensive insurance solutions. Specialized in life, health, and accident coverage with focus on client education and long-term relationships.",
       achievements: ["Maintained 95% client retention rate"],
       skills: ["Sales", "Risk Assessment", "Financial Planning", "Client Consultation", "Regulatory Compliance"]
-    },
-    digital_marketing: {
-      title: "Digital Marketing Specialist",
-      company: "AI Edge Marketing Innovations llc",
-      duration: "2022 - Present",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752263709/470589136_122251930028007142_8438325034571951274_n_buluzx.jpg",
-      description: "Independent digital marketing consultant helping small businesses grow their online presence through strategic marketing, branding, SEO, and e-commerce optimization. Collaborated with local entrepreneurs to improve lead generation, increase brand visibility, and drive measurable business results. Actively managing multiple client projects across industries.",
-      achievements: [
-        "Built and executed digital marketing strategies for 10+ clients",
-        "Generated consistent lead flow increases of 30-60% for local businesses",
-        "Designed marketing funnels integrating SEO, social, and paid ads"
-      ],
-      skills: [
-        "SEO/SEM",
-        "Content Marketing",
-        "Google Analytics",
-        "Email Campaigns",
-        "Social Media Strategy",
-        "E-commerce Optimization",
-        "Conversion Rate Optimization",
-        "Client Consultation"
-      ]
-    },
-    music_producer: {
-      title: "Music Producer & Audio Engineer",
-      company: "Independent Studio",
-      duration: "2013 - Present",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752259078/Screenshot_2025-07-11_143745_lkgfay.png",
-      description: "Professional music production and audio engineering services. Created 100+ original compositions and provided production services for various artists.",
-      achievements: ["Produced 100+ original songs", "Worked with 50+ independent artists", "Songs featured in commercial projects"],
-      skills: ["Pro Tools", "Big Show Events", "Audio Engineering", "Music Composition", "Mixing & Mastering", "Recording Arts", "Creative Direction"]
-    },
-    welder: {
-      title: "Aluminum and Steel Fabricator",
-      company: "Heartland RV",
-      duration: "2020 - 2022",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752258776/Screenshot_2025-07-11_143237_kurh63.png",
-      description: "Skilled in aluminum and steel fabrication, specializing in the production of high-quality RV components. Experienced in welding, assembly, and quality control.",
-      achievements: ["Improved production efficiency by approximately 20% reducing overall hours worked"],
-      skills: ["Welding", "Metal Fabrication", "Blueprint Reading", "Quality Control", "Team Collaboration"]
-    },
-    management: {
-      title: "Assistant Supervisor",
-      company: "L&W Engineering",
-      duration: "2017 - 2020",
-      image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752259581/Screenshot_2025-07-11_144505_evfhks.png",
-      description: "Assisting the supervisor in setting and managing daily operations. Enforcing company policies and regulations to ensure a safe, efficient work environment. Addressing employee concerns and resolving conflicts in the workplace.",
-      achievements: ["Consecutive record breaking years"],
-      skills: ["Training", "Welding", "Blueprints", "Work Orders", "Team Collaboration", "Employee Management"]
     }
+
   };
 
   const sliderImages = [
@@ -300,7 +236,7 @@ function AboutPage() {
       <div className="about-hero">
         <div className="about-content">
           <div className="about-text">
-            <h1>About Dustin Bovee</h1>
+            <h1>About Holly Bovee</h1>
             <p className="about-subtitle">Creative Visionary — Innovative Thinker</p>
           </div>
 
@@ -308,8 +244,8 @@ function AboutPage() {
             <div className="about-image-inner">
               <img
                 className="about-image"
-                src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1748132681/485807983_9289284137787659_7415467271367767227_n_vytilr.jpg"
-                alt="Dustin Bovee - Professional Portrait"
+                src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1756253339/1000000628_hgreuf.jpg"
+                alt="Holly Bovee - Professional Portrait"
               />
             </div>
           </div>
@@ -320,27 +256,7 @@ function AboutPage() {
         {/* My Story Section */}
         <section className="about-section">
                  <h2>My Story</h2>
-          <p>
-            Hello. My name is Dustin, and I&apos;m a creative visionary, software engineer, and father of five with a passion for music, technology, and living a life of meaning. My journey hasn&apos;t been a straight line—it&apos;s been a story of resilience, reinvention, and deep commitment to my family and personal growth.
-            <br /><br />
-            I fell in love with music as a teenager growing up in the Midwest. I joined a touring band as the lead guitarist. Travelling and playing at many great venues across the country. After earning a Bachelor&apos;s in Music from Full Sail University, I got married and chose to step away from the band and touring to build a home and raise a family. That decision was one of the most defining decisions of my life—and it shaped the man and professional I am today.
-            <br /><br />
-            Wanting to build a career close to my wife—who was also a Certified Emergency Nurse Assistant—I earned my own C.E.N.A. certification. Though I passed the state exam and entered the healthcare field, I quickly realized that path wasn&apos;t for me. Instead, I transitioned to the trades and began working at L&W Engineering as a welder. I poured myself into that craft, earning four promotions in just two years and eventually becoming Assistant Supervisor.
-            <br /><br />
-            In 2020, as the COVID-19 pandemic reshaped the world, I moved to Heartland RV to work fewer hours while supporting my growing family. While there, I earned an Associate&apos;s of General Studies and completed seven Google certifications in digital marketing and e-commerce. I began helping local businesses build their online presence and generate leads through digital strategy—finding new ways to blend creativity, business, and technology.
-            <br /><br />
-            My next chapter was motivated by a desire for financial independence. I launched an independent insurance agency alongside my wife. We both became licensed insurance producers in Michigan, specializing in life, health, and accident coverage. For over a year, I helped families plan their futures, budget with intention, and understand how to use life insurance as an investment tool. This work taught me how to listen, communicate, and serve.
-            <br /><br />
-            All the while, I continued to support my community by offering digital marketing support, audio engineering services, and financial education. But I knew there was one path I hadn&apos;t fully pursued—software engineering. Technology had been a part of my life since my early teens, and now I was ready to go all in.
-            <br /><br />
-            I enrolled in App Academy, one of the most selective and intensive full-stack software engineering bootcamps in the country. The program was rigorous—888+ hours of hands-on learning, coding challenges, and full-stack project builds. I mastered tools like JavaScript, Python, React, Flask, and PostgreSQL, and learned to thrive in collaborative, fast-paced environments. I graduated in May 2025 as a full-stack software engineer.
-            <br /><br />
-            Then, in June 2025, just one month after graduation, I had a heart attack. It was terrifying, and it changed everything. In the weeks that followed, I committed to living healthier, being more present, and never taking time for granted. That moment gave me a renewed sense of urgency—not just in life, but in purpose.
-            <br /><br />
-            Today, I continue to work as a freelance software engineer, building applications, designing creative solutions, and learning advanced AI technologies to develop more sophisticated projects. I&apos;m always exploring new tools, pushing the limits of what I can create, and finding ways to bring value to those around me—especially my family. They remain my greatest inspiration in everything I do.
-            <br /><br />
-            Whether I&apos;m helping a business streamline operations, collaborating on a creative project, or writing the next line of code—I bring with me a spirit of curiosity, love, and resilience. Life is fragile, and I intend to make every moment count.
-          </p>
+
         </section>
 
 
