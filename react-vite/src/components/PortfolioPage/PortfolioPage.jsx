@@ -42,19 +42,6 @@ const categories = ["All", "Acting", "Modeling", "Voice Acting", "Monologues", "
 
 
 
-const videoData = [
-  { src: 'https://www.youtube.com/embed/xnXgBuqI-1g?si=6wtGMT3SMcQURKOw', caption: 'Cool Project 1' },
-  { src: 'https://www.youtube.com/embed/xm7FOw1Hjpc?si=rNPakM6BsYixHfJR', caption: 'Another Project' },
-  { src: 'https://www.youtube.com/embed/aA-tknLpm4U?si=3L_bil4wM-Z-nsp-', caption: 'The Best One Yet' },
-  { src: 'https://www.youtube.com/embed/CpsjVVIHBbc?si=c6AX8xpxxL92iPYr', caption: 'The Best One Yet' },
-  { src: 'https://www.youtube.com/embed/5lYlp0zfmTo?si=imMrQCId-AOCTkDK', caption: 'The Best One Yet' },
-  { src: 'https://www.youtube.com/embed/mSvZu6TGu_w?si=iW42gOPemo6JXlPk', caption: 'The Best One Yet' },
-  { src: 'https://www.youtube.com/embed/o2_0RIKBgMA?si=NixcNInDKiUQ7DP4', caption: 'The Best One Yet' },
-  { src: 'https://www.youtube.com/embed/DvcoxWyBYmA?si=_CZ4KiVai27-EMHs', caption: 'The Best One Yet' },
-];
-
-
-
 
 
 
