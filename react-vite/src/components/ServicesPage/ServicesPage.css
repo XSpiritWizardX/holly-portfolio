@@ -1,6 +1,6 @@
 .services-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #000000 55%, #3a4e53 100%);
+  background: black;
   color: white;
   padding: 2rem;
 }

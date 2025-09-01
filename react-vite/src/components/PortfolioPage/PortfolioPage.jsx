@@ -1,9 +1,11 @@
 import "./PortfolioPage.css";
 import { useState } from "react";
-import VideoSlider from "../VideoSlider/VideoSlider";
 import { Link } from "react-router-dom";
-import SignTheWall from '../SignTheWall/SignTheWall';
 import MouseTrail from '../MouseTrail/MouseTrail'
+
+
+
+
 const projects = [
 
 
@@ -11,31 +13,31 @@ const projects = [
 
 
   {
-    id: 8,
-    title: "Maze Hunter",
-    description: "A maze game built with react aimed to let users get to know me better.",
-    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749601690/Screenshot_2025-06-10_202436_t5yu4h.png",
-    liveUrl: "/maze-game",
-    githubUrl: "#",
-    technologies: ["React", "CSS"],
-    category: "Game Development",
-    isInternal: true
-  },
-  {
-    id: 9,
-    title: "Code Clicker",
-    description: "A clicker game where you can also answer coding problems to advance. Built to help students to focus on coding while also taking some time to rest.",
+    id: 1,
+    title: "Makeup Artist Clicker Game Consultant",
+    description: "A makeup clicker game designed to test your makeup knowledge.",
     image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749614962/Screenshot_2025-06-11_000857_lz9nfu.png",
     liveUrl: "/clicker",
     githubUrl: "#",
-    technologies: ["React", "CSS"],
-    category: "Game Development",
+    skills: ["Makeup Experience", "Consulting"],
+    category: "Games",
+    isInternal: true
+  },
+  {
+    id: 2,
+    title: "Maze Hunter Sound Effects",
+    description: "A maze game to get to know me better.",
+    image: "https://res.cloudinary.com/dl6ls3rgu/image/upload/v1749601690/Screenshot_2025-06-10_202436_t5yu4h.png",
+    liveUrl: "/maze-game",
+    githubUrl: "#",
+    skills: ["Voice Acting", "Studio Recording"],
+    category: "Voice Acting",
     isInternal: true
   },
 
 ];
 
-const categories = ["All", "Acting", "Modeling", "Games", "Photos", "Charity"];
+const categories = ["All", "Acting", "Modeling", "Voice Acting", "Monologues", "Charity","Games"];
 
 
 
@@ -132,7 +134,7 @@ function PortfolioPage() {
           <div className="project-info">
             <h3>{project.title}</h3>
             <div className="project-tech">
-              {project.technologies.map((tech, index) => (
+              {project.skills.map((tech, index) => (
                 <span key={index} className="tech-tag">{tech}</span>
               ))}
             </div>
@@ -215,42 +217,22 @@ function PortfolioPage() {
 
 
 
-      <div className="media-section">
-
-        <VideoSlider videos={videoData}/>
 
 
-
-      </div>
-
-      <SignTheWall/>
 
       {selectedProject && (
         <div className="project-modal" onClick={() => setSelectedProject(null)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <button className="close-btn" onClick={() => setSelectedProject(null)}>×</button>
 
-            {selectedProject.video ? (
-              <video
-                className="modal-video"
-                controls
-                autoPlay
-                muted
-                loop
-              >
-                <source src={selectedProject.video} type="video/mp4" />
-                <img src={selectedProject.image} alt={selectedProject.title} />
-              </video>
-            ) : (
-              <img src={selectedProject.image} alt={selectedProject.title} />
-            )}
+
 
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.description}</p>
 
             <div className="modal-tech">
-              {selectedProject.technologies.map((tech, index) => (
-                <span key={index} className="tech-tag">{tech}</span>
+              {selectedProject.skills.map((skill, index) => (
+                <span key={index} className="tech-tag">{skill}</span>
               ))}
             </div>
 

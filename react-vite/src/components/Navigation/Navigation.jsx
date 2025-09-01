@@ -23,7 +23,7 @@ function Navigation() {
             <a
             className="nav-link"
             href="/services" >
-              Services
+              IMDB
             </a>
             <a
             className="nav-link"

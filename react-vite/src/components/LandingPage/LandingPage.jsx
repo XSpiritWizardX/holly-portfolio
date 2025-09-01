@@ -58,7 +58,7 @@ function LandingPage() {
                  <div className="profile-inner">
                   <img
                     className="hero-profile-image"
-                    src="https://res.cloudinary.com/dl6ls3rgu/image/upload/v1752268509/IMG_6061_hoeepp.jpg"
+                    src="https://res.cloudinary.com/dl6ls3rgu/image/upload/c_fill,w_600,h_600,g_auto/v1752268512/Screenshot_20250622-151657_m7oyov.png"
                     alt="Profile"
                   />
                 </div>

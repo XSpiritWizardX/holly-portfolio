@@ -1,6 +1,6 @@
 .portfolio-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #000000 55%, #3a4e53 100%);
+  background: black;
   color: white;
   padding: 2rem;
 }
@@ -75,6 +75,7 @@
 
 
 .project-card {
+  max-width: 400px;
   position: relative;
   border-radius: 15px;
   padding: 4px;
@@ -91,17 +92,25 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: conic-gradient(
+   background: conic-gradient(
     from 0deg,
-    #ff0000,
-    #ff8800,
-    #ffff00,
-    #00ff00,
-    #00ffff,
-    #ff00ff,
-    #ff0000
-  );
-  animation: spin-border 2s linear infinite;
+    rgb(255, 3, 242),
+    rgb(11, 255, 255),
+    rgb(255, 3, 242),
+    rgb(114, 255, 114),
+    rgb(255, 3, 242),
+    #fffb02,
+    rgb(255, 3, 242),
+    rgb(11, 255, 255),
+    rgb(255, 3, 242),
+    #fffb02,
+    rgb(255, 3, 242),
+    rgb(114, 255, 114),
+    rgb(255, 3, 242),
+    rgb(11, 255, 255),
+    rgb(255, 3, 242)
+    );
+  animation: spin-border 4s linear infinite;
   z-index: -2;
 }
 

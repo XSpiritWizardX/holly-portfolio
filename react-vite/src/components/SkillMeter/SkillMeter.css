@@ -2,6 +2,7 @@
   padding: 3rem 2rem;
   border-radius: 20px;
   margin-top: 4rem;
+  background: black;
 
 }
 
@@ -58,7 +59,7 @@ padding: 3rem;
     background-color: white;
     font-size: 1.5rem;
     border: 8px outset grey;
-    box-shadow: 0px 0px 10px black, 0px 0px 15px red, 0px 0px 20px orange, 0px 0px 25px yellow, 0px 0px 30px green, 0px 0px 35px cyan, 0px 0px 40px blue, 0px 0px 45px violet, 0px 0px 50px white;
+    box-shadow: 0px 0px 10px  yellow, 0px 0px 30px green, 0px 0px 35px cyan;
     cursor: pointer;
 }
 
